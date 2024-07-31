@@ -1,0 +1,22 @@
+.ProjectDetailSection h3 {
+    text-shadow: 1px 1px #e1e1e1;
+}
+
+.ProjectDetailSection .img_wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.ProjectDetailSection .img_wrapper img {
+    width: 25%;
+}
+
+@media (max-width: 720px) {
+    .ProjectDetailSection .img_wrapper {
+        flex-direction: column;
+    }
+
+    .ProjectDetailSection .img_wrapper img {
+        width: 100%;
+    }
+}

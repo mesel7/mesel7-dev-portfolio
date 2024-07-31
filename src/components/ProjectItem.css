@@ -1,0 +1,41 @@
+.ProjectItem {
+    cursor: pointer;
+    display: flex;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.ProjectItem img {
+    width: 100px;
+}
+
+.ProjectItem .description_section {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.ProjectItem .description_section h3 {
+    margin: 0;
+    margin-bottom: 4px;
+    text-shadow: 1px 1px #e1e1e1;
+}
+
+.ProjectItem .description_section p {
+    margin: 0;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+@media (max-width: 720px) {
+    .ProjectItem {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ProjectItem .description_section {
+        align-items: center;
+    }
+}

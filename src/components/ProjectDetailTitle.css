@@ -1,0 +1,52 @@
+.ProjectDetailTitle {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.ProjectDetailTitle h2 {
+    margin-top: 0;
+    text-shadow: 1px 2px #e1e1e1;
+}
+
+.ProjectDetailTitle .time_wrapper {
+    font-weight: bold;
+}
+
+.ProjectDetailTitle ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 10px;
+}
+
+.ProjectDetailTitle .link_wrapper {
+    font-weight: bold;
+}
+
+.ProjectDetailTitle li {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.ProjectDetailTitle .link_wrapper {
+    display: flex;
+    gap: 40px;
+}
+
+.ProjectDetailTitle .link {
+    cursor: pointer;
+}
+
+@media (max-width: 720px) {
+    .ProjectDetailTitle {
+        text-align: center;
+    }
+
+    .ProjectDetailTitle ul {
+        justify-content: center;
+    }
+
+    .ProjectDetailTitle .link_wrapper {
+        justify-content: center;
+    }
+}
