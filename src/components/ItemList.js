@@ -2,7 +2,7 @@ import "./ItemList.css";
 
 const ItemList = ({ data, RenderItem }) => {
     return (
-        <div className="ItemList">
+        <div className="item-list">
             {data.map((it, idx) => <RenderItem key={idx} {...it} />)}
         </div>
     );

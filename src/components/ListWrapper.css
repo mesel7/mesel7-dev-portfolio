@@ -1,21 +1,20 @@
-.ListWrapper {
+.list-wrapper {
     display: flex;
     flex-direction: column;
     padding: 60px;
     gap: 20px;
 }
 
-.ListWrapper h2 {
+.list-wrapper h2 {
     margin-top: 0;
-    text-shadow: 1px 2px #e1e1e1;
 }
 
 @media (max-width: 720px) {
-    .ListWrapper {
+    .list-wrapper {
         padding: 30px;
     }
 
-    .ListWrapper h2 {
+    .list-wrapper h2 {
         margin: 0 auto;
     }
 }

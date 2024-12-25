@@ -11,7 +11,7 @@ const ProjectDetail = () => {
         return <div>프로젝트를 불러오고 있습니다...</div>;
     } else {
         return (
-            <div className="ProjectDetail">
+            <div className="project-detail">
                 <Header />
                 <ProjectDetailWrapper {...project} />
             </div>

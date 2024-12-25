@@ -48,10 +48,10 @@ const Header = () => {
     const handleMobileMenuClick = () => setShowMenu(!showMenu);
 
     return (
-        <div className="Header">
+        <div className="header">
             <PC>
                 <h1><span onClick={handleTitleClick}>mesel7 PORTFOLIO</span></h1>
-                <div className="menu_wrapper">
+                <div className="menu-wrapper">
                     {menuItems.map((it, idx) => (
                         <MenuItem
                             key={idx}
@@ -64,13 +64,12 @@ const Header = () => {
             </PC>
             <Mobile>
                 <h1><span onClick={handleTitleClick}>mesel7</span></h1>
-                <div className="menu_wrapper">
-                    <div className="mobile_menu" onClick={handleMobileMenuClick}>
-                        <FontAwesomeIcon icon={MobileMenuIcons.faBars} size={"2x"} style={{ color: "black" }}/>
-                        <p>MENU</p>
+                <div className="menu-wrapper">
+                    <div className="mobile-menu" onClick={handleMobileMenuClick}>
+                        <FontAwesomeIcon icon={MobileMenuIcons.faBars} size={"2x"} />
                     </div>
                     {showMenu && (
-                        <div className="dropdown_menu">
+                        <div className="dropdown-menu">
                             {menuItems.map((it, idx) => (
                                 <MenuItem
                                 key={idx}

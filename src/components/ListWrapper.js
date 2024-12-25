@@ -21,7 +21,7 @@ const ListWrapper = ({ contentType }) => {
     const RenderItem = renderItemMap[contentType];
 
     return (
-        <div className="ListWrapper">
+        <div className="list-wrapper">
             <h2>{`MY ${contentType.toUpperCase()}`}</h2>
             <ItemList data={data} RenderItem={RenderItem} />
         </div>

@@ -1,7 +1,6 @@
 import { skillsIcons } from "./utils";
 import swImages from "./utils";
 
-
 export const skillsPreData = [
     {
         icon: skillsIcons.faHtml5,
@@ -52,49 +51,49 @@ export const projectsPreData = [
         name: "sweetii",
         title: "달콤한 만남 스위티, Sweetii",
         time: "2024.01 ~ 2024.06",
-        description: "대학생 연애 플랫폼",
+        description: "대학생 소개팅 웹 앱입니다.\n대학교 인증이 완료된 이성과 매칭 및 실시간 채팅 서비스를 제공합니다.\nFirebase로 DB 사용과 배포를 하였습니다.\n개발 기간 동안 출시하여 실제 사용자들을 대상으로 서비스했습니다.",
 
         tech: ["HTML5", "CSS3", "JAVASCRIPT", "Firebase"],
         links: [],
         sections: [
             {
                 title: "메인 페이지",
-                description: "메인페이지 입니다. ",
+                description: "시즌 별 업데이트를 보여주는 배너와 최근 로그인한 유저를 정렬하여 보여주는 메인 페이지입니다.\nFirebase 쿼리를 통해 최근 로그인한 순서로 유저 데이터를 보여줍니다.",
                 imgs: [swImages["sw_main1.png"]]
             },
             {
                 title: "로그인 페이지",
-                description: "로그인 페이지 입니다",
+                description: "이메일/비밀번호 뿐 아니라 API를 연동하여 주요 SNS 서비스로 간편하게 로그인할 수 있도록 구현했습니다.",
                 imgs: [swImages["sw_login1.png"], swImages["sw_login2.png"], swImages["sw_login3.png"]]
             },
             {
                 title: "프로필 카드",
-                description: "프로필 카드입니다",
+                description: "Firebase 쿼리를 통해 이성의 프로필을 가져와 프로필 카드로 보여줍니다.\n가로로 스크롤하여 카드를 넘길 때 애니메이션 효과를 주었습니다.",
                 imgs: [swImages["sw_profile1.png"], swImages["sw_profile2.png"], swImages["sw_profile3.png"]]
             },
             {
                 title: "매칭",
-                description: "매칭 기능입니다",
+                description: "이성에게 매칭을 보낼 수 있고 받은 요청/보낸 요청으로 보여줍니다.\n요청은 Firebase에서 별도 데이터로 관리하며 수락/거절, 대기 상태를 가집니다.",
                 imgs: [swImages["sw_matching1.png"], swImages["sw_matching2.png"], swImages["sw_matching3.png"]]
             },
             {
                 title: "채팅",
-                description: "채팅 기능입니다",
+                description: "매칭이 성사된 상대와 실시간 채팅을 할 수 있습니다.\n쿡 찌르기를 통해 상대의 전화번호로 SMS 푸쉬 메시지를 보낼 수 있습니다.",
                 imgs: [swImages["sw_chat1.png"], swImages["sw_chat2.png"], swImages["sw_chat3.png"]]
             },
             {
                 title: "마이페이지",
-                description: "마이페이지 입니다",
+                description: "자신의 프로필을 다양한 방식으로 보여줄 수 있습니다.\n입력 필드들은 Firebase에서 데이터로 관리합니다.\n드롭다운 리스트에 select2, 스크롤바에 perfect-scrollbar를 사용하여 사용자 경험을 높였습니다.\n학교 이메일 또는 학생증 사진으로 대학교 인증이 가능합니다.",
                 imgs: [swImages["sw_mypage1.png"], swImages["sw_mypage2.png"], swImages["sw_mypage3.png"], swImages["sw_mypage4.png"]]
             },
             {
                 title: "상점",
-                description: "상점입니다",
+                description: "매칭 등 유료 서비스를 구매하기 위한 상점입니다.\n결제 API를 연동하여 PG사를 통해 결제를 진행할 수 있습니다.",
                 imgs: [swImages["sw_shop1.png"], swImages["sw_shop2.png"]]
             },
             {
                 title: "고객센터",
-                description: "고객센터입니다",
+                description: "이용 중 문의사항을 접수할 수 있는 고객센터 페이지입니다.",
                 imgs: [swImages["sw_cs1.png"], swImages["sw_cs2.png"]]
             }
         ]

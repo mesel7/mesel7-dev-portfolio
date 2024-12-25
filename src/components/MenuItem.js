@@ -4,7 +4,7 @@ import "./MenuItem.css";
 const MenuItem = ({ dataUrl, dataRoute, icon, content, isSelected, onClick }) => {
     return (
         <div
-            className={["MenuItem", isSelected ? "MenuItem_selected" : ""].join(" ")}
+            className={["menu-item", isSelected ? "menu-item-selected" : ""].join(" ")}
             data-route={dataRoute}
             data-url={dataUrl}
             onClick={onClick}

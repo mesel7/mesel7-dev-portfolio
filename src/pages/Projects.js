@@ -3,7 +3,7 @@ import ListWrapper from "../components/ListWrapper";
 
 const Projects = () => {
     return (
-        <div className="Projects">
+        <div className="projects">
             <Header />
             <ListWrapper contentType={"projects"}/>
         </div>

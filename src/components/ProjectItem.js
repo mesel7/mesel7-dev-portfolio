@@ -9,11 +9,9 @@ const ProjectItem = ({ img, name, title, time, description }) => {
     };
 
     return (
-        <div className="ProjectItem" onClick={goDetail}>
-            
-                <img alt="project_title" src={img} />
-            
-            <div className="description_section">
+        <div className="project-item" onClick={goDetail}>
+            <img alt="project-title" src={img} />
+            <div className="description-section">
                 <h3>{title}</h3>
                 <p>{time}</p>
                 <p>{description}</p>

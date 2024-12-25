@@ -2,15 +2,15 @@ import "./HomeContent.css"
 
 const HomeContent = () => {
     return (
-        <div className="HomeContent">
-            <div className="profile_picture_wrapper">
-                <img alt="profile_picture" src="../logo512.png" />
+        <div className="home-content">
+            <div className="profile-picture-wrapper">
+                <img alt="profile-picture" src="../logo512.png" />
             </div>
             <h2>안녕하세요!<br/>저는 웹 개발자입니다!</h2>
-            <div className="introduce_wrapper">
+            <div className="introduce-wrapper">
                 <p>안녕하세요! 잘 부탁드려요 ㅎㅋㅎㅋ</p>
             </div>
-            <div className="infos_wrapper">
+            <div className="infos-wrapper">
                 <h2>INFOS</h2>
                 <p>NAME: 김동현</p>
                 <p>BIRTHDATE: 1999.04.28</p>

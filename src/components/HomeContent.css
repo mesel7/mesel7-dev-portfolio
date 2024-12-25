@@ -1,25 +1,21 @@
-.HomeContent {
+.home-content {
     display: flex;
     flex-direction: column;
     padding: 60px;
 }
 
-.HomeContent h2 {
-    text-shadow: 1px 2px #e1e1e1;
-}
-
-.HomeContent .profile_picture_wrapper {
+.home-content .profile-picture-wrapper {
     border: 1px solid #ececec;
     box-shadow: rgba(100, 100, 100, 0.2) 0px 7px 29px 0px;
     border-radius: 5px;
 }
 
-.HomeContent .profile_picture_wrapper img {
+.home-content .profile-picture-wrapper img {
     width: 100%;
 }
 
 @media (max-width: 720px) {
-    .HomeContent {
+    .home-content {
         padding: 30px;
     }
 }

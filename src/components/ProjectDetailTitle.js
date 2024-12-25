@@ -11,16 +11,16 @@ const ProjectDetailTitle = ({ title, time, tech, links, description }) => {
     };
 
     return (
-        <div className="ProjectDetailTitle">
+        <div className="project-detail-title">
             <h2>{title}</h2>
-            <div className="time_wrapper">
+            <div className="time-wrapper">
                 <FontAwesomeIcon icon={projectsIcons.faCalendarDay} style={{ color: "#000000", marginRight: "4px" }}/>
                 {time}
             </div>
             <ul>
                 {tech.map((it, idx) => <li key={idx}>{it}</li>)}
             </ul>
-            <div className="link_wrapper">
+            <div className="link-wrapper">
                 <div className="link" data-url={links[0]} onClick={handleLinkClick}>
                     <FontAwesomeIcon icon={projectsIcons.faFileCode} style={{ color: "#000000", marginRight: "4px" }}/>
                     Project Link
@@ -30,7 +30,7 @@ const ProjectDetailTitle = ({ title, time, tech, links, description }) => {
                     Github Link
                 </div>
             </div>
-            <div className="description_wrapper">
+            <div className="description-wrapper">
                 <p>{description}</p>
             </div>
         </div>
