@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./ProjectDetailTitle.css";
-import { projectsIcons } from "../utils";
+import { projectsIcons } from "../../utils";
 
 const ProjectDetailTitle = ({ title, time, tech, links, description }) => {
     const handleLinkClick = (e) => {

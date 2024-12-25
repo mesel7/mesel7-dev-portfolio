@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import ItemList from "./ItemList";
 import "./ListWrapper.css"
-import SkillItem from "./SkillItem";
-import ProjectItem from "./ProjectItem";
-import { SkillsDataContext } from "../contexts/SkillsDataContext";
-import { ProjectsDataContext } from "../contexts/ProjectsDataContext";
+import SkillItem from "../skills/SkillItem"
+import ProjectItem from "../projects/ProjectItem";
+import { SkillsDataContext } from "../../contexts/SkillsDataContext";
+import { ProjectsDataContext } from "../../contexts/ProjectsDataContext";
 
 const contextMap = {
     skills: SkillsDataContext,

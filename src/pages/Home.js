@@ -1,5 +1,5 @@
-import Header from "../components/Header";
-import HomeContent from "../components/HomeContent";
+import Header from "../components/common/Header";
+import HomeContent from "../components/home/HomeContent";
 
 const Home = () => {
     return (

@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react"
-import { ProjectsDataContext } from "../contexts/ProjectsDataContext"
+import { ProjectsDataContext } from "../contexts/ProjectsDataContext";
 import { useNavigate } from "react-router-dom";
 
 const useProject = (name) => {

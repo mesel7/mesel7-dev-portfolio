@@ -1,5 +1,5 @@
-import Header from "../components/Header";
-import ListWrapper from "../components/ListWrapper";
+import Header from "../components/common/Header";
+import ListWrapper from "../components/common/ListWrapper";
 
 const Skills = () => {
     return (

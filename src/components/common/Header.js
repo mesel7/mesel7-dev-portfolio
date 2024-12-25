@@ -1,6 +1,6 @@
 import "./Header.css";
 import { useLocation, useNavigate } from "react-router-dom";
-import { menuItems, MobileMenuIcons } from "../utils";
+import { menuItems, MobileMenuIcons } from "../../utils"
 import MenuItem from "./MenuItem";
 import { useEffect, useState } from "react";
 import { Mobile, PC } from "./ResponsiveComponents";

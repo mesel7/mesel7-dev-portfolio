@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import useProject from "../hooks/useProject";
-import Header from "../components/Header";
-import ProjectDetailWrapper from "../components/ProjectDetailWrapper";
+import Header from "../components/common/Header";
+import ProjectDetailWrapper from "../components/project_detail/ProjectDetailWrapper";
 
 const ProjectDetail = () => {
     const { name } = useParams();
