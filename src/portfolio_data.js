@@ -1,5 +1,6 @@
 import { skillsIcons } from "./utils";
-import swImages from "./utils";
+import { swImages } from "./utils";
+import { diaryImages } from "./utils";
 
 export const skillsPreData = [
     {
@@ -30,6 +31,23 @@ export const skillsPreData = [
   
 export const projectsPreData = [
     {
+        img: diaryImages["diary_logo.png"],
+        name: "weather-diary",
+        title: "마음의 날씨, 감정 기록 플랫폼",
+        time: "2024.09 ~ 2024.12",
+        description: "LLM 기반 감정 분석과 심리 상담 기능을 도입한 일기 앱입니다.\n사용자가 감정을 기록하고 심리적 도움을 얻을 수 있도록 지원합니다.\n캘린더와 해시태그 기능으로 편리한 일기 관리와 검색을 제공합니다.",
+
+        tech: ["HTML5", "CSS3", "JAVASCRIPT", "REACT", "Firebase", "Node.js", "MySQL"],
+        links: ["https://weather-diary-kr.web.app/", "https://github.com/24-precapstone-team3/weather-diary"],
+        sections: [
+            {
+                title: "메인 페이지",
+                description: "메인페이지 입니다.",
+                imgs: []
+            }
+        ]
+    },
+    {
         img: "",
         name: "portfolio",
         title: "mesel7 PORTFOLIO",
@@ -41,7 +59,7 @@ export const projectsPreData = [
         sections: [
             {
                 title: "메인 페이지",
-                description: "메인페이지 입니다. ",
+                description: "메인페이지 입니다.",
                 imgs: []
             }
         ]

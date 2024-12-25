@@ -51,12 +51,12 @@ export const projectsIcons = {
     faSquareGithub
 };
 
+// 지정한 디렉터리에서 프로젝트 이미지 파일들을 동적으로 가져와 객체로 반환
 const importImages = (r) => {
     const images = {};
     r.keys().forEach((it) => { images[it.replace("./", "")] = r(it); });
     return images; 
 };
 
-const swImages = importImages(require.context("./images/sweetii", false, /\.(png|jpe?g|svg)$/));
-
-export default swImages;
+export const swImages = importImages(require.context("./images/sweetii", false, /\.(png|jpe?g|svg)$/));
+export const diaryImages = importImages(require.context("./images/weather_diary", false, /\.(png|jpe?g|svg)$/));
