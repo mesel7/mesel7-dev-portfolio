@@ -1,4 +1,4 @@
-import { skillsIcons } from "./utils";
+import { seremeetyImages, skillsIcons } from "./utils";
 import { swImages } from "./utils";
 import { diaryImages } from "./utils";
 
@@ -39,6 +39,23 @@ export const projectsPreData = [
 
         tech: ["HTML5", "CSS3", "JAVASCRIPT", "REACT", "Firebase", "Node.js", "MySQL"],
         links: ["https://weather-diary-kr.web.app/", "https://github.com/24-precapstone-team3/weather-diary"],
+        sections: [
+            {
+                title: "메인 페이지",
+                description: "메인페이지 입니다.",
+                imgs: []
+            }
+        ]
+    },
+    {
+        img: seremeetyImages["seremeety_logo.png"],
+        name: "seremeety",
+        title: "만남의 세레나데, 대학생 연애 플랫폼 Seremeety",
+        time: "2024.08 ~ 2024.09",
+        description: "자만추가 어려운 대학생들을 위한 건전한 연애 플랫폼입니다.\nSNS처럼 프로필을 작성하고 셀프 소개 등 다양한 매칭을 제공합니다.\n세레미티와 비슷한 단어 세레니티 블루 색상으로 파스텔 톤의 로맨틱한 테마를 적용했습니다.\n밤에 연인의 집 창가에서 부르는 사랑의 노래 세레나데 + 미팅(소개팅 등 만남) = 세레미티",
+
+        tech: ["HTML5", "CSS3", "JAVASCRIPT", "REACT", "Firebase"],
+        links: ["https://seremeety-kr.web.app/", "https://github.com/mesel7/seremeety-web"],
         sections: [
             {
                 title: "메인 페이지",

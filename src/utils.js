@@ -60,3 +60,4 @@ const importImages = (r) => {
 
 export const swImages = importImages(require.context("./images/sweetii", false, /\.(png|jpe?g|svg)$/));
 export const diaryImages = importImages(require.context("./images/weather_diary", false, /\.(png|jpe?g|svg)$/));
+export const seremeetyImages = importImages(require.context("./images/seremeety", false, /\.(png|jpe?g|svg)$/));
