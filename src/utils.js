@@ -1,63 +1,91 @@
-import { faCss3Alt, faGithub, faHtml5, faInstagram, faJs, faReact, faSquareGithub } from "@fortawesome/free-brands-svg-icons";
-import { faBars, faCalendarDay, faFileCode, faHouse, faStar, faTableList } from "@fortawesome/free-solid-svg-icons";
+import {
+    faCss3Alt,
+    faGithub,
+    faHtml5,
+    faInstagram,
+    faJs,
+    faReact,
+    faSquareGithub,
+} from "@fortawesome/free-brands-svg-icons";
+import {
+    faBars,
+    faCalendarDay,
+    faFileCode,
+    faHouse,
+    faStar,
+    faTableList,
+} from "@fortawesome/free-solid-svg-icons";
 
+// 메뉴 아이템
 export const menuItems = [
     {
         dataUrl: "",
         dataRoute: "/",
         icon: faHouse,
-        content: "HOME"
+        content: "HOME",
     },
     {
         dataUrl: "",
         dataRoute: "/skills",
         icon: faStar,
-        content: "SKILLS"
+        content: "SKILLS",
     },
     {
         dataUrl: "",
         dataRoute: "/projects",
         icon: faTableList,
-        content: "PROJECTS"
+        content: "PROJECTS",
     },
     {
         dataUrl: "https://github.com/mesel7",
         dataRoute: "",
         icon: faGithub,
-        content: "GITHUB"
+        content: "GITHUB",
     },
     {
         dataUrl: "https://www.instagram.com/_mesel_7",
         dataRoute: "",
         icon: faInstagram,
-        content: "INSTAGRAM"
-    }
+        content: "INSTAGRAM",
+    },
 ];
 
+// 아이콘 묶음
 export const MobileMenuIcons = {
-    faBars
+    faBars,
 };
 
 export const skillsIcons = {
     faHtml5,
     faCss3Alt,
     faJs,
-    faReact
+    faReact,
 };
 
 export const projectsIcons = {
     faCalendarDay,
     faFileCode,
-    faSquareGithub
+    faSquareGithub,
 };
 
-// 지정한 디렉터리에서 프로젝트 이미지 파일들을 동적으로 가져와 객체로 반환
-const importImages = (r) => {
-    const images = {};
-    r.keys().forEach((it) => { images[it.replace("./", "")] = r(it); });
-    return images; 
-};
+// Vite용 이미지 자동 import
+const importImages = (glob) =>
+    Object.fromEntries(
+        Object.entries(glob).map(([path, mod]) => {
+            const fileName = path.split("/").pop();
+            return [fileName, mod.default];
+        })
+    );
 
-export const swImages = importImages(require.context("./images/sweetii", false, /\.(png|jpe?g|svg)$/));
-export const diaryImages = importImages(require.context("./images/weather_diary", false, /\.(png|jpe?g|svg)$/));
-export const seremeetyImages = importImages(require.context("./images/seremeety", false, /\.(png|jpe?g|svg)$/));
+// Vite에서는 glob으로 폴더 전체 import
+export const swImages = importImages(
+    import.meta.glob("./images/sweetii/*.{png,jpg,jpeg,svg}", { eager: true })
+);
+
+export const diaryImages = importImages(
+    import.meta.glob("./images/weather_diary/*.{png,jpg,jpeg,svg}", { eager: true })
+);
+
+export const seremeetyImages = importImages(
+    import.meta.glob("./images/seremeety/*.{png,jpg,jpeg,svg}", { eager: true })
+);
