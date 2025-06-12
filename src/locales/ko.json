@@ -1,0 +1,28 @@
+{
+  "skills": {
+    "html": {
+      "title": "HTML5",
+      "description": "시맨틱 태그를 활용하여 구조적인 마크업을 작성할 수 있습니다.\n웹 표준과 접근성을 고려하여 레이아웃을 설계할 수 있으며,\n간결하고 유지보수하기 쉬운 구조로 HTML을 작성하는 데 익숙합니다."
+    },
+    "css": {
+      "title": "CSS3",
+      "description": "Flexbox와 미디어 쿼리를 활용한 반응형 레이아웃 구현이 가능합니다.\n애니메이션과 트랜지션을 통해 인터랙티브한 UI를 연출할 수 있습니다.\n컴포넌트 단위의 커스텀 스타일 설계에도 익숙합니다."
+    },
+    "js": {
+      "title": "JavaScript",
+      "description": "Vanilla JavaScript로 DOM 조작과 이벤트 처리를 구현할 수 있습니다.\nES6 문법(화살표 함수, 비구조화 할당, 템플릿 리터럴 등)을 활용할 수 있습니다.\naxios를 활용하여 백엔드(Spring Boot)와의 비동기 통신을 구현한 경험이 있습니다."
+    },
+    "react": {
+      "title": "React",
+      "description": "컴포넌트 기반의 UI 개발에 익숙하며, 상태 관리(Context API, useReducer 등) 경험이 있습니다.\n라우팅 처리와 조건부 렌더링 등 기본 구조를 잘 이해하고 있습니다.\nuseCallback, memo 등을 활용한 성능 최적화도 고려하여 개발합니다."
+    },
+    "node": {
+      "title": "Node.js",
+      "description": "Node.js의 실행 구조와 런타임 환경에 대해 이해하고 있습니다.\nnpm을 통해 프로젝트 의존성을 관리할 수 있습니다.\n로컬 서버 환경 구성이나 백엔드 연동에 Node.js를 사용한 경험이 있습니다."
+    },
+    "git": {
+      "title": "Git / GitHub",
+      "description": "Git을 사용하여 프로젝트 버전을 관리하고 팀원과 협업한 경험이 있습니다.\npull request, merge, rebase 등 기본적인 브랜치 전략에 대해 이해하고 있습니다.\nGitHub를 통해 코드 리뷰 및 이슈 관리를 수행한 경험이 있습니다."
+    }
+  }
+}

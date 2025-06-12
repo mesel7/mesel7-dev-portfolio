@@ -3,30 +3,12 @@ import { swImages } from "./utils";
 import { diaryImages } from "./utils";
 
 export const skillsPreData = [
-    {
-        icon: skillsIcons.faHtml5,
-        color: "#e34c26",
-        title: "HTML5",
-        description: "웹 사이트에 필요한 태그 활용\nHTML 구조를 이해하고 작성\n웹 접근성과 SEO 최적화"
-    },
-    {
-        icon: skillsIcons.faCss3Alt,
-        color: "#3c99dc",
-        title: "CSS3",
-        description: "스타일링을 통해 웹 페이지 디자인\n반응형 디자인 구현\n애니메이션 효과 적용"
-    },
-    {
-        icon: skillsIcons.faJs,
-        color: "#f0db4f",
-        title: "JAVASCRIPT",
-        description: "다양한 동적 기능 추가\nDOM 조작과 이벤트 처리\nES6+ 문법 활용"
-    },
-    {
-        icon: skillsIcons.faReact,
-        color: "#61dbfb",
-        title: "REACT",
-        description: "컴포넌트 기반의 UI 구축\n상태 관리 및 데이터 흐름 이해\nHooks와 Context API 활용"
-    }
+    { itemKey: "html", icon: skillsIcons.faHtml5, color: "#e34c26" },
+    { itemKey: "css", icon: skillsIcons.faCss3Alt, color: "#3c99dc" },
+    { itemKey: "js", icon: skillsIcons.faJs, color: "#f0db4f" },
+    { itemKey: "react", icon: skillsIcons.faReact, color: "#61dbfb" },
+    { itemKey: "node", icon: skillsIcons.faNodeJs, color: "#3c873a" },
+    { itemKey: "git", icon: skillsIcons.faGitAlt, color: "#f1502f" }
 ];
   
 export const projectsPreData = [

@@ -1,0 +1,28 @@
+{
+  "skills": {
+    "html": {
+      "title": "HTML5",
+      "description": "セマンティックタグを活用し、構造的で保守性の高いマークアップを作成できます。\nWeb標準とアクセシビリティを意識したレイアウト設計が可能です。\n読みやすく整理されたHTMLのコーディングに慣れています。"
+    },
+    "css": {
+      "title": "CSS3",
+      "description": "Flexboxやメディアクエリを活用し、レスポンシブなレイアウトを実現できます。\nアニメーションやトランジションを使ったインタラクティブなUIの構築が可能です。\nカスタムスタイルの設計にも柔軟に対応できます。"
+    },
+    "js": {
+      "title": "JavaScript",
+      "description": "Vanilla JavaScriptを用いてDOM操作やイベント処理が可能です。\nES6以降の構文（アロー関数、分割代入、テンプレートリテラルなど）に対応しています。\naxiosを使ってSpring Bootなどのバックエンドとの非同期通信を実装した経験があります。"
+    },
+    "react": {
+      "title": "React",
+      "description": "コンポーネントベースのUI開発に慣れており、状態管理（Context API、useReducerなど）も経験しております。\nルーティングや条件付きレンダリングなどの基本構造を理解しています。\nuseCallbackやmemoなどを用いたパフォーマンス最適化も意識した開発が可能です。"
+    },
+    "node": {
+      "title": "Node.js",
+      "description": "JavaScriptのランタイム環境であるNode.jsの動作構造を理解しています。\nnpmによるパッケージ管理や、ローカルサーバー環境での活用経験があります。\nバックエンド連携や開発環境の構築にも対応可能です。"
+    },
+    "git": {
+      "title": "Git / GitHub",
+      "description": "Gitを用いたバージョン管理およびチーム開発の経験があります。\nPull RequestやMerge、Rebaseなどの基本的なブランチ運用に対応しています。\nGitHub上でのコードレビューやイシュー管理も行ってまいりました。"
+    }
+  }
+}

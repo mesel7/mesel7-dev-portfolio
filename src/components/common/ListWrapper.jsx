@@ -6,17 +6,17 @@ import ProjectItem from "../projects/ProjectItem";
 import { SkillsDataContext } from "../../contexts/SkillsDataContext";
 import { ProjectsDataContext } from "../../contexts/ProjectsDataContext";
 
-const contextMap = {
-    skills: SkillsDataContext,
-    projects: ProjectsDataContext
-};
-
-const renderItemMap = {
-    skills: SkillItem,
-    projects: ProjectItem
-};
-
 const ListWrapper = ({ contentType }) => {
+    const contextMap = {
+        skills: SkillsDataContext,
+        projects: ProjectsDataContext
+    };
+
+    const renderItemMap = {
+        skills: SkillItem,
+        projects: ProjectItem
+    };
+    
     const data = useContext(contextMap[contentType]);
     const RenderItem = renderItemMap[contentType];
 
