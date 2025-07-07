@@ -1,8 +1,13 @@
 .list-wrapper {
     display: flex;
     flex-direction: column;
-    padding: 60px;
-    gap: 20px;
+    padding: 4rem;
+    margin: 4rem 1rem;
+    gap: 1rem;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 1rem 3rem rgba(59, 170, 247, 0.2);
+    backdrop-filter: blur(0.75rem);
+    border-radius: 1rem;
 }
 
 .list-wrapper h2 {

@@ -1,22 +1,34 @@
-import { useParams } from "react-router-dom";
-import useProject from "../hooks/useProject";
+import { useParams, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 import Header from "../components/common/Header";
 import ProjectDetailWrapper from "../components/project_detail/ProjectDetailWrapper";
+import { projectsPreData } from "../portfolio_data";
 
 const ProjectDetail = () => {
     const { name } = useParams();
-    const project = useProject(name);
+    const navigate = useNavigate();
+    const [project, setProject] = useState(null);
+
+    useEffect(() => {
+        const matchProjectData = projectsPreData.find((it) => it.name === name);
+        if (matchProjectData) {
+            setProject(matchProjectData);
+        } else {
+            alert("프로젝트가 존재하지 않습니다");
+            navigate("/projects", { replace: true });
+        }
+    }, [name, navigate]);
 
     if (!project) {
-        return <div>프로젝트를 불러오고 있습니다...</div>;
-    } else {
-        return (
-            <div className="project-detail">
-                <Header />
-                <ProjectDetailWrapper {...project} />
-            </div>
-        );
+        return <div>프로젝트를 불러오는 중입니다...</div>;
     }
+
+    return (
+        <div className="project-detail">
+            <Header />
+            <ProjectDetailWrapper {...project} />
+        </div>
+    );
 };
 
 export default ProjectDetail;

@@ -9,7 +9,7 @@ const MenuItem = ({ dataUrl, dataRoute, icon, content, isSelected, onClick }) =>
             data-url={dataUrl}
             onClick={onClick}
         >
-            <FontAwesomeIcon icon={icon} style={{ color: "black" }} />
+            <FontAwesomeIcon icon={icon} />
             {content}
         </div>
     );

@@ -1,14 +1,20 @@
+import Css3Icon from "./icons/Css3Icon";
+import GitIcon from "./icons/GitIcon";
+import Html5Icon from "./icons/Html5Icon";
+import JsIcon from "./icons/JsIcon";
+import NodeIcon from "./icons/NodeIcon";
+import ReactIcon from "./icons/ReactIcon";
 import { seremeetyImages, skillsIcons } from "./utils";
 import { swImages } from "./utils";
 import { diaryImages } from "./utils";
 
 export const skillsPreData = [
-    { itemKey: "html", icon: skillsIcons.faHtml5, color: "#e34c26" },
-    { itemKey: "css", icon: skillsIcons.faCss3Alt, color: "#3c99dc" },
-    { itemKey: "js", icon: skillsIcons.faJs, color: "#f0db4f" },
-    { itemKey: "react", icon: skillsIcons.faReact, color: "#61dbfb" },
-    { itemKey: "node", icon: skillsIcons.faNodeJs, color: "#3c873a" },
-    { itemKey: "git", icon: skillsIcons.faGitAlt, color: "#f1502f" }
+    { itemKey: "html", icon: Html5Icon },
+    { itemKey: "css", icon: Css3Icon },
+    { itemKey: "js", icon: JsIcon },
+    { itemKey: "react", icon: ReactIcon },
+    { itemKey: "node", icon: NodeIcon },
+    { itemKey: "git", icon: GitIcon }
 ];
   
 export const projectsPreData = [

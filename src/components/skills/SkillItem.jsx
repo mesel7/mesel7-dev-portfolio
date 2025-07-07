@@ -1,9 +1,8 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslation } from "react-i18next";
 import "./SkillItem.css";
 import i18n from 'i18next';
 
-const SkillItem = ({ icon, color, itemKey }) => {
+const SkillItem = ({ icon: IconComponent, itemKey }) => {
     const { t } = useTranslation();
 
     const title = t(`skills.${itemKey}.title`);
@@ -15,16 +14,17 @@ const SkillItem = ({ icon, color, itemKey }) => {
 
     return (
         <div className="skill-item">
-            <div className="icon-section">
-                <FontAwesomeIcon icon={icon} size="5x" style={{ color: color }} />
-                <p>{title}</p>
+            <div className="skill-item__image-wrapper">
+                <IconComponent />
             </div>
-            <div className="description-section">
-                <ul>
+            <div className="skill-item__content">
+                <div className="skill-item__date">2025.07.07</div>
+                <div className="skill-item__title">{title}</div>
+                <div className="skill-item__description">
                     {descriptionLines.map((line, idx) => (
-                        <li key={idx}>{line}</li>
+                        <div className="skill-item__description-line" key={idx}>{line}</div>
                     ))}
-                </ul>
+                </div>
             </div>
         </div>
     );

@@ -50,7 +50,7 @@ const Header = () => {
     return (
         <div className="header">
             <PC>
-                <h1><span onClick={handleTitleClick}>mesel7 PORTFOLIO</span></h1>
+                <div className="header-title" onClick={handleTitleClick}>mesel7 PORTFOLIO</div>
                 <div className="menu-wrapper">
                     {menuItems.map((it, idx) => (
                         <MenuItem
@@ -63,7 +63,7 @@ const Header = () => {
                 </div>
             </PC>
             <Mobile>
-                <h1><span onClick={handleTitleClick}>mesel7</span></h1>
+                <div className="header-title" onClick={handleTitleClick}>mesel7</div>
                 <div className="menu-wrapper">
                     <div className="mobile-menu" onClick={handleMobileMenuClick}>
                         <FontAwesomeIcon icon={MobileMenuIcons.faBars} size={"2x"} />

@@ -1,58 +1,57 @@
 .skill-item {
-    display: flex;
-    border: 1px solid #e2e2e2;
-    border-radius: 5px;
-    padding: 20px;
-    gap: 20px;
-}
-
-.skill-item .icon-section {
-    min-width: 100px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 2rem rgba(59, 170, 247, 0.2);
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.skill-item .icon-section p {
-    margin: 0;
-    font-weight: bold;
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.4rem 3rem rgba(59, 170, 247, 0.3);
 }
 
-.skill-item .description-section {
-    flex-grow: 1;
+.skill-item__image-wrapper {
     display: flex;
+    justify-content: center;
     align-items: center;
+    padding: 2rem;
 }
 
-.skill-item .description-section ul {
-    list-style: none;
-    padding: 0;
+.skill-item__image-wrapper svg {
+    width: 8rem;
+    height: 8rem;
 }
 
-.skill-item .description-section li {
-    position: relative;
-    padding-left: 20px;
-    margin-bottom: 10px;
+.skill-item__content {
+    padding: 1rem;
 }
 
-.skill-item .description-section li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 12px;
-    height: 1px;
-    background-color: black;
-    top: 50%;
+.skill-item__date {
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 0.5rem;
+}
+
+.skill-item__title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.skill-item__description {
+    font-size: 0.95rem;
+}
+
+.skill-item__description-line {
+    margin-bottom: 0.25rem;
 }
 
 @media (max-width: 720px) {
-    .skill-item {
-        flex-direction: column;
-    }
-
-    .skill-item .description-section {
-        justify-content: center;
+    .skill-item__image-wrapper svg {
+        width: 50px;
+        height: 50px;
     }
 }
