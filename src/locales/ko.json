@@ -1,4 +1,9 @@
 {
+  "skillsPage": {
+    "titleMain": "TECH STACK",
+    "titleSub": "기술 스택"
+  },
+  
   "skills": {
     "html": {
       "title": "HTML5",

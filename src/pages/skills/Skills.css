@@ -1,18 +1,62 @@
+.skills__content {
+    max-width: 1280px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 4rem;
+}
+
+.skills__bar {
+    height: 0.1rem;
+    width: 100%;
+    background-color: rgba(59, 170, 247, 0.1);
+    position: absolute;
+    left: 0;
+}
+
 .skills__title-section {
-    text-align: center;
-    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 4rem;
 }
 
 .skills__title {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills__title-main {
+    font-family: "Outfit";
     font-size: 2rem;
-    margin: 0;
+    font-weight: 500;
+}
+
+.skills__title-sub {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #777;
 }
 
 .skills__title-bar {
-    width: 80px;
-    height: 2px;
-    background-color: #3baaf7;
-    margin: 0.5rem auto 0;
+    width: 6rem;
+    height: 0.1rem;
+    background-color: rgba(59, 170, 247, 0.25);
+}
+
+.skills__subtitle-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: "Outfit";
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 2rem 0;
+}
+
+.skills__subtitle-bar {
+    width: 0.25rem;
+    height: 2rem;
+    background: linear-gradient(135deg, #053bad 0%, #3baaf7 100%);
 }
 
 .skills__list {
@@ -24,11 +68,17 @@
     box-shadow: 0 1rem 3rem rgba(59, 170, 247, 0.2);
     backdrop-filter: blur(0.75rem);
     border-radius: 1rem;
+    
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
     .skills__list {
-        grid-template-columns: 1fr;
-        padding: 1rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .skills__list {
+        grid-template-columns: repeat(2, 1fr);
     }
 }

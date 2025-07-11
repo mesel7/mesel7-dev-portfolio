@@ -73,18 +73,18 @@ body {
   
   font-family:
   /* 일본어 */
-  'Hiragino',
-  'ヒラギノ角ゴ ProN W3',
-  'HiraKakuProN-W3',
-  'ヒラギノ角ゴ Pro W3',
-  'HiraKakuPro-W3',
-  'Noto Sans JP',
+  "Hiragino",
+  "ヒラギノ角ゴ ProN W3",
+  "HiraKakuProN-W3",
+  "ヒラギノ角ゴ Pro W3",
+  "HiraKakuPro-W3",
+  "Noto Sans JP",
 
   /* 한글 */
-  'Noto Sans KR',
+  "Noto Sans KR",
 
   /* fallback */
-  sans-serif;
+  "sans-serif";
 }
 
 body,img {

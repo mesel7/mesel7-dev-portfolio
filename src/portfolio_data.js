@@ -9,12 +9,12 @@ import { swImages } from "./utils";
 import { diaryImages } from "./utils";
 
 export const skillsPreData = [
-    { itemKey: "html", icon: Html5Icon },
-    { itemKey: "css", icon: Css3Icon },
-    { itemKey: "js", icon: JsIcon },
-    { itemKey: "react", icon: ReactIcon },
-    { itemKey: "node", icon: NodeIcon },
-    { itemKey: "git", icon: GitIcon }
+    { itemKey: "html", icon: Html5Icon, since: "2020.03" },
+    { itemKey: "css", icon: Css3Icon, since: "2020.04" },
+    { itemKey: "js", icon: JsIcon, since: "2020.08" },
+    { itemKey: "react", icon: ReactIcon, since: "2024.07" },
+    { itemKey: "node", icon: NodeIcon, since: "2024.07" },
+    { itemKey: "git", icon: GitIcon, since: "2023.12" }
 ];
   
 export const projectsPreData = [
