@@ -11,7 +11,8 @@
 }
 
 .menu-text-item:hover {
-    border-bottom: 0.125rem solid rgba(59, 170, 247, 1);
+    border-bottom: 0.125rem solid #90caf9;
+    opacity: 0.75;
 }
 
 .menu-icon-item:hover {
