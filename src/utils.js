@@ -7,50 +7,48 @@ import {
     faReact,
     faSquareGithub,
 } from "@fortawesome/free-brands-svg-icons";
+
 import {
     faBars,
     faCalendarDay,
     faFileCode,
-    faHouse,
-    faStar,
-    faTableList,
 } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faGlobe } from "@fortawesome/pro-light-svg-icons";
 
 // 메뉴 아이템
 export const menuItems = [
     {
         dataUrl: "",
-        dataRoute: "/",
-        icon: faHouse,
-        content: "HOME",
-    },
-    {
-        dataUrl: "",
         dataRoute: "/skills",
-        icon: faStar,
+        icon: null,
         content: "SKILLS",
     },
     {
         dataUrl: "",
         dataRoute: "/projects",
-        icon: faTableList,
+        icon: null,
         content: "PROJECTS",
     },
     {
         dataUrl: "https://github.com/mesel7",
         dataRoute: "",
         icon: faGithub,
-        content: "GITHUB",
+        content: "",
     },
     {
         dataUrl: "https://www.instagram.com/_mesel_7",
         dataRoute: "",
         icon: faInstagram,
-        content: "INSTAGRAM",
+        content: "",
     },
 ];
 
 // 아이콘 묶음
+export const PCMenuIcons = {
+    faGlobe,
+    faEnvelope
+}
+
 export const MobileMenuIcons = {
     faBars,
 };
