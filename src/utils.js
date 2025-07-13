@@ -13,6 +13,7 @@ import {
     faCalendarDay,
     faFileCode,
 } from "@fortawesome/free-solid-svg-icons";
+
 import { faEnvelope, faGlobe } from "@fortawesome/pro-light-svg-icons";
 
 // 메뉴 아이템

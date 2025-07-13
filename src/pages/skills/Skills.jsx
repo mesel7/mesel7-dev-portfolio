@@ -1,5 +1,4 @@
 import "./Skills.css";
-import Header from "../../components/common/Header";
 import SkillItem from "../../components/skills/SkillItem";
 import { skillsPreData } from "../../portfolio_data";
 import { useTranslation } from "react-i18next";
@@ -9,7 +8,6 @@ const Skills = () => {
 
     return (
         <div className="skills">
-            <Header />
             <div className="skills__content">
                 <div className="skills__title-section">
                     <div className="skills__title">

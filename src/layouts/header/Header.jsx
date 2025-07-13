@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { menuItems, MobileMenuIcons, PCMenuIcons } from "../../utils";
 import MenuItem from "./MenuItem";
 import { useEffect, useState } from "react";
-import { Mobile, PC } from "./ResponsiveComponents";
+import { Mobile, PC } from "../../components/common/ResponsiveComponents";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslation } from "react-i18next";
 

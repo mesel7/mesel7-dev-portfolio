@@ -1,9 +1,10 @@
-import Css3Icon from "./icons/Css3Icon";
-import GitIcon from "./icons/GitIcon";
-import Html5Icon from "./icons/Html5Icon";
-import JsIcon from "./icons/JsIcon";
-import NodeIcon from "./icons/NodeIcon";
-import ReactIcon from "./icons/ReactIcon";
+import Css3Icon from './assets/icons/Css3Icon';
+import Html5Icon from './assets/icons/Html5Icon';
+import JsIcon from './assets/icons/JsIcon';
+import NodeIcon from './assets/icons/NodeIcon';
+import ReactIcon from './assets/icons/ReactIcon';
+import GitIcon from './assets/icons/GitIcon';
+
 import { seremeetyImages, skillsIcons } from "./utils";
 import { swImages } from "./utils";
 import { diaryImages } from "./utils";
