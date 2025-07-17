@@ -13,11 +13,11 @@ const HomeContent = () => {
             </div>
             <div className="infos-wrapper">
                 <h2>INFOS</h2>
-                <p>NAME: 김동현</p>
+                <p>NAME: 안녕</p>
                 <p>BIRTHDATE: 1999.04.28</p>
-                <p>PHONE: 010-5954-2166</p>
+                <p>PHONE: 010-1234-5678</p>
                 <p>ADDRESS: 서울특별시 노원구</p>
-                <p>EMAIL: cejhans1520@gmail.com</p>
+                <p>EMAIL: yourmail@gmail.com</p>
             </div>
         </div>
     );

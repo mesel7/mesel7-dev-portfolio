@@ -1,0 +1,116 @@
+.home__container {
+    max-width: 1280px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    gap: 4rem;
+    overflow: hidden;
+}
+
+.home__left {
+    width: 24rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__photo-wrapper {
+    aspect-ratio: 2/3;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0.7rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.home__photo {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(1.05) contrast(1.02) saturate(1.05);
+}
+
+.home__right {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home__greeting {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.home__title {
+    font-family: "Outfit";
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.home__title-highlight {
+    background: linear-gradient(to right, #cbe9f7, #a8d0f0, #d1cfff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home__description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.home__info-grid {
+    max-width: 40rem;
+    font-family:
+        "Outfit",
+        "Hiragino",
+        "ヒラギノ角ゴ ProN W3",
+        "HiraKakuProN-W3",
+        "ヒラギノ角ゴ Pro W3",
+        "HiraKakuPro-W3",
+        "Noto Sans JP",
+        "Noto Sans KR",
+        "sans-serif";
+    font-size: 1.125rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.home__info-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.home__info-label {
+    font-weight: 700;
+    color: #a8d0f0;
+    white-space: nowrap;
+    letter-spacing: 0.025rem;
+}
+
+.home__info-value {
+    flex: 1;
+}
+
+.home__button {
+    font-family: "Outfit";
+    background: linear-gradient(to right, #cbe9f7, #a8d0f0, #d1cfff);
+    color: white;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 
+        box-shadow 0.4s ease,
+        transform 0.3s ease;
+}
+
+.home__button:hover {
+    box-shadow: 0 0 0.5rem rgba(203, 233, 247, 0.7), 
+                0 0 1.25rem rgba(209, 207, 255, 0.6);
+}

@@ -1,7 +1,6 @@
 .footer {
     font-family: "Outfit";
-    background: linear-gradient(to right, #b2e3ff, #90caf9, #d7eafc);
-    color: #1c3d5a;
+    background-color: rgba(59, 170, 247, 0.2);
     padding: 1rem 2rem;
 }
 

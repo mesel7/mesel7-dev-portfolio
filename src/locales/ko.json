@@ -1,9 +1,27 @@
 {
+  "home": {
+    "greeting": "안녕하세요 :)",
+    "titlePrefix": "I'M",
+    "titleHighlight": "FRONTEND DEVELOPER",
+    "description": "프론트엔드 개발은 단순한 화면 구현을 넘어, 사용자가 서비스를 어떻게 인지하고 경험하는지를 설계하는 일이라고 생각합니다. 저는 기능보다 본질, 복잡함보다 간결함을 지향하며, 감각적이면서도 효율적인 UI/UX를 고민하며 개발해왔습니다. 사용자와 가장 가까운 영역인 프론트엔드를 중심으로 경험을 쌓아온 것은, 앞으로 어떤 서비스를 만들 것인가를 고민하는 데 큰 자산이 될 것이라 믿습니다.",
+    "nameLabel": "NAME :",
+    "nameValue": "김동현",
+    "phoneLabel": "PHONE :",
+    "phoneValue": "010-5954-2166",
+    "emailLabel": "EMAIL :",
+    "emailValue": "cejhans1520@gmail.com",
+    "birthdateLabel": "BIRTHDATE :",
+    "birthdateValue": "1999.04.28",
+    "addressLabel": "ADDRESS :",
+    "addressValue": "Seoul, Korea",
+    "moreButton": "MORE ABOUT ME"
+  },
+
   "skillsPage": {
     "titleMain": "TECH STACK",
     "titleSub": "기술 스택"
   },
-  
+
   "skills": {
     "html": {
       "title": "HTML5",

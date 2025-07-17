@@ -1,9 +1,27 @@
 {
+  "home": {
+    "greeting": "こんにちは :)",
+    "titlePrefix": "I'M",
+    "titleHighlight": "FRONTEND DEVELOPER",
+    "description": "私は日々、使いやすく美しいUI/UXを目指しながら開発に取り組んでおります。特にフロントエンドは、ユーザーとの接点に最も近い領域であり、サービスの本質を形にできる魅力的な分野だと考えています。日本の多様で独自性のある文化コンテンツに惹かれ、それらを支えるウェブサービスに携わりたいと思い、日本での実務経験を通じて感性と技術の両面から学びたいと考えております。",
+    "nameLabel": "NAME :",
+    "nameValue": "KIM DONGHYEON",
+    "phoneLabel": "PHONE :",
+    "phoneValue": "010-5954-2166",
+    "emailLabel": "EMAIL :",
+    "emailValue": "cejhans1520@gmail.com",
+    "birthdateLabel": "BIRTHDATE :",
+    "birthdateValue": "1999.04.28",
+    "addressLabel": "ADDRESS :",
+    "addressValue": "Seoul, Korea",
+    "moreButton": "MORE ABOUT ME"
+  },
+
   "skillsPage": {
     "titleMain": "TECH STACK",
     "titleSub": "技術スタック"
   },
-  
+
   "skills": {
     "html": {
       "title": "HTML5",
