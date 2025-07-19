@@ -2,7 +2,8 @@
   "home": {
     "greeting": "こんにちは :)",
     "titlePrefix": "I'M",
-    "titleHighlight": "FRONTEND DEVELOPER",
+    "titleHighlight1": "FRONTEND",
+    "titleHighlight2": "DEVELOPER",
     "description": "私は日々、使いやすく美しいUI/UXを目指しながら開発に取り組んでおります。特にフロントエンドは、ユーザーとの接点に最も近い領域であり、サービスの本質を形にできる魅力的な分野だと考えています。日本の多様で独自性のある文化コンテンツに惹かれ、それらを支えるウェブサービスに携わりたいと思い、日本での実務経験を通じて感性と技術の両面から学びたいと考えております。",
     "nameLabel": "NAME :",
     "nameValue": "KIM DONGHYEON",
@@ -15,11 +16,6 @@
     "addressLabel": "ADDRESS :",
     "addressValue": "Seoul, Korea",
     "moreButton": "MORE ABOUT ME"
-  },
-
-  "skillsPage": {
-    "titleMain": "TECH STACK",
-    "titleSub": "技術スタック"
   },
 
   "skills": {
@@ -46,6 +42,33 @@
     "git": {
       "title": "Git / GitHub",
       "description": "Gitを用いたバージョン管理およびチーム開発の経験があります。\nPull RequestやMerge、Rebaseなどの基本的なブランチ運用に対応しています。\nGitHub上でのコードレビューやイシュー管理も行ってまいりました。"
+    }
+  },
+
+  "experience": {
+    "capstone": {
+      "period": "2025.03 ~ 2025.06",
+      "title": "Capstone Design Project",
+      "role": "Team Leader / Frontend Developer",
+      "description": "キャップストーンプロジェクトにて5人チームのリーダーを務め、Webフロントエンドの開発を担当いたしました。モバイルとWebの双方に対応するクロスプラットフォーム構成のサービスを実装し、OpenAI APIとSpring Bootを用いたバックエンドとの連携設計、ユーザー導線を意識したUI/UXの構築を通じて、ソフトウェア開発全体の流れを理解し、チーム開発のマネジメント経験を積むことができました。"
+    },
+    "preCapstone": {
+      "period": "2024.09 ~ 2024.12",
+      "title": "Pre-Capstone: Industry Collaboration Project",
+      "role": "Frontend Developer",
+      "description": "Reactのスキルを実践的なチーム開発に初めて応用したプロジェクトです。企業連携型の学内プロジェクトにて、4人チームの一員としてフロントエンド開発を担当いたしました。RESTful APIとの連携、Context APIによる状態管理、レスポンシブデザインの最適化など、幅広い実装を行いました。完成度の高さが評価され、学内にて優秀賞を受賞いたしました。"
+    },
+    "reactPractice": {
+      "period": "2024.07 ~ 2024.08",
+      "title": "React Practice Projects",
+      "role": "Personal Project",
+      "description": "初期のプロジェクトを通じて、Vanilla JSのデバッグのしやすさは理解した一方で、生産性や保守性の限界も感じ、Reactを独学いたしました。その後、新たにマッチングWebアプリをReactで企画・開発し、併せてポートフォリオサイトも制作する中で、状態管理、ルーティング、Context設計、パフォーマンス最適化などの技術理解を体系的に深めることができました。"
+    },
+    "playin": {
+      "period": "2024.01 ~ 2024.06",
+      "title": "PLAY-IN (Startup Collaboration)",
+      "role": "Frontend Developer",
+      "description": "スタートアップとの連携による初めての実務的プロジェクトであり、企画チームと協力して大学生向けマッチングWebアプリの開発と運用を行いました。HTML・CSS・Vanilla JS・Firebaseを用いてフロントエンド全体の実装および本番環境へのデプロイを担当し、ユーザーフィードバックに基づき、画像の最適化や読み込み速度の改善など、実運用上の課題に積極的に対応いたしました。"
     }
   }
 }

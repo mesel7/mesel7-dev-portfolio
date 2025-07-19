@@ -1,0 +1,51 @@
+.experience-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.25rem 1rem rgba(40, 40, 40, 0.1);
+    background: #fff;
+}
+
+.experience-item__header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.experience-item__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #282828;
+}
+
+.experience-item__meta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    color: #888;
+    font-family: "Outfit";
+}
+
+.experience-item__role {
+    font-weight: 500;
+}
+
+.experience-item__dot {
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.experience-item__date {
+    color: var(--souten-medium);
+    font-weight: 500;
+}
+
+.experience-item__description p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #444;
+    margin: 0.2rem 0;
+}

@@ -3,7 +3,7 @@
     align-items: center;
     cursor: pointer;
     border-bottom: 0.125rem solid transparent;
-    transition: border-bottom 0.25s ease, opacity 0.25s ease;
+    transition: border-bottom 0.3s ease, opacity 0.3s ease;
 }
 
 .menu-text-item {
@@ -11,7 +11,7 @@
 }
 
 .menu-text-item:hover {
-    border-bottom: 0.125rem solid rgba(59, 170, 247);
+    border-bottom: 0.125rem solid var(--souten-medium);
     opacity: 0.75;
 }
 

@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import ProjectDetailWrapper from "../components/project_detail/ProjectDetailWrapper";
-import { projectsPreData } from "../portfolio_data";
+import { projectsPreData } from "../portfolio-data";
 
 const ProjectDetail = () => {
     const { name } = useParams();

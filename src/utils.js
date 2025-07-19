@@ -20,9 +20,9 @@ import { faEnvelope, faGlobe } from "@fortawesome/pro-light-svg-icons";
 export const menuItems = [
     {
         dataUrl: "",
-        dataRoute: "/skills",
+        dataRoute: "/about",
         icon: null,
-        content: "SKILLS",
+        content: "ABOUT",
     },
     {
         dataUrl: "",

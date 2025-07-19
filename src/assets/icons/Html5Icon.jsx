@@ -2,9 +2,8 @@ const Html5Icon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="100" height="100">
     <defs>
       <linearGradient id="html5Gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" stopColor="#cbe9f7" />
-        <stop offset="50%" stopColor="#a8d0f0" />
-        <stop offset="100%" stopColor="#d1cfff" />
+        <stop offset="10%" stopColor="rgba(20, 106, 204, 1)" />
+        <stop offset="100%" stopColor="rgba(151, 236, 252, 1)" />
       </linearGradient>
     </defs>
     <path 

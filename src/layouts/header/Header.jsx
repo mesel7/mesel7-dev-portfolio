@@ -19,8 +19,12 @@ const Header = () => {
     }, [location.pathname]);
 
     const isSelected = (route) => {
-        if (!route) return false;
-        if (route === "/") return selectedRoute === route;
+        if (!route) {
+            return false;
+        }
+        if (route === "/") {
+            return selectedRoute === route;
+        }
         return selectedRoute.startsWith(route) && selectedRoute !== "/";
     };
 
@@ -95,10 +99,10 @@ const Header = () => {
                 <div className="dropdown-menu">
                 {menuItems.map((item, idx) => (
                     <MenuItem
-                    key={idx}
-                    {...item}
-                    isSelected={isSelected(item.dataRoute)}
-                    onClick={handleMenuClick}
+                        key={idx}
+                        {...item}
+                        isSelected={isSelected(item.dataRoute)}
+                        onClick={handleMenuClick}
                     />
                 ))}
                 </div>

@@ -111,6 +111,24 @@ input:-moz-autofill {
   -moz-text-fill-color: #000 !important;
 }
 
+:root {
+    --souten-deepest: rgba(14, 51, 153, 1);
+    --souten-deep: rgba(20, 106, 204, 1);
+    --souten-medium: rgba(59, 162, 255, 1);
+    --souten-light: rgba(108, 207, 254, 1);
+    --souten-sky: rgba(151, 236, 252, 1);
+
+    --cloud-deep: rgba(183, 226, 250, 1);
+    --cloud-base: rgba(226, 252, 252, 1);
+    --cloud-light: rgba(250, 255, 255, 1);
+
+    --souten-gradient: linear-gradient(
+        135deg,
+        var(--souten-deep) 10%,
+        var(--souten-sky) 100%
+    );
+}
+
 @media (max-width: 768px) {
   html {
     font-size: 12px;

@@ -1,5 +1,5 @@
 import ProjectItem from "../components/projects/ProjectItem";
-import { projectsPreData } from "../portfolio_data";
+import { projectsPreData } from "../portfolio-data";
 
 const Projects = () => {
     return (

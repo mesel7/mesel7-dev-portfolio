@@ -1,9 +1,9 @@
 .home__container {
     max-width: 1280px;
     box-sizing: border-box;
-    margin: 0 auto;
     padding: 2rem;
     display: flex;
+    justify-content: center;
     gap: 4rem;
     overflow: hidden;
 }
@@ -18,9 +18,9 @@
 
 .home__photo-wrapper {
     aspect-ratio: 2/3;
-    border-radius: 1rem;
+    border-radius: 0.75rem;
     overflow: hidden;
-    box-shadow: 0 0.7rem 1.5rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.25rem 1rem rgba(40, 40, 40, 0.1);
 }
 
 .home__photo {
@@ -30,6 +30,7 @@
 }
 
 .home__right {
+    max-width: 40rem;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -37,30 +38,32 @@
 }
 
 .home__greeting {
-    font-size: 1.25rem;
-    margin-bottom: 0.25rem;
+    font-size: 1.375rem;
+    font-weight: 500;
 }
 
 .home__title {
     font-family: "Outfit";
-    font-size: 2.4rem;
+    font-size: 3.5rem;
     font-weight: 700;
+    letter-spacing: 0.15rem;
     margin-bottom: 0.75rem;
 }
 
 .home__title-highlight {
-    background: linear-gradient(to right, #cbe9f7, #a8d0f0, #d1cfff);
+    background: var(--souten-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-shadow: 0 0.2rem 0.5rem rgba(20, 106, 204, 0.3);
 }
 
 .home__description {
     font-size: 1rem;
-    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 4rem;
 }
 
 .home__info-grid {
-    max-width: 40rem;
     font-family:
         "Outfit",
         "Hiragino",
@@ -86,7 +89,7 @@
 
 .home__info-label {
     font-weight: 700;
-    color: #a8d0f0;
+    color: var(--souten-medium);
     white-space: nowrap;
     letter-spacing: 0.025rem;
 }
@@ -97,20 +100,20 @@
 
 .home__button {
     font-family: "Outfit";
-    background: linear-gradient(to right, #cbe9f7, #a8d0f0, #d1cfff);
-    color: white;
-    padding: 1rem 2.5rem;
+    background: var(--souten-gradient);
+    box-shadow: 0 0.25rem 1rem rgba(40, 40, 40, 0.1);
     border: none;
-    border-radius: 2rem;
-    font-size: 1.2rem;
+    border-radius: 9999px;
+    color: #fff;
+    letter-spacing: 0.1rem;
+        text-shadow: 0 0.2rem 0.5rem rgba(20, 106, 204, 0.3);
+    padding: 1rem 2.5rem;
+    font-size: 1.25rem;
     font-weight: 600;
     cursor: pointer;
-    transition: 
-        box-shadow 0.4s ease,
-        transform 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
 .home__button:hover {
-    box-shadow: 0 0 0.5rem rgba(203, 233, 247, 0.7), 
-                0 0 1.25rem rgba(209, 207, 255, 0.6);
+    opacity: 0.75;
 }

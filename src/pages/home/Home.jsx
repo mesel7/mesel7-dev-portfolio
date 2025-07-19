@@ -1,9 +1,11 @@
 import './Home.css';
 import { useTranslation } from 'react-i18next';
 import profile from '../../assets/images/profile.jpg';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
     const { t } = useTranslation();
+    const navigate = useNavigate();
 
     return (
         <div className="home">
@@ -21,7 +23,10 @@ const Home = () => {
                     <div className="home__greeting">{t('home.greeting')}</div>
                     <div className="home__title">
                         {t('home.titlePrefix')}{" "}
-                        <span className="home__title-highlight">{t('home.titleHighlight')}</span>
+                        <span className="home__title-highlight">
+                            {t('home.titleHighlight1')}<br />
+                            {t('home.titleHighlight2')}
+                        </span>
                     </div>
                     <div className="home__description">
                         {t('home.description')}
@@ -49,7 +54,9 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="home__button-wrapper">
-                        <button className="home__button">{t('home.moreButton')}</button>
+                        <button className="home__button" onClick={() => navigate('/about')}>
+                            {t('home.moreButton')}
+                        </button>
                     </div>
                 </div>
             </div>

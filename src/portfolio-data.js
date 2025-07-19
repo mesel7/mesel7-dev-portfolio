@@ -5,7 +5,7 @@ import NodeIcon from './assets/icons/NodeIcon';
 import ReactIcon from './assets/icons/ReactIcon';
 import GitIcon from './assets/icons/GitIcon';
 
-import { seremeetyImages, skillsIcons } from "./utils";
+import { seremeetyImages } from "./utils";
 import { swImages } from "./utils";
 import { diaryImages } from "./utils";
 
@@ -17,7 +17,14 @@ export const skillsPreData = [
     { itemKey: "node", icon: NodeIcon, since: "2024.07" },
     { itemKey: "git", icon: GitIcon, since: "2023.12" }
 ];
-  
+
+export const experiencePreData = [
+    { itemKey: "capstone" },
+    { itemKey: "preCapstone" },
+    { itemKey: "reactPractice" },
+    { itemKey: "playin" },
+];
+
 export const projectsPreData = [
     {
         img: diaryImages["diary_logo.png"],
