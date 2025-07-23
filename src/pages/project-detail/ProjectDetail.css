@@ -1,0 +1,216 @@
+.project-detail__content {
+    max-width: 1280px;
+    box-sizing: border-box;
+    padding: 4rem 8rem;
+}
+
+.project-detail__title-section {
+    position: relative;
+    font-family: "Outfit";
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.project-detail__title {
+    background: var(--souten-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 1;
+    letter-spacing: 0.15rem;
+    text-shadow: 0 0.2rem 0.5rem rgba(20, 106, 204, 0.3);
+}
+
+.project-detail__title-background {
+    position: absolute;
+    top: 50%;
+    font-size: 6rem;
+    opacity: 0.15;
+    transform: translateY(-55%);
+    letter-spacing: 0.25rem;
+    background: var(--souten-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: blur(0.15rem);
+}
+
+.project-detail__subtitle-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    font-family: "Outfit";
+    font-size: 1.75rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+
+.project-detail__subtitle-bar {
+    width: 32rem;
+    height: 0.125rem;
+    background-color: #f5f5f5;
+}
+
+.project-datail__subtitle {
+    font-family: "Outfit";
+    font-size: 1.75rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+}
+
+.project-detail__header {
+    border-bottom: 0.1rem solid #f5f5f5;
+}
+
+.project-detail__name {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.project-detail__name-bar {
+    width: 0.25rem;
+    height: 3rem;
+    background: var(--souten-gradient);
+}
+
+.project-detail__info-line {
+    font-family: "Outfit";
+    font-size: 1.125rem;
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.75rem;
+}
+
+.project-detail__info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.project-detail__period {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: "Outfit";
+    font-size: 1.125rem;
+    margin-bottom: 1.75rem;
+}
+
+.project-detail__type {
+    font-family: "Outfit";
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+}
+
+.project-detail__tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.project-detail__tech-item {
+    font-family: "Outfit";
+    font-size: 1rem;
+    padding: 0.25rem 0.5rem;
+    border: 0.1rem solid #f5f5f5;
+    border-radius: 0.25rem;
+}
+
+.project-detail__description {
+    font-size: 1rem;
+    white-space: pre-line;
+    line-height: 1.75;
+    margin-bottom: 1.75rem;
+}
+
+.project-detail__links {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.75rem;
+}
+
+.project-detail__link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: "Outfit";
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.project-detail__link svg {
+    color: var(--souten-medium);
+}
+
+.project-detail__link:hover {
+    color: var(--souten-medium);
+}
+
+.project-detail__insights {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 0;
+    border-bottom: 0.1rem solid #f5f5f5;
+}
+
+.project-detail__section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.project-detail__section-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: "Outfit";
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.025rem;
+}
+
+.project-detail__section-title-bar {
+    width: 0.15rem;
+    height: 2.25rem;
+    background: var(--souten-medium);
+}
+
+.project-detail__section-content {
+    line-height: 1.75;
+}
+
+.project-detail__note {
+    background-color: #fcfcfc;
+    font-size: 0.875rem;
+    color: #888;
+    line-height: 1.75;
+    padding: 1rem 1.25rem;
+    border-radius: 0.25rem;
+    margin-top: 2rem;
+}
+
+.project-detail__note p {
+    margin: 0;
+}
+
+.project-detail__button-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-detail__button-wrapper {
+    padding: 2rem 0;
+}

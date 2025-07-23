@@ -1,8 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './pages/home/Home';
-import Projects from './pages/Projects';
-import ProjectDetail from './pages/ProjectDetail';
+import Projects from './pages/projects/Projects';
+import ProjectDetail from './pages/project-detail/ProjectDetail';
 import Layout from './layouts/layout/Layout';
 import About from './pages/about/About';
 

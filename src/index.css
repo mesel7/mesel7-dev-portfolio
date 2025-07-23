@@ -120,13 +120,15 @@ input:-moz-autofill {
 
     --cloud-deep: rgba(183, 226, 250, 1);
     --cloud-base: rgba(226, 252, 252, 1);
-    --cloud-light: rgba(250, 255, 255, 1);
+    --cloud-light: rgba(247, 252, 255, 1);
 
     --souten-gradient: linear-gradient(
         135deg,
         var(--souten-deep) 10%,
         var(--souten-sky) 100%
     );
+
+    --cloud-shadow: 0 0.25rem 1rem rgba(40, 40, 40, 0.1);
 }
 
 @media (max-width: 768px) {

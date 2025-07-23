@@ -101,12 +101,12 @@
 .home__button {
     font-family: "Outfit";
     background: var(--souten-gradient);
-    box-shadow: 0 0.25rem 1rem rgba(40, 40, 40, 0.1);
+    box-shadow: var(--cloud-shadow);
     border: none;
     border-radius: 9999px;
     color: #fff;
     letter-spacing: 0.1rem;
-        text-shadow: 0 0.2rem 0.5rem rgba(20, 106, 204, 0.3);
+    text-shadow: 0 0.2rem 0.5rem rgba(20, 106, 204, 0.3);
     padding: 1rem 2.5rem;
     font-size: 1.25rem;
     font-weight: 600;

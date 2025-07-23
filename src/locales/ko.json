@@ -71,5 +71,102 @@
       "role": "Frontend Developer",
       "description": "스타트업 외주로 시작한 첫 실전 프로젝트로, 기획팀과 협업하여 대학생 소개팅 웹 앱을 개발·운영하였습니다. HTML・CSS・Vanilla JS・Firebase를 활용해 전체 프론트 구현부터 배포까지 담당했으며, 실사용자 대상 피드백을 바탕으로 이미지 최적화, 로딩 속도 개선 등 다양한 이슈를 직접 해결했습니다."
     }
+  },
+
+  "projects": {
+    "portfolio": {
+      "name": "portfolio",
+      "title": "mesel7 PORTFOLIO",
+      "period": "2024.07 ~ 2025.07",
+      "type": "Personal Project / Fullstack",
+      "description": "React와 Firebase 기반으로 제작한 포트폴리오 사이트입니다. 蒼天 감성의 색상 팔레트를 적용하여 개인의 정체성과 감성을 담아냈습니다.",
+      "tech": ["HTML5", "CSS3", "JavaScript", "React", "Firebase"],
+      "links": {
+        "project": "https://mesel7-dev-portfolio.web.app/",
+        "github": "https://github.com/mesel7/portfolio"
+      },
+      "note": "이 프로젝트의 주요 기능, 구조, 스크린샷 등은 GitHub를 통해 확인하실 수 있으며 프로젝트 링크에서 실제 서비스를 체험해보실 수 있습니다.\n본 페이지에서는 개발 배경과 문제 해결 과정, 배운 점을 중심으로 정리하였습니다.",
+      "insight": {
+        "motive": "그동안의 프로젝트와 기술을 체계적으로 정리하고 보여줄 수 있는 나만의 공간이 필요하다고 느껴 직접 포트폴리오 사이트를 제작하게 되었습니다.",
+        "problemSolving": "React 기반 컴포넌트 구조로 재사용성과 유지보수성을 고려하여 설계하였고, 蒼天 테마에 맞춰 색상 팔레트와 타이포그래피를 커스터마이징했습니다.",
+        "learned": "기술 외에도 나 자신을 잘 표현하는 디자인과 구성력이 중요하다는 점을 깨달았고, 브랜딩과 개발의 균형을 고민하게 된 프로젝트였습니다."
+      }
+    },
+    "foodRunner": {
+      "name": "food-runner",
+      "title": "푸드 러너",
+      "period": "2025.03 ~ 2025.06",
+      "type": "Team Project (5 members) / Team Leader • Web Frontend",
+      "description": "식단 및 운동 기록을 자동화하여 건강 관리를 쉽게 할 수 있도록 도와주는 앱입니다. 사진 인식, 음성 인식, 영양 분석 등 다양한 AI 기술을 통합하여 구현했습니다.",
+      "tech": ["Spring Boot", "MySQL", "React Native", "Firebase", "AWS S3", "OpenAI API", "Google Cloud Vision"],
+      "links": {
+        "project": "",
+        "github": "https://github.com/mesel7/food-runner"
+      },
+      "note": "이 프로젝트는 현재 배포 환경이 종료되어 서비스는 이용하실 수 없지만, 주요 기능, 구조, 스크린샷 등은 GitHub를 통해 확인 가능합니다.\n본 페이지에서는 개발 배경과 문제 해결 과정, 배운 점을 중심으로 정리하였습니다.",
+      "insight": {
+        "motive": "바쁜 일상 속에서도 건강 관리를 지속적으로 하고 싶어, 식단과 운동 기록을 자동화해주는 앱을 만들게 되었습니다.",
+        "problemSolving": "음식 사진 인식과 운동 음성 인식을 결합하는 기능 구현이 어려웠지만, Google Vision API, OpenAI API 등 외부 도구를 활용하여 자동화 흐름을 완성할 수 있었습니다.",
+        "learned": "AI와 연동되는 서비스에서 사용자 경험을 설계하는 데 있어 API 응답 시간, 정확도, UX 피드백 등 다양한 요소의 조율이 중요하다는 점을 실감했습니다."
+      }
+    },
+    "weatherDiary": {
+      "name": "weather-diary",
+      "title": "마음의 날씨, 감정 기록 플랫폼",
+      "period": "2024.09 ~ 2024.12",
+      "type": "Team Project (4 members) / Web Frontend",
+      "description": "LLM 기반 감정 분석과 심리 상담 기능을 도입한 일기 앱입니다. 사용자가 감정을 기록하고 심리적 도움을 얻을 수 있도록 지원합니다. 캘린더와 해시태그 기능으로 편리한 일기 관리와 검색을 제공합니다.",
+      "tech": ["HTML5", "CSS3", "JavaScript", "React", "Firebase", "Node.js", "MySQL"],
+      "links": {
+        "project": "https://weather-diary-kr.web.app/",
+        "github": "https://github.com/24-precapstone-team3/weather-diary"
+      },
+      "note": "이 프로젝트는 현재 배포 환경이 종료되어 서비스는 이용하실 수 없지만, 주요 기능, 구조, 스크린샷 등은 GitHub를 통해 확인 가능합니다.\n본 페이지에서는 개발 배경과 문제 해결 과정, 배운 점을 중심으로 정리하였습니다.",
+      "insight": {
+        "motive": "건강 관리를 하며 느낀 점 중, 신체 건강뿐 아니라 정신적 케어도 매우 중요하다고 판단했습니다. 사람들의 감정을 기록하고 정리할 수 있는 공간이 필요하다고 생각해 본 프로젝트를 시작했습니다.",
+        "problemSolving": "OpenAI의 LLM API를 활용하여 감정 분석 결과를 제공하는 부분에서 초기 응답 속도와 정확도가 낮은 문제가 있었습니다. 프롬프트를 튜닝하고 로딩 시 UX를 개선하여 사용자 경험을 끌어올렸습니다.",
+        "learned": "기술보다 중요한 것은 사용자 경험이라는 점을 다시 한 번 느꼈고, 민감한 데이터를 다룰 때 보안과 사용자 신뢰 확보가 얼마나 중요한지를 배웠습니다."
+      }
+    },
+    "seremeety": {
+      "name": "seremeety",
+      "title": "만남의 세레나데, Seremeety",
+      "period": "2024.08 ~ 2024.09",
+      "type": "Personal Project / Fullstack",
+      "description": "자만추가 어려운 대학생들을 위한 건전한 연애 플랫폼입니다. SNS처럼 프로필을 작성하고 셀프 소개 등 다양한 매칭을 제공합니다. 세레미티와 비슷한 단어 세레니티 블루 색상으로 파스텔 톤의 로맨틱한 테마를 적용했습니다.",
+      "tech": ["HTML5", "CSS3", "JavaScript", "React", "Firebase"],
+      "links": {
+        "project": "https://seremeety-kr.web.app/",
+        "github": "https://github.com/mesel7/seremeety-web"
+      },
+      "note": "이 프로젝트의 주요 기능, 구조, 스크린샷 등은 GitHub를 통해 확인하실 수 있으며 프로젝트 링크에서 실제 서비스를 체험해보실 수 있습니다.\n본 페이지에서는 개발 배경과 문제 해결 과정, 배운 점을 중심으로 정리하였습니다.",
+      "insight": {
+        "motive": "대학생들이 쉽게 접근할 수 있는 건전한 만남 플랫폼이 부족하다고 느껴, 자만추를 원하는 사용자들을 위한 서비스가 필요하다고 생각했습니다.",
+        "problemSolving": "Firebase를 기반으로 사용자 인증, 매칭 요청, 실시간 상태 등을 구조화하여 구현했으며, 감성적인 테마를 적용하여 연애 앱에 어울리는 분위기를 전달하고자 했습니다.",
+        "learned": "연애라는 민감한 주제를 다룰 때 신뢰성과 감성을 모두 충족하는 UI/UX가 중요하다는 점을 체감했습니다."
+      }
+    },
+    "sweetii": {
+      "name": "sweetii",
+      "title": "달콤한 만남 스위티, Sweetii",
+      "period": "2024.01 ~ 2024.06",
+      "type": "Team Project (3 members) / Web Frontend",
+      "description": "대학교 인증을 기반으로 이성과 매칭하고, 실시간 채팅이 가능한 소개팅 앱입니다. 실제 사용자 대상 MVP로 배포하여 반응을 수집하고 개선한 프로젝트입니다.",
+      "tech": ["HTML5", "CSS3", "JavaScript", "Firebase"],
+      "links": {
+        "project": "",
+        "github": ""
+      },
+      "note": "이 프로젝트는 현재 배포 환경이 종료되어 서비스를 이용하실 수 없고 회사 내부 정책으로 소스 코드를 공개할 수는 없지만, GitHub에 별도로 정리한 소개 페이지에서 주요 기능, 구조, 스크린샷 등을 확인 가능합니다.\n본 페이지에서는 개발 배경과 문제 해결 과정, 배운 점을 중심으로 정리하였습니다.",
+      "insight": {
+        "motive": "대학교 인증 기반으로 신뢰할 수 있는 소개팅 서비스를 만들고 싶었고, 실제로 사용자들이 활용할 수 있는 MVP를 제작해보기 위해 시작한 프로젝트였습니다.",
+        "problemSolving": "Firebase Authentication과 Database를 중심으로 매칭, 채팅, 상점 기능까지 구성하였고, 실시간 데이터 처리와 사용자 인증 흐름에서 많은 시행착오를 겪으며 구조를 개선했습니다.",
+        "learned": "실제 서비스 운영 경험을 통해 유저 피드백의 중요성과 함께, 단순한 기능 구현보다 '사용자 입장에서의 흐름'이 더 중요하다는 것을 배웠습니다."
+      }
+    }
+  },
+
+  "projectDetail": {
+    "moreLabel": "프로젝트 목록"
   }
 }

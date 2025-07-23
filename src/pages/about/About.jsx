@@ -21,8 +21,8 @@ const About = () => {
                 </div>
 
                 <div className="about__skills-list">
-                    {skillsPreData.map((skill, idx) => (
-                        <SkillItem key={idx} {...skill} />
+                    {skillsPreData.map((item, idx) => (
+                        <SkillItem key={idx} {...item} />
                     ))}
                 </div>
 
