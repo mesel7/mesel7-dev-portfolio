@@ -1,156 +1,156 @@
 .home__content {
-    max-width: 1280px;
-    box-sizing: border-box;
-    padding: 4rem;
+  max-width: 1280px;
+  box-sizing: border-box;
+  padding: 4rem;
 }
 
 .home__title-section {
-    position: relative;
-    font-family: "Outfit";
-    font-size: 3.5rem;
-    font-weight: 700;
-    letter-spacing: 0.1rem;
-    display: flex;
-    justify-content: center;
+  position: relative;
+  font-family: "Outfit";
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  display: flex;
+  justify-content: center;
 }
 
 .home__title {
-    background: var(--souten-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    z-index: 1;
-    letter-spacing: 0.15rem;
-    text-shadow: 0 0.2rem 0.5rem rgba(20, 106, 204, 0.3);
+  background: var(--souten-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 1;
+  letter-spacing: 0.15rem;
+  text-shadow: 0 0.2rem 0.5rem rgba(20, 106, 204, 0.3);
 }
 
 .home__title-background {
-    position: absolute;
-    top: 50%;
-    font-size: 6rem;
-    opacity: 0.25;
-    transform: translateY(-55%);
-    letter-spacing: 0.25rem;
-    background: var(--souten-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    filter: blur(0.15rem);
-    white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  font-size: 6rem;
+  opacity: 0.25;
+  transform: translateY(-55%);
+  letter-spacing: 0.25rem;
+  background: var(--souten-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: blur(0.15rem);
+  white-space: nowrap;
 }
 
 .home__subtitle-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-    font-family: "Outfit";
-    font-size: 1.75rem;
-    font-weight: 500;
-    letter-spacing: 0.05rem;
-    padding-top: 4rem;
-    padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  font-family: "Outfit";
+  font-size: 1.75rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
 }
 
 .home__subtitle-bar {
-    position: absolute;
-    width: 100vw;
-    height: 1px;
-    background-color: #f5f5f5;
+  position: absolute;
+  width: 100vw;
+  height: 1px;
+  background-color: #f5f5f5;
 }
 
 .home__subtitle {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 .home__container {
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
 }
 
 .home__left {
-    width: 25rem;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 25rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home__photo-wrapper {
-    aspect-ratio: 2/3;
-    overflow: hidden;
-    box-shadow: var(--cloud-shadow);
+  aspect-ratio: 2/3;
+  overflow: hidden;
+  box-shadow: var(--cloud-shadow);
 }
 
 .home__photo {
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(1.05) contrast(1.02) saturate(0.95);
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(1.05) contrast(1.02) saturate(0.95);
 }
 
 .home__right {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .home__greeting {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-size: 1.375rem;
-    font-weight: 700;
-    letter-spacing: 0.05rem;
-    margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.375rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  margin: 2rem 0;
 }
 
 .home__greeting-bar {
-    width: 0.2rem;
-    height: 2.75rem;
-    background: var(--souten-gradient);
+  width: 0.2rem;
+  height: 2.75rem;
+  background: var(--souten-gradient);
 }
 
 .home__description {
-    font-size: 1rem;
-    line-height: 2.25;
-    letter-spacing: 0.05rem;
-    margin-bottom: 4rem;
-    font-weight: 500;
+  font-size: 1rem;
+  line-height: 2.25;
+  letter-spacing: 0.05rem;
+  margin-bottom: 4rem;
+  font-weight: 500;
 }
 
 .home__info {
-    font-family:
-        "Outfit", "Hiragino", "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W3", "ヒラギノ角ゴ Pro W3",
-        "HiraKakuPro-W3", "Noto Sans JP", "Noto Sans KR", "sans-serif";
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem 0;
-    margin-bottom: 2.5rem;
+  font-family:
+    "Outfit", "Hiragino", "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W3", "ヒラギノ角ゴ Pro W3",
+    "HiraKakuPro-W3", "Noto Sans JP", "Noto Sans KR", "sans-serif";
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem 0;
+  margin-bottom: 2.5rem;
 }
 
 .home__info-item {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 .home__info-label {
-    font-size: 1.125rem;
-    font-weight: 700;
-    white-space: nowrap;
-    letter-spacing: 0.025rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  white-space: nowrap;
+  letter-spacing: 0.025rem;
 }
 
 .home__info-value {
-    font-weight: 500;
-    letter-spacing: 0.025rem;
+  font-weight: 500;
+  letter-spacing: 0.025rem;
 }
 
 .home__button-wrapper .custom-button svg {
-    position: absolute;
-    top: 35%;
-    right: 6%;
-    transition: transform 0.3s ease;
+  position: absolute;
+  top: 35%;
+  right: 6%;
+  transition: transform 0.3s ease;
 }
 
 .home__button-wrapper .custom-button:hover svg {
-    transform: translateX(0.25rem);
+  transform: translateX(0.25rem);
 }
