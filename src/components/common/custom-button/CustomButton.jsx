@@ -7,7 +7,7 @@ const CustomButton = ({ text, icon, onClick }) => {
             {icon && <FontAwesomeIcon icon={icon} />}
             <span>{text}</span>
         </button>
-    )
+    );
 };
 
 export default CustomButton;

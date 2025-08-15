@@ -1,5 +1,5 @@
 .project-item {
-    border-radius: 0.75rem;
+    cursor: pointer;
     box-shadow: 0 0.25rem 1rem rgba(40, 40, 40, 0.1);
     padding: 1.5rem;
     display: flex;
@@ -19,8 +19,8 @@
 }
 
 .project-item__title {
-    font-weight: 500;
-    font-size: 1.25rem;
+    font-weight: 700;
+    font-size: 1.125rem;
 }
 
 .project-item__date {
@@ -41,7 +41,7 @@
     font-size: 0.875rem;
     padding: 0.1rem 0.25rem;
     border-radius: 0.25rem;
-    border: 0.1rem solid #f5f5f5;
+    border: 1px solid #e0e0e0;
 }
 
 .project-item__description {

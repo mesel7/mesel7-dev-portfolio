@@ -1,7 +1,7 @@
 .footer {
     font-family: "Outfit";
     padding: 1rem 2rem;
-    border-top: 0.125rem solid #f5f5f5;
+    border-top: 1px solid #f5f5f5;
 }
 
 .footer-container {
@@ -13,7 +13,16 @@
 
 .footer-left {
     font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.footer-left span {
+    font-size: 1.5rem;
     font-weight: 500;
+    background: var(--souten-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 0.4rem;
 }
 
 .footer-right {

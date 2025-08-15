@@ -1,11 +1,11 @@
-import "./ProjectDetail.css";
-import { useParams, useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
-import { projectsPreData } from "../../portfolio-data";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { icons, projectsIcons } from "../../utils";
-import CustomButton from "../../components/common/custom-button/CustomButton";
+import './ProjectDetail.css';
+import { useParams, useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { projectsPreData } from '../../portfolio-data';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { icons, projectsIcons } from '../../utils';
+import CustomButton from '../../components/common/custom-button/CustomButton';
 
 const ProjectDetail = () => {
     const { name } = useParams();
@@ -13,7 +13,8 @@ const ProjectDetail = () => {
     const { t } = useTranslation();
     const [project, setProject] = useState(null);
 
-    const formatKey = (str) => str.replace(/([a-z])([A-Z])/g, '$1 $2').replace(/\b\w/g, (char) => char.toUpperCase());
+    const formatKey = (str) =>
+        str.replace(/([a-z])([A-Z])/g, '$1 $2').replace(/\b\w/g, (char) => char.toUpperCase());
 
     useEffect(() => {
         const matched = projectsPreData.find(({ itemKey }) => {
@@ -34,13 +35,13 @@ const ProjectDetail = () => {
                 description: t(`projects.${itemKey}.description`),
                 tech: t(`projects.${itemKey}.tech`, { returnObjects: true }),
                 links: t(`projects.${itemKey}.links`, { returnObjects: true }),
-                note: noteRaw ? noteRaw.split("\n").filter(line => line.trim() !== "") : [],
+                note: noteRaw ? noteRaw.split('\n').filter((line) => line.trim() !== '') : [],
                 insight: t(`projects.${itemKey}.insight`, { returnObjects: true }),
             };
             setProject(projectData);
         } else {
-            alert("프로젝트가 존재하지 않습니다");
-            navigate("/projects", { replace: true });
+            alert('프로젝트가 존재하지 않습니다');
+            navigate('/projects', { replace: true });
         }
     }, [name, navigate, t]);
 
@@ -52,12 +53,8 @@ const ProjectDetail = () => {
         <div className="project-detail">
             <div className="project-detail__content">
                 <div className="project-detail__title-section">
-                    <div className="project-detail__title">
-                        PROJECT DETAIL
-                    </div>
-                    <div className="project-detail__title-background">
-                        PROJECT DETAIL
-                    </div>
+                    <div className="project-detail__title">PROJECT DETAIL</div>
+                    <div className="project-detail__title-background">PROJECT DETAIL</div>
                 </div>
                 <div className="project-detail__subtitle-section">
                     <div className="project-detail__subtitle-bar"></div>
@@ -74,18 +71,24 @@ const ProjectDetail = () => {
                             {project.period}
                         </span>
                         <span className="project-detail__info-item">
-                            <FontAwesomeIcon icon={project.type.startsWith("Personal") ? icons.faUser : icons.faUsers} />
+                            <FontAwesomeIcon
+                                icon={
+                                    project.type.startsWith('Personal')
+                                        ? icons.faUser
+                                        : icons.faUsers
+                                }
+                            />
                             {project.type}
                         </span>
                     </div>
                     <div className="project-detail__tech">
                         {project.tech.map((it, idx) => (
-                            <div key={idx} className="project-detail__tech-item">{it}</div>
+                            <div key={idx} className="project-detail__tech-item">
+                                {it}
+                            </div>
                         ))}
                     </div>
-                    <div className="project-detail__description">
-                        {project.description}
-                    </div>
+                    <div className="project-detail__description">{project.description}</div>
                     <div className="project-detail__links">
                         {project.links.project && (
                             <div
@@ -105,6 +108,15 @@ const ProjectDetail = () => {
                                 GitHub
                             </div>
                         )}
+                        {project.links.demo && (
+                            <div
+                                className="project-detail__link"
+                                onClick={() => window.open(project.links.demo)}
+                            >
+                                <FontAwesomeIcon icon={projectsIcons.faCircleArrowRight} />
+                                Demo
+                            </div>
+                        )}
                     </div>
                 </div>
                 <div className="project-detail__insights">
@@ -121,19 +133,19 @@ const ProjectDetail = () => {
                     ))}
                 </div>
                 {project.note && (
-                        <div className="project-detail__note">
-                            {project.note.map((line, idx) => (
-                                <p key={idx}>{line}</p>
-                            ))}
-                        </div>
+                    <div className="project-detail__note">
+                        {project.note.map((line, idx) => (
+                            <p key={idx}>{line}</p>
+                        ))}
+                    </div>
                 )}
                 <div className="project-detail__button-wrapper">
                     <div className="project-detail__button-label">
                         <FontAwesomeIcon icon={icons.faWindowRestore} />
-                        {t("projectDetail.moreLabel")}
+                        {t('projectDetail.moreLabel')}
                     </div>
                     <CustomButton
-                        text={"PROJECTS"}
+                        text={'PROJECTS'}
                         icon={icons.faArrowLeft}
                         onClick={() => navigate('/projects')}
                     />

@@ -1,114 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap");
 
 @font-face {
-  font-family: Hiragino;
-  font-weight: 100;
-  src: local("HiraginoSans-W1"),local("Hiragino Sans")
+    font-family: Hiragino;
+    font-weight: 100;
+    src: local("HiraginoSans-W1"), local("Hiragino Sans");
 }
 
 @font-face {
-  font-family: Hiragino;
-  font-weight: 200;
-  src: local("HiraginoSans-W2"),local("Hiragino Sans")
+    font-family: Hiragino;
+    font-weight: 200;
+    src: local("HiraginoSans-W2"), local("Hiragino Sans");
 }
 
 @font-face {
-  font-family: Hiragino;
-  font-weight: 300;
-  src: local("HiraginoSans-W3"),local("Hiragino Sans")
+    font-family: Hiragino;
+    font-weight: 300;
+    src: local("HiraginoSans-W3"), local("Hiragino Sans");
 }
 
 @font-face {
-  font-family: Hiragino;
-  font-weight: 400;
-  src: local("HiraginoSans-W3"),local("Hiragino Sans")
+    font-family: Hiragino;
+    font-weight: 400;
+    src: local("HiraginoSans-W3"), local("Hiragino Sans");
 }
 
 @font-face {
-  font-family: Hiragino;
-  font-weight: 500;
-  src: local("HiraginoSans-W5"),local("Hiragino Sans")
+    font-family: Hiragino;
+    font-weight: 500;
+    src: local("HiraginoSans-W5"), local("Hiragino Sans");
 }
 
 @font-face {
-  font-family: Hiragino;
-  font-weight: 600;
-  src: local("HiraginoSans-W6"),local("Hiragino Sans")
+    font-family: Hiragino;
+    font-weight: 600;
+    src: local("HiraginoSans-W6"), local("Hiragino Sans");
 }
 
 @font-face {
-  font-family: Hiragino;
-  font-weight: 700;
-  src: local("HiraginoSans-W6"),local("Hiragino Sans")
+    font-family: Hiragino;
+    font-weight: 700;
+    src: local("HiraginoSans-W6"), local("Hiragino Sans");
 }
 
 @font-face {
-  font-family: Hiragino;
-  font-weight: 800;
-  src: local("HiraginoSans-W7"),local("Hiragino Sans")
+    font-family: Hiragino;
+    font-weight: 800;
+    src: local("HiraginoSans-W7"), local("Hiragino Sans");
 }
 
 @font-face {
-  font-family: Hiragino;
-  font-weight: 900;
-  src: local("HiraginoSans-W8"),local("Hiragino Sans")
+    font-family: Hiragino;
+    font-weight: 900;
+    src: local("HiraginoSans-W8"), local("Hiragino Sans");
 }
 
 html {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 body {
-  height: 100%;
-  background-color: #fff;
-  color: #282828;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  
-  font-family:
-  "Hiragino",
-  "ヒラギノ角ゴ ProN W3",
-  "HiraKakuProN-W3",
-  "ヒラギノ角ゴ Pro W3",
-  "HiraKakuPro-W3",
-  "Noto Sans JP",
-  "Noto Sans KR",
-  "sans-serif";
+    height: 100%;
+    background-color: #fff;
+    color: #282828;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+
+    font-family:
+        "Hiragino", "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W3", "ヒラギノ角ゴ Pro W3",
+        "HiraKakuPro-W3", "Noto Sans JP", "Noto Sans KR", "sans-serif";
 }
 
-body,img {
-  -webkit-touch-callout:none;
-  -webkit-user-select:none;
-  -khtml-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  user-select:none;
-}
-  
+body,
 img {
-  -webkit-user-drag:none;
-  -khtml-user-drag:none;
-  -moz-user-drag:none;
-  -o-user-drag:none
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
 }
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px white inset !important;
-  -webkit-text-fill-color: #000 !important;
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+    -webkit-text-fill-color: #000 !important;
 }
 
 input:-moz-autofill {
-  box-shadow: 0 0 0 30px white inset !important;
-  -moz-text-fill-color: #000 !important;
+    box-shadow: 0 0 0 30px white inset !important;
+    -moz-text-fill-color: #000 !important;
 }
 
 :root {
@@ -122,23 +117,19 @@ input:-moz-autofill {
     --cloud-base: rgba(226, 252, 252, 1);
     --cloud-light: rgba(247, 252, 255, 1);
 
-    --souten-gradient: linear-gradient(
-        135deg,
-        var(--souten-deep) 10%,
-        var(--souten-sky) 100%
-    );
+    --souten-gradient: linear-gradient(135deg, var(--souten-deep) 10%, var(--souten-sky) 100%);
 
     --cloud-shadow: 0 0.25rem 1rem rgba(40, 40, 40, 0.1);
 }
 
 @media (max-width: 768px) {
-  html {
-    font-size: 12px;
-  }
+    html {
+        font-size: 12px;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  html {
-    font-size: 1.5625vw; /* 1024px: 1rem = 16px, 768px: 1rem = 12px */
-  }
+    html {
+        font-size: 1.5625vw; /* 1024px: 1rem = 16px, 768px: 1rem = 12px */
+    }
 }

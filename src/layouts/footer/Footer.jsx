@@ -5,7 +5,8 @@ const Footer = () => {
         <div className="footer">
             <div className="footer-container">
                 <div className="footer-left">
-                    MESEL7 DEV PORTFOLIO
+                    <span>mesel7</span>
+                    Dev Portfolio
                 </div>
                 <div className="footer-right">
                     <div className="footer-copy">© 2025 mesel7. All Rights Reserved.</div>

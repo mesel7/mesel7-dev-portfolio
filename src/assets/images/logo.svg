@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <!-- souten-gradient: 135deg, #146acc -> #97ecfc -->
+    <linearGradient id="souten" x1="0" y1="0" x2="1" y2="1" gradientTransform="rotate(135 .5 .5)">
+      <stop offset="10%" stop-color="rgba(20,106,204,1)"></stop>
+      <stop offset="100%" stop-color="rgba(151,236,252,1)"></stop>
+    </linearGradient>
+
+    <!-- 네온: 필터 영역 크게 (클리핑 방지) -->
+    <filter id="neonSoft" x="-120%" y="-120%" width="340%" height="340%" filterUnits="objectBoundingBox">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="g1"></feGaussianBlur>
+      <feColorMatrix in="g1" type="matrix" values="0 0 0 0 0.20
+                0 0 0 0 0.58
+                0 0 0 0 0.96
+                0 0 0 0.40 0" result="c1"></feColorMatrix>
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3.5" result="g2"></feGaussianBlur>
+      <feColorMatrix in="g2" type="matrix" values="0 0 0 0 0.35
+                0 0 0 0 0.75
+                0 0 0 0 1.00
+                0 0 0 0.65 0" result="c2"></feColorMatrix>
+      <feMerge>
+        <feMergeNode in="c1"></feMergeNode>
+        <feMergeNode in="c2"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 전체 -10도 기울임 -->
+  <g transform="rotate(-10 256 256)" stroke-linecap="round" stroke-linejoin="round" filter="url(#neonSoft)">
+    <!-- 바깥 별 -->
+    <path d="M256 34 L322 186 L480 206 L354 302 L396 474 L256 386 L120 476 L158 302 L32 206 L190 186 Z" fill="none" stroke="url(#souten)" stroke-width="20"></path>
+    <!-- 안쪽 별 -->
+    <path d="M256 124 L300 222 L400 230 L318 290 L344 388 L256 334 L168 388 L194 290 L112 230 L212 222 Z" fill="none" stroke="url(#souten)" stroke-width="10" opacity="0.95"></path>
+  </g>
+</svg>

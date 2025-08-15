@@ -1,12 +1,13 @@
-import { useTranslation } from "react-i18next";
-import "./SkillItem.css";
+import { useTranslation } from 'react-i18next';
+import './SkillItem.css';
+import { splitTextByNewline } from '../../utils';
 
 const SkillItem = ({ icon: IconComponent, itemKey, since }) => {
     const { t } = useTranslation();
 
     const title = t(`skills.${itemKey}.title`);
     const description = t(`skills.${itemKey}.description`);
-    const descriptionLines = description.split("\n").filter((line) => line.trim() !== "");
+    const descriptionLines = splitTextByNewline(description);
 
     return (
         <div className="skill-item">

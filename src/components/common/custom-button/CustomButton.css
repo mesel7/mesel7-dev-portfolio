@@ -18,14 +18,3 @@
 .custom-button:hover {
     opacity: 0.75;
 }
-
-.custom-button svg {
-    position: absolute;
-    top: 35%;
-    left: 6%;
-    transition: transform 0.3s ease;
-}
-
-.custom-button:hover svg {
-    transform: translateX(-0.25rem);
-}
