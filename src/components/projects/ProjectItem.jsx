@@ -14,7 +14,7 @@ const ProjectItem = ({ itemKey }) => {
   const description = t(`projects.${itemKey}.description`);
 
   return (
-    <div className="project-item" onClick={() => navigate(`/projects/${name}`)}>
+    <div className="project-item u-break u-min0" onClick={() => navigate(`/projects/${name}`)}>
       <div className="project-item__content">
         <div className="project-item__header">
           <div className="project-item__title">{title}</div>

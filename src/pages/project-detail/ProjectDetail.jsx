@@ -40,31 +40,23 @@ const ProjectDetail = () => {
       };
       setProject(projectData);
     } else {
-      alert('프로젝트가 존재하지 않습니다');
+      alert(t('projectDetail.page.notFound'));
       navigate('/projects', { replace: true });
     }
   }, [name, navigate, t]);
 
   if (!project) {
-    return <div className="project-detail__loading">로딩 중...</div>;
+    return <div className="project-detail__loading">{t('projectDetail.page.loading')}</div>;
   }
 
   return (
     <div className="project-detail">
-      <div className="project-detail__content">
-        <div className="project-detail__title-section">
-          <div className="project-detail__title">PROJECT DETAIL</div>
-          <div className="project-detail__title-background">PROJECT DETAIL</div>
-        </div>
-        <div className="project-detail__subtitle-section">
-          <div className="project-detail__subtitle-bar"></div>
-          <div className="project-datail__subtitle">PROJECT OVERVIEW</div>
-        </div>
-        <div className="project-detail__header">
-          <div className="project-detail__name">
-            <div className="project-detail__name-bar"></div>
-            {project.title}
-          </div>
+      <div className="project-detail__title u-break">{t('projectDetail.page.title')}</div>
+      <div className="project-detail__divider"></div>
+
+      <div className="project-detail__section">
+        <div className="project-detail__header u-break">
+          <div className="project-detail__name">{project.title}</div>
           <div className="project-detail__info-line">
             <span className="project-detail__info-item">
               <FontAwesomeIcon icon={icons.faCalendar} />
@@ -85,6 +77,13 @@ const ProjectDetail = () => {
             ))}
           </div>
           <div className="project-detail__description">{project.description}</div>
+          {project.note && (
+            <div className="project-detail__note">
+              {project.note.map((line, idx) => (
+                <p key={idx}>{line}</p>
+              ))}
+            </div>
+          )}
           <div className="project-detail__links">
             {project.links.project && (
               <div
@@ -112,35 +111,32 @@ const ProjectDetail = () => {
             )}
           </div>
         </div>
+
         <div className="project-detail__insights">
           {Object.entries(project.insight).map(([key, val], idx) => (
-            <div key={idx} className="project-detail__section">
-              <div className="project-detail__section-title">
-                <div className="project-detail__section-title-bar"></div>
-                <div className="project-detail__section-title-text">{t(`${formatKey(key)}`)}</div>
+            <div key={idx} className="project-detail__insight u-break">
+              <div className="project-detail__insight-title">
+                <div className="project-detail__insight-title-bar"></div>
+                <div className="project-detail__insight-title-text">{t(`${formatKey(key)}`)}</div>
               </div>
-              <div className="project-detail__section-content">{val}</div>
+              <div className="project-detail__insight-content">{val}</div>
             </div>
           ))}
         </div>
-        {project.note && (
-          <div className="project-detail__note">
-            {project.note.map((line, idx) => (
-              <p key={idx}>{line}</p>
-            ))}
-          </div>
-        )}
-        <div className="project-detail__button-wrapper">
-          <div className="project-detail__button-label">
-            <FontAwesomeIcon icon={icons.faWindowRestore} />
-            {t('projectDetail.moreLabel')}
-          </div>
-          <CustomButton
-            text={'PROJECTS'}
-            icon={icons.faArrowLeft}
-            onClick={() => navigate('/projects')}
-          />
+      </div>
+
+      <div className="project-detail__divider"></div>
+
+      <div className="project-detail__button-wrapper">
+        <div className="project-detail__button-label">
+          <FontAwesomeIcon icon={icons.faWindowRestore} />
+          {t('projectDetail.page.cta.backToList')}
         </div>
+        <CustomButton
+          text={t('projectDetail.page.cta.projectsButton')}
+          icon={icons.faArrowLeft}
+          onClick={() => navigate('/projects')}
+        />
       </div>
     </div>
   );

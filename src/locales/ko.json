@@ -1,80 +1,109 @@
 {
   "home": {
-    "greeting": "안녕하세요 :)",
-    "titlePrefix": "I'M",
-    "titleHighlight": "FRONTEND DEVELOPER",
-    "titleHighlight1": "FRONTEND",
-    "titleHighlight2": "DEVELOPER",
-    "description": "저는 시각적인 아름다움뿐 아니라, 사용 편의성까지 균형 있게 담아낸 UI/UX를 목표로 개발에 임하고 있습니다. 특히 프론트엔드는 사용자가 서비스를 가장 먼저 경험하는 영역으로, 단순히 화면을 구현하는 차원을 넘어, 서비스의 인상과 사용 과정 전반을 설계하는 일이라고 생각합니다. 저는 작은 디테일 하나까지 사용자 경험을 고려하며, 기능 속에 서비스의 본질을 녹여내는 것을 중요하게 여겨왔습니다. 이러한 개발 태도는 앞으로도 다양한 환경에서 새로운 시도를 가능하게 하고, 기술력뿐 아니라 서비스의 본질을 사용자 경험의 형태로 나타내는 역량을 더욱 키워줄 것이라 믿습니다.",
-    "nameLabel": "NAME",
-    "nameValue": "김동현",
-    "phoneLabel": "PHONE",
-    "phoneValue": "010-5954-2166",
-    "emailLabel": "EMAIL",
-    "emailValue": "cejhans1520@gmail.com",
-    "birthdateLabel": "BIRTHDATE",
-    "birthdateValue": "1999.04.28",
-    "addressLabel": "ADDRESS",
-    "addressValue": "Seoul, Korea",
-    "languageLabel": "LANGUAGE",
-    "languageValue": "Korean / Japanese"
-  },
-
-  "skills": {
-    "html": {
-      "title": "HTML5",
-      "description": "시맨틱 태그를 활용하여 구조적인 마크업을 작성할 수 있습니다.\n웹 표준과 접근성을 고려하여 레이아웃을 설계할 수 있습니다.\n간결하고 유지보수하기 쉬운 구조로 HTML을 작성하는 데 익숙합니다."
-    },
-    "css": {
-      "title": "CSS3",
-      "description": "Flexbox와 미디어 쿼리를 조합해 반응형 레이아웃을 구현할 수 있습니다.\nBEM 방법론과 브라우저 개발자 도구를 활용해 구조적인 클래스 설계와 세밀한 스타일 디버깅이 가능합니다.\n컴포넌트 단위의 커스텀 스타일 설계에도 익숙합니다."
-    },
-    "js": {
-      "title": "JavaScript",
-      "description": "Vanilla JavaScript로 DOM 조작과 이벤트 처리를 구현할 수 있습니다.\nES6 문법(화살표 함수, 구조 분해 할당, 템플릿 리터럴 등)을 활용할 수 있습니다.\naxios를 활용하여 백엔드(Spring Boot)와의 비동기 통신을 구현한 경험이 있습니다."
-    },
-    "react": {
-      "title": "React",
-      "description": "컴포넌트 기반의 UI 개발과 React Router 기반 라우팅, 조건부 렌더링 등 기본 구조를 잘 이해하고 있습니다.\nuseState로 로컬 상태를, Context로 전역 상태를 설계·관리하며 데이터를 적절히 공급할 수 있습니다.\nuseCallback, React.memo 등을 활용한 성능 최적화도 고려하여 개발합니다."
-    },
-    "node": {
-      "title": "Node.js",
-      "description": "Node.js의 실행 구조와 런타임 환경에 대해 이해하고 있습니다.\nnpm을 통해 프로젝트 의존성을 관리할 수 있습니다.\n로컬 서버 환경 구성이나 백엔드 연동에 Node.js를 사용한 경험이 있습니다."
-    },
-    "git": {
-      "title": "Git / GitHub",
-      "description": "Git을 사용하여 프로젝트 버전을 관리하고 팀원과 협업한 경험이 있습니다.\nPull Request, Merge, Rebase 등 기본적인 브랜치 전략에 대해 이해하고 있습니다.\nGitHub를 통해 코드 리뷰 및 이슈 관리를 수행한 경험이 있습니다."
+    "page": {
+      "title": "WEB DEVELOPER",
+      "greeting": "안녕하세요 :)",
+      "description": "저는 시각적인 아름다움뿐 아니라, 사용 편의성까지 균형 있게 담아낸 UI/UX를 목표로 개발에 임하고 있습니다. 특히 프론트엔드는 사용자가 서비스를 가장 먼저 경험하는 영역으로, 단순히 화면을 구현하는 차원을 넘어, 서비스의 인상과 사용 과정 전반을 설계하는 일이라고 생각합니다. 저는 작은 디테일 하나까지 사용자 경험을 고려하며, 기능 속에 서비스의 본질을 녹여내는 것을 중요하게 여겨왔습니다. 이러한 개발 태도는 앞으로도 다양한 환경에서 새로운 시도를 가능하게 하고, 기술력뿐 아니라 서비스의 본질을 사용자 경험의 형태로 나타내는 역량을 더욱 키워줄 것이라 믿습니다.",
+      "cta": {
+        "moreAboutMe": "MORE ABOUT ME"
+      },
+      "sections": {
+        "profile": {
+          "heading": "PROFILE",
+          "caption": "프로필",
+          "items": {
+            "name": { "label": "NAME", "value": "김동현" },
+            "birthdate": { "label": "BIRTHDATE", "value": "1999.04.28" },
+            "phone": { "label": "PHONE", "value": "010-5954-2166" },
+            "email": { "label": "EMAIL", "value": "cejhans1520@gmail.com" },
+            "address": { "label": "ADDRESS", "value": "Seoul, Korea" },
+            "language": { "label": "LANGUAGE", "value": "Korean / Japanese" }
+          }
+        }
+      }
     }
   },
 
-  "experience": {
-    "capstone": {
-      "period": "2025.03 ~ 2025.06",
-      "title": "Capstone Design Project",
-      "role": "Team Leader / Frontend Developer",
-      "description": "캡스톤 프로젝트에서 5인 팀의 팀장을 맡고 웹 프론트엔드를 전담하였으며, 모바일·웹 통합 구조의 크로스 플랫폼 서비스를 구현하였습니다. OpenAI API와 Spring Boot 백엔드 연동을 설계하고, 사용자 흐름을 고려한 UI/UX를 구현하여 SW 프로젝트의 전체 개발 흐름을 이해하고 조율하는 경험을 쌓았습니다."
+  "about": {
+    "page": {
+      "title": "ABOUT",
+      "lead": "제가 주로 사용하는 기술 스택과 개발 경험을 소개합니다.",
+      "sections": {
+        "tech": {
+          "heading": "TECH STACK",
+          "caption": "기술 스택"
+        },
+        "experience": {
+          "heading": "EXPERIENCE",
+          "caption": "개발 경험"
+        }
+      }
     },
-    "preCapstone": {
-      "period": "2024.09 ~ 2024.12",
-      "title": "Pre-Capstone: Industry Collaboration Project",
-      "role": "Frontend Developer",
-      "description": "React 기술을 실전 협업에 적용한 첫 프로젝트입니다. 기업 연계 4인 팀 프로젝트에서 프론트엔드를 담당하였습니다. RESTful API 연동, Context 기반 상태 관리, 반응형 UI 최적화 등 다양한 기능을 구현하였고, 개발 완성도로 교내 우수상을 수상했습니다."
+    "skills": {
+      "html": {
+        "title": "HTML5",
+        "description": "시맨틱 태그를 활용하여 구조적인 마크업을 작성할 수 있습니다.\n웹 표준과 접근성을 고려하여 레이아웃을 설계할 수 있습니다.\n간결하고 유지보수하기 쉬운 구조로 HTML을 작성하는 데 익숙합니다."
+      },
+      "css": {
+        "title": "CSS3",
+        "description": "Flexbox와 미디어 쿼리를 조합해 반응형 레이아웃을 구현할 수 있습니다.\nBEM 방법론과 브라우저 개발자 도구를 활용해 구조적인 클래스 설계와 세밀한 스타일 디버깅이 가능합니다.\n컴포넌트 단위의 커스텀 스타일 설계에도 익숙합니다."
+      },
+      "js": {
+        "title": "JavaScript",
+        "description": "Vanilla JavaScript로 DOM 조작과 이벤트 처리를 구현할 수 있습니다.\nES6 문법(화살표 함수, 구조 분해 할당, 템플릿 리터럴 등)을 활용할 수 있습니다.\naxios를 활용하여 백엔드(Spring Boot)와의 비동기 통신을 구현한 경험이 있습니다."
+      },
+      "react": {
+        "title": "React",
+        "description": "컴포넌트 기반의 UI 개발과 React Router 기반 라우팅, 조건부 렌더링 등 기본 구조를 잘 이해하고 있습니다.\nuseState로 로컬 상태를, Context로 전역 상태를 설계·관리하며 데이터를 적절히 공급할 수 있습니다.\nuseCallback, React.memo 등을 활용한 성능 최적화도 고려하여 개발합니다."
+      },
+      "node": {
+        "title": "Node.js",
+        "description": "Node.js의 실행 구조와 런타임 환경에 대해 이해하고 있습니다.\nnpm을 통해 프로젝트 의존성을 관리할 수 있습니다.\n로컬 서버 환경 구성이나 백엔드 연동에 Node.js를 사용한 경험이 있습니다."
+      },
+      "git": {
+        "title": "Git / GitHub",
+        "description": "Git을 사용하여 프로젝트 버전을 관리하고 팀원과 협업한 경험이 있습니다.\nPull Request, Merge, Rebase 등 기본적인 브랜치 전략에 대해 이해하고 있습니다.\nGitHub를 통해 코드 리뷰 및 이슈 관리를 수행한 경험이 있습니다."
+      }
     },
-    "reactPractice": {
-      "period": "2024.07 ~ 2024.08",
-      "title": "React Practice Projects",
-      "role": "Personal Project",
-      "description": "초기 프로젝트를 통해 Vanilla JS의 디버깅 용이성은 경험했지만, 생산성과 유지 보수에는 한계를 느껴 React를 독학하게 되었습니다. React를 활용해 새로운 소개팅 웹 앱을 기획·개발하였고, 포트폴리오 사이트 제작도 병행하며 상태 관리, 라우팅, Context 구조 설계, 성능 최적화 기법에 대해 체계적인 이해를 갖추었습니다."
-    },
-    "playin": {
-      "period": "2024.01 ~ 2024.06",
-      "title": "PLAY-IN (Startup Collaboration)",
-      "role": "Frontend Developer",
-      "description": "스타트업 외주로 시작한 첫 실전 프로젝트로, 기획팀과 협업하여 대학생 소개팅 웹 앱을 개발·운영하였습니다. HTML・CSS・Vanilla JS・Firebase를 활용해 전체 프론트 구현부터 배포까지 담당했으며, 실사용자 대상 피드백을 바탕으로 이미지 최적화, 로딩 속도 개선 등 다양한 이슈를 직접 해결했습니다."
+    "experience": {
+      "capstone": {
+        "period": "2025.03 ~ 2025.06",
+        "title": "Capstone Design Project",
+        "role": "Team Leader / Frontend Developer",
+        "description": "캡스톤 프로젝트에서 5인 팀의 팀장을 맡고 웹 프론트엔드를 전담하였으며, 모바일·웹 통합 구조의 크로스 플랫폼 서비스를 구현하였습니다. OpenAI API와 Spring Boot 백엔드 연동을 설계하고, 사용자 흐름을 고려한 UI/UX를 구현하여 SW 프로젝트의 전체 개발 흐름을 이해하고 조율하는 경험을 쌓았습니다."
+      },
+      "preCapstone": {
+        "period": "2024.09 ~ 2024.12",
+        "title": "Pre-Capstone: Industry Collaboration Project",
+        "role": "Frontend Developer",
+        "description": "React 기술을 실전 협업에 적용한 첫 프로젝트입니다. 기업 연계 4인 팀 프로젝트에서 프론트엔드를 담당하였습니다. RESTful API 연동, Context 기반 상태 관리, 반응형 UI 최적화 등 다양한 기능을 구현하였고, 개발 완성도로 교내 우수상을 수상했습니다."
+      },
+      "reactPractice": {
+        "period": "2024.07 ~ 2024.08",
+        "title": "React Practice Projects",
+        "role": "Personal Project",
+        "description": "초기 프로젝트를 통해 Vanilla JS의 디버깅 용이성은 경험했지만, 생산성과 유지 보수에는 한계를 느껴 React를 독학하게 되었습니다. React를 활용해 새로운 소개팅 웹 앱을 기획·개발하였고, 포트폴리오 사이트 제작도 병행하며 상태 관리, 라우팅, Context 구조 설계, 성능 최적화 기법에 대해 체계적인 이해를 갖추었습니다."
+      },
+      "playin": {
+        "period": "2024.01 ~ 2024.06",
+        "title": "PLAY-IN (Startup Collaboration)",
+        "role": "Frontend Developer",
+        "description": "스타트업 외주로 시작한 첫 실전 프로젝트로, 기획팀과 협업하여 대학생 소개팅 웹 앱을 개발·운영하였습니다. HTML・CSS・Vanilla JS・Firebase를 활용해 전체 프론트 구현부터 배포까지 담당했으며, 실사용자 대상 피드백을 바탕으로 이미지 최적화, 로딩 속도 개선 등 다양한 이슈를 직접 해결했습니다."
+      }
     }
   },
 
   "projects": {
+    "page": {
+      "title": "PROJECTS",
+      "lead": "제가 진행했던 주요 프로젝트를 소개합니다.",
+      "sections": {
+        "mainProjects": {
+          "heading": "MAIN PROJECTS",
+          "caption": "주요 프로젝트"
+        }
+      }
+    },
     "portfolio": {
       "name": "portfolio",
       "title": "mesel7 Dev Portfolio",
@@ -169,6 +198,14 @@
   },
 
   "projectDetail": {
-    "moreLabel": "프로젝트 목록"
+    "page": {
+      "title": "PROJECT DETAIL",
+      "cta": {
+        "backToList": "프로젝트 목록",
+        "projectsButton": "PROJECTS"
+      },
+      "notFound": "프로젝트가 존재하지 않습니다.",
+      "loading": "프로젝트 정보를 불러오는 중입니다..."
+    }
   }
 }

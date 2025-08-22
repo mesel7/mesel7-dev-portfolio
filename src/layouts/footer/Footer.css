@@ -1,46 +1,56 @@
 .footer {
   font-family: "Outfit";
-  padding: 1rem 2rem;
   border-top: 1px solid #f5f5f5;
+  background: #fff;
 }
 
-.footer-container {
+.footer__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  height: 56px;
 }
 
-.footer-left {
-  font-size: 1.25rem;
-  font-weight: 400;
+.footer__logo {
+  display: flex;
+  align-items: center;
+  width: 189px;
+  height: 100%;
+  margin-left: 3rem;
+  box-sizing: border-box;
 }
 
-.footer-left span {
-  font-size: 1.5rem;
-  font-weight: 500;
-  background: var(--souten-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-right: 0.4rem;
+.footer__logo img {
+  width: 189px;
+  display: block;
 }
 
-.footer-right {
+.footer__right {
   display: flex;
   gap: 1rem;
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 0.875rem;
+  margin-right: 1.25rem;
 }
 
 @media (max-width: 768px) {
-  .footer-container {
+  .footer__container {
+    height: 96px;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.25rem;
   }
 
-  .footer-right {
-    text-align: center;
+  .footer__logo {
+    margin-left: 1.5rem;
+    height: auto;
+  }
+
+  .footer__right {
+    flex-direction: column;
+    gap: 0rem;
+    margin-left: 1.25rem;
+    margin-right: 0;
   }
 }

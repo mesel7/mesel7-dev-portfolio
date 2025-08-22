@@ -5,12 +5,12 @@ import { splitTextByNewline } from '../../utils';
 const SkillItem = ({ icon: IconComponent, itemKey, since }) => {
   const { t } = useTranslation();
 
-  const title = t(`skills.${itemKey}.title`);
-  const description = t(`skills.${itemKey}.description`);
+  const title = t(`about.skills.${itemKey}.title`);
+  const description = t(`about.skills.${itemKey}.description`);
   const descriptionLines = splitTextByNewline(description);
 
   return (
-    <div className="skill-item">
+    <div className="skill-item u-break u-min0">
       <div className="skill-item__image-wrapper">
         <IconComponent />
       </div>

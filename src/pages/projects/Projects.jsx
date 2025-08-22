@@ -1,20 +1,28 @@
 import './Projects.css';
 import ProjectItem from '../../components/projects/ProjectItem';
 import { projectsPreData } from '../../portfolio-data';
+import { useTranslation } from 'react-i18next';
 
 const Projects = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="projects">
-      <div className="projects__content">
-        <div className="projects__title-section">
-          <div className="projects__title">PROJECTS</div>
-          <div className="projects__title-background">PROJECTS</div>
+      <div className="projects__title u-break">{t('projects.page.title')}</div>
+      <div className="projects__divider"></div>
+      <div className="projects__lead">{t('projects.page.lead')}</div>
+
+      <div className="projects__section">
+        <div className="projects__section-header u-break">
+          <div className="projects__section-heading">
+            {t('projects.page.sections.mainProjects.heading')}
+          </div>
+          <div className="projects__section-caption">
+            {t('projects.page.sections.mainProjects.caption')}
+          </div>
         </div>
-        <div className="projects__subtitle-section">
-          <div className="projects__subtitle-bar"></div>
-          <div className="projects__subtitle">MY PROJECTS</div>
-        </div>
-        <div className="projects-list">
+
+        <div className="projects__list">
           {projectsPreData.map((project, idx) => (
             <ProjectItem key={idx} {...project} />
           ))}

@@ -7,6 +7,7 @@ import Layout from './layouts/layout/Layout';
 import About from './pages/about/About';
 import { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import ScrollToTop from './components/common/ScrollToTop';
 
 function App() {
   const { i18n } = useTranslation(); // i18n.language 자동 추적됨
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <div className="App">
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />

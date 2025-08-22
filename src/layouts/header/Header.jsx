@@ -1,12 +1,20 @@
 import './Header.css';
-import logo from '../../assets/images/logo.svg';
+import logoDefault from '../../assets/images/logo-default.png';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { menuItems, MobileMenuIcons, PCMenuIcons } from '../../utils';
+import {
+  linkItemsMobile,
+  menuItems,
+  menuItemsMobile,
+  MobileMenuIcons,
+  PCMenuIcons,
+} from '../../utils';
 import MenuItem from './MenuItem';
 import { useEffect, useState } from 'react';
 import { Mobile, PC } from '../../components/common/ResponsiveComponents';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useTranslation } from 'react-i18next';
+import MenuItemMobile from './MenuItemMobile';
+import LinkItemMobile from './linkItemMobile';
 
 const Header = () => {
   const [selectedRoute, setSelectedRoute] = useState('');
@@ -14,6 +22,7 @@ const Header = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { i18n } = useTranslation();
+  const currentLang = i18n.resolvedLanguage || 'ko';
 
   useEffect(() => {
     setSelectedRoute(location.pathname);
@@ -29,7 +38,14 @@ const Header = () => {
     return selectedRoute.startsWith(route) && selectedRoute !== '/';
   };
 
-  const handleTitleClick = () => navigate('/');
+  const handleTitleClick = () => {
+    navigate('/');
+
+    // 모바일인 경우 메뉴 닫음
+    if (showMenu) {
+      setShowMenu(false);
+    }
+  };
 
   const handleMenuClick = (e) => {
     const route = e.currentTarget.getAttribute('data-route');
@@ -37,17 +53,25 @@ const Header = () => {
     if (route) {
       navigate(route);
       setSelectedRoute(route);
+
+      // 모바일인 경우 메뉴 닫음
+      setShowMenu(false);
     } else if (url) {
       window.open(url, '_blank');
     }
-    setShowMenu(false);
   };
 
+  // 모바일 메뉴 열기
   const handleMobileMenuClick = () => setShowMenu(!showMenu);
 
   const handleLanguageToggle = () => {
-    const nextLang = i18n.language === 'ko' ? 'ja' : 'ko';
+    const nextLang = currentLang === 'ko' ? 'ja' : 'ko';
     i18n.changeLanguage(nextLang);
+
+    // 모바일인 경우 메뉴 닫음
+    if (showMenu) {
+      setShowMenu(false);
+    }
   };
 
   const handleContactClick = () => {
@@ -55,15 +79,14 @@ const Header = () => {
   };
 
   return (
-    <div className="header">
+    <header className="header">
       <PC>
-        <div className="header-container">
-          <div className="header-logo" onClick={handleTitleClick}>
-            <img src={logo} alt={'logo'} />
-            <div className="logo-text">mesel7</div>
+        <div className="header__container--pc">
+          <div className="header__logo">
+            <img src={logoDefault} alt="logo" onClick={handleTitleClick} />
           </div>
-          <div className="header-right">
-            <div className="menu-items">
+          <div className="header__right">
+            <div className="header__menu-items">
               {menuItems.map((item, idx) => (
                 <MenuItem
                   key={idx}
@@ -73,12 +96,12 @@ const Header = () => {
                 />
               ))}
             </div>
-            <div className="lang-contact">
-              <div className="lang-switch" onClick={handleLanguageToggle}>
+            <div className="header__lang-contact">
+              <div className="header__lang-switch" onClick={handleLanguageToggle}>
                 <FontAwesomeIcon icon={PCMenuIcons.faGlobe} />
-                {i18n.language === 'ko' ? ' JAPANESE' : ' KOREAN'}
+                {currentLang === 'ko' ? ' JAPANESE' : ' KOREAN'}
               </div>
-              <div className="contact" onClick={handleContactClick}>
+              <div className="header__contact" onClick={handleContactClick}>
                 <FontAwesomeIcon icon={PCMenuIcons.faEnvelope} />
                 CONTACT
               </div>
@@ -87,28 +110,39 @@ const Header = () => {
         </div>
       </PC>
       <Mobile>
-        <div className="header-title" onClick={handleTitleClick}>
-          mesel7
-        </div>
-        <div className="menu-wrapper">
-          <div className="mobile-menu" onClick={handleMobileMenuClick}>
-            <FontAwesomeIcon icon={MobileMenuIcons.faBars} size={'2x'} />
+        <div className="header__container--mobile">
+          <div className="header__mobile-left"></div>
+          <div className="header__logo" onClick={handleTitleClick}>
+            <img src={logoDefault} alt="logo" />
           </div>
-          {showMenu && (
-            <div className="dropdown-menu">
-              {menuItems.map((item, idx) => (
-                <MenuItem
-                  key={idx}
-                  {...item}
-                  isSelected={isSelected(item.dataRoute)}
-                  onClick={handleMenuClick}
-                />
+          <div className="header__mobile-menu" onClick={handleMobileMenuClick}>
+            <FontAwesomeIcon icon={MobileMenuIcons.faBars} />
+          </div>
+        </div>
+        {showMenu && (
+          <div className="menu-box">
+            {menuItemsMobile.map((item, idx) => (
+              <MenuItemMobile key={idx} {...item} onClick={handleMenuClick} />
+            ))}
+            <div className="menu-box__lang-contact">
+              <div className="menu-box__lang-switch u-min0" onClick={handleLanguageToggle}>
+                <FontAwesomeIcon icon={PCMenuIcons.faGlobe} />
+                {currentLang === 'ko' ? ' JAPANESE' : ' KOREAN'}
+              </div>
+              <div className="menu-box__contact u-min0" onClick={handleContactClick}>
+                <FontAwesomeIcon icon={PCMenuIcons.faEnvelope} />
+                CONTACT
+              </div>
+            </div>
+            <div className="menu-box__link-wrapper">
+              {linkItemsMobile.map((item, idx) => (
+                <LinkItemMobile key={idx} {...item} onClick={handleMenuClick} />
               ))}
             </div>
-          )}
-        </div>
+          </div>
+        )}
       </Mobile>
-    </div>
+    </header>
   );
 };
 

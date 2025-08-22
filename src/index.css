@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap");
 
 @font-face {
   font-family: Hiragino;
@@ -122,14 +120,17 @@ input:-moz-autofill {
   --cloud-shadow: 0 0.25rem 1rem rgba(40, 40, 40, 0.1);
 }
 
-@media (max-width: 768px) {
-  html {
-    font-size: 12px;
-  }
+.u-break {
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+.u-min0 {
+  min-width: 0;
+}
+
+@media (max-width: 768px) {
   html {
-    font-size: 1.5625vw; /* 1024px: 1rem = 16px, 768px: 1rem = 12px */
+    font-size: 14px;
   }
 }

@@ -1,66 +1,24 @@
-.project-detail__content {
-  max-width: 1280px;
-  box-sizing: border-box;
-  padding: 4rem;
-}
-
-.project-detail__title-section {
-  position: relative;
-  font-family: "Outfit";
-  font-size: 3.5rem;
-  font-weight: 700;
-  letter-spacing: 0.1rem;
-  display: flex;
-  justify-content: center;
-}
-
 .project-detail__title {
-  background: var(--souten-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  z-index: 1;
-  letter-spacing: 0.15rem;
-  text-shadow: 0 0.2rem 0.5rem rgba(20, 106, 204, 0.3);
-}
-
-.project-detail__title-background {
-  position: absolute;
-  top: 50%;
-  font-size: 6rem;
-  opacity: 0.25;
-  transform: translateY(-55%);
-  letter-spacing: 0.25rem;
-  background: var(--souten-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: blur(0.15rem);
-  white-space: nowrap;
-}
-
-.project-detail__subtitle-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
+  text-align: center;
   font-family: "Outfit";
-  font-size: 1.75rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 600;
   letter-spacing: 0.05rem;
-  padding-top: 4rem;
-  padding-bottom: 3rem;
+  padding: 3rem 0;
 }
 
-.project-detail__subtitle-bar {
+.project-detail__divider {
   width: 100%;
   height: 1px;
   background-color: #f5f5f5;
+  margin-bottom: 3rem;
 }
 
-.project-datail__subtitle {
-  font-family: "Outfit";
-  font-size: 1.75rem;
-  font-weight: 500;
-  letter-spacing: 0.05rem;
+.project-detail__section {
+  max-width: 1280px;
+  margin: 0 auto 3rem;
+  padding: 0 3rem;
+  box-sizing: border-box;
 }
 
 .project-detail__header {
@@ -70,13 +28,18 @@
 .project-detail__name {
   display: flex;
   align-items: center;
+  position: relative;
   gap: 1rem;
   font-size: 1.75rem;
   font-weight: 500;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1.25rem;
 }
 
-.project-detail__name-bar {
+.project-detail__name::before {
+  position: absolute;
+  content: "";
+  left: 0;
   width: 0.25rem;
   height: 3rem;
   background: var(--souten-gradient);
@@ -87,7 +50,7 @@
   font-size: 1.125rem;
   display: flex;
   gap: 2rem;
-  margin-bottom: 1.75rem;
+  margin-bottom: 1.5rem;
 }
 
 .project-detail__info-item {
@@ -102,20 +65,20 @@
   gap: 0.75rem;
   font-family: "Outfit";
   font-size: 1.125rem;
-  margin-bottom: 1.75rem;
+  margin-bottom: 1.5rem;
 }
 
 .project-detail__type {
   font-family: "Outfit";
   font-size: 1.125rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .project-detail__tech {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .project-detail__tech-item {
@@ -130,13 +93,27 @@
   white-space: pre-line;
   line-height: 2.25;
   letter-spacing: 0.05rem;
-  margin-bottom: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-detail__note {
+  background-color: #f5f5f5;
+  font-size: 0.875rem;
+  color: #888;
+  line-height: 1.7;
+  padding: 1rem 1.25rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-detail__note p {
+  margin: 0;
 }
 
 .project-detail__links {
   display: flex;
   gap: 2rem;
-  margin-bottom: 1.75rem;
+  margin-bottom: 1.5rem;
 }
 
 .project-detail__link {
@@ -161,17 +138,16 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  padding: 3rem 0;
-  border-bottom: 1px solid #f5f5f5;
+  margin-top: 3rem;
 }
 
-.project-detail__section {
+.project-detail__insight {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
 }
 
-.project-detail__section-title {
+.project-detail__insight-title {
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -181,30 +157,23 @@
   letter-spacing: 0.025rem;
 }
 
-.project-detail__section-title-bar {
+.project-detail__insight-title-bar {
   width: 0.15rem;
   height: 2.25rem;
   background: var(--souten-medium);
 }
 
-.project-detail__section-content {
+.project-detail__insight-content {
   white-space: pre-line;
   line-height: 2.25;
   letter-spacing: 0.05rem;
 }
 
-.project-detail__note {
-  background-color: #fcfcfc;
-  font-size: 0.875rem;
-  color: #888;
-  line-height: 1.75;
-  padding: 1rem 1.25rem;
-  border-radius: 0.25rem;
-  margin-top: 2rem;
-}
-
-.project-detail__note p {
-  margin: 0;
+.project-detail__button-wrapper {
+  max-width: 1280px;
+  margin: 0 auto 3rem;
+  padding: 0 3rem;
+  box-sizing: border-box;
 }
 
 .project-detail__button-label {
@@ -214,17 +183,45 @@
   margin-bottom: 1rem;
 }
 
-.project-detail__button-wrapper {
-  padding: 2rem 0;
-}
-
 .project-detail__button-wrapper .custom-button svg {
   position: absolute;
-  top: 35%;
-  left: 6%;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%) translateX(0);
   transition: transform 0.3s ease;
 }
 
 .project-detail__button-wrapper .custom-button:hover svg {
-  transform: translateX(-0.25rem);
+  transform: translateY(-50%) translateX(-0.3rem);
+}
+
+.project-detail__loading {
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #888;
+  margin: 3rem;
+}
+
+@media (max-width: 768px) {
+  .project-detail__name {
+    padding-left: 0;
+  }
+
+  .project-detail__name::before {
+    content: none;
+  }
+
+  .project-detail__section {
+    padding: 0 1.5rem;
+  }
+
+  .project-detail__info-line {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .project-detail__button-wrapper {
+    padding: 0 1.5rem;
+  }
 }

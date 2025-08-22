@@ -4,21 +4,18 @@ import './ExperienceItem.css';
 const ExperienceItem = ({ itemKey }) => {
   const { t } = useTranslation();
 
-  const period = t(`experience.${itemKey}.period`);
-  const title = t(`experience.${itemKey}.title`);
-  const role = t(`experience.${itemKey}.role`);
-  const description = t(`experience.${itemKey}.description`);
+  const period = t(`about.experience.${itemKey}.period`);
+  const title = t(`about.experience.${itemKey}.title`);
+  const role = t(`about.experience.${itemKey}.role`);
+  const description = t(`about.experience.${itemKey}.description`);
 
   return (
-    <div className="experience-item">
+    <div className="experience-item u-break u-min0">
       <div className="experience-item__header">
-        <div className="experience-item__bar" />
-        <div className="experience-item__body">
-          <div className="experience-item__title">{title}</div>
-          <div className="experience-item__meta">
-            <div className="experience-item__role">{role}</div>
-            <div className="experience-item__period">{period}</div>
-          </div>
+        <div className="experience-item__title">{title}</div>
+        <div className="experience-item__meta">
+          <div className="experience-item__role">{role}</div>
+          <div className="experience-item__period">{period}</div>
         </div>
       </div>
       <div className="experience-item__description">

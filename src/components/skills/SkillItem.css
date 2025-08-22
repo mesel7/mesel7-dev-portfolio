@@ -37,7 +37,9 @@
 .skill-item__date {
   font-family: "Outfit";
   font-size: 0.875rem;
+  font-weight: 500;
   color: #888;
+  margin-top: 0.125rem;
 }
 
 .skill-item__description {
@@ -50,13 +52,14 @@
 .skill-item__description-line {
   position: relative;
   padding-left: 1.5rem;
+  line-height: 1.7;
 }
 
 .skill-item__description-line::before {
   content: "";
   position: absolute;
   width: 1rem;
-  height: 0.1rem;
+  height: 2px;
   left: 0;
   top: 50%;
   transform: translateY(-50%);

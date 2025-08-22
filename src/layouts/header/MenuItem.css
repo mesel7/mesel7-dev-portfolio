@@ -20,9 +20,3 @@
 .menu-icon-item:hover {
   opacity: 0.5;
 }
-
-@media (max-width: 720px) {
-  .menu-item::before {
-    width: 0;
-  }
-}

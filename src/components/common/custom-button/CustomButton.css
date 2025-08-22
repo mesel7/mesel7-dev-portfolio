@@ -1,16 +1,18 @@
 .custom-button {
-  width: 20rem;
+  width: 100%;
+  max-width: 17rem;
+  height: 3rem;
   position: relative;
   font-family: "Outfit";
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 600;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.05rem;
   background: var(--souten-gradient);
   box-shadow: var(--cloud-shadow);
   border: none;
   color: #fff;
   text-shadow: 0 0.2rem 0.5rem rgba(20, 106, 204, 0.3);
-  padding: 1rem 2.5rem;
+  padding: 0;
   cursor: pointer;
   transition: opacity 0.3s ease;
 }
