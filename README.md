@@ -15,7 +15,7 @@
 ## 📎 기타 정보 / その他の情報
 
 **🧩 프로젝트 링크 / プロジェクトリンク**  
-[`https://mesel7.dev/`](https://mesel7.dev/)  
+[`https://mesel7.dev/`](https://mesel7.dev)  
 
 **🌐 포트폴리오 사이트 / ポートフォリオサイト**  
 [`https://mesel7.dev/projects/portfolio`](https://mesel7.dev/projects/portfolio)  
