@@ -104,6 +104,32 @@
         }
       }
     },
+    "sabiShop": {
+      "name": "sabi-shop",
+      "title": "SABI SHOP - WABI SABI Minimal Coffee Store",
+      "period": "2025.10 ~ 2025.11",
+      "type": "Personal Project / Fullstack",
+      "description": "SABI SHOPは、日本の美意識「侘び寂び(Wabi-Sabi)」から着想を得たミニマルなコーヒーストアです。\n「華やかさよりも余白を、装飾よりも温もりを」というコンセプトのもと、抑えたデザインと直感的なユーザー体験（UX）を追求しました。\nNext.jsのSSRおよびSSGを活用し、SEOパフォーマンスを強化しました。\nTailwind CSSによって高速かつ一貫性のあるデザインシステムを構築し、Redux Toolkitを用いてグローバル状態を効率的に管理しています。\nまた、Firebase AuthとFirestoreを利用してログインおよび注文データを処理し、Vercelによる自動デプロイパイプラインを構築しました。\ni18nに対応し、韓国語と日本語の切り替えが可能な多言語構造を設計しました。",
+      "tech": [
+        "Tailwind CSS",
+        "TypeScript",
+        "React",
+        "Redux Toolkit",
+        "Next.js",
+        "Firebase",
+        "Vercel"
+      ],
+      "links": {
+        "project": "https://sabi-shop.vercel.app",
+        "github": "https://github.com/mesel7/sabi-shop"
+      },
+      "note": "本プロジェクトの主要機能・構造・スクリーンショット等はGitHubにてご確認いただけます。また、プロジェクトリンクから実際のサービスを体験することも可能です。\n本ページでは、開発の背景、課題解決の過程、学んだ点を中心にまとめています。",
+      "insight": {
+        "motive": "これまでのプロジェクトではReact SPAとContext APIを基盤として実装していましたが、レンダリング効率や状態管理の複雑さ、SEO対応において限界を感じていました。\nそこでNext.jsを導入し、CSRだけでなくSSR・SSGの構成を直接体験し、実際のデプロイ環境でSEOおよび初期ロード速度の改善効果を検証しました。\nまた、CSS（BEM命名）による静的スタイリングから脱却し、Tailwind CSSへ移行することで、高速なスタイル設計と一貫したレスポンシブデザインを実現しました。",
+        "problemSolving": "React Context APIの代わりにRedux Toolkitを導入し、カートのように複数ページで共通利用されるグローバル状態をslice単位で構造化し、localStorageと同期させることでデータの永続性を確保しました。\nFirebase Authを用いてユーザー認証を簡素化し、Firestoreで注文データを管理しました。\nまた、VercelのCI/CDパイプラインを構成し、push操作のみで自動デプロイが行える環境を整えました。\nNext.jsの動的ルーティング（App Router）を活用して、商品詳細ページおよび注文履歴を効率的にレンダリングし、i18nの多言語JSON構造をlocaleごとに分離して保守性を向上させました。\nTypeScriptを導入することでコンパイル段階でエラーを事前に検出し、props・stateの型整合性を維持することで安定したコード品質を実現しました。",
+        "learned": "Next.jsへの移行を通じて、React SPAとは異なるレンダリング方式（SSR、SSG、ISR）を理解し、サービス構築におけるクライアントとサーバーの役割分担を明確に把握することができました。\nTailwind CSSの導入によって、デザインシステムの管理効率と生産性の向上を実感し、TypeScriptへのマイグレーションを通じてコードの安全性と保守性を大幅に高めました。\nまた、Redux Toolkitのslice構造により状態管理ロジックがシンプルかつ予測可能になり、Vercelによる自動デプロイにより開発からデプロイ、フィードバックまでのサイクルを大幅に短縮できました。\n結果として、SABI SHOPは技術的な実験と学習を兼ね備えた「次のステップへの成長プロジェクト」となり、フロントエンドエンジニアとして新しい技術スタックを実務レベルで習得した貴重な経験となりました。"
+      }
+    },
     "portfolio": {
       "name": "portfolio",
       "title": "mesel7 Dev Portfolio",
