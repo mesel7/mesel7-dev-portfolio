@@ -130,15 +130,7 @@
       "period": "2025.10 ~ 2025.11",
       "type": "Personal Project / Fullstack",
       "description": "SABI SHOP은 일본 미학 ‘와비사비(侘び寂び)’에서 영감을 받은 미니멀 커피 스토어입니다.\n‘화려함보다 여백을, 꾸밈보다 온기를’이라는 컨셉으로 절제된 디자인과 직관적인 사용자 경험(UX)을 추구하였으며, Next.js의 SSR과 SSG을 활용해 SEO 성능을 강화했습니다.\nTailwind CSS를 통해 빠른 스타일링과 일관된 디자인 시스템을 구축하였고, Redux Toolkit으로 전역 상태를 체계적으로 관리했습니다. 또한, Firebase Auth와 Firestore로 로그인 및 주문 데이터를 처리하고, Vercel을 통해 자동 배포 파이프라인을 구축했습니다.\n다국어(i18n) 지원을 구현하여 한국어·일본어 간 언어 전환이 가능한 구조를 설계했습니다.",
-      "tech": [
-        "Tailwind CSS",
-        "TypeScript",
-        "React",
-        "Redux Toolkit",
-        "Next.js",
-        "Firebase",
-        "Vercel"
-      ],
+      "tech": "Tailwind CSS, TypeScript, React, Redux Toolkit, Next.js, Firebase, Vercel",
       "links": {
         "project": "https://sabi-shop.vercel.app",
         "github": "https://github.com/mesel7/sabi-shop"
@@ -156,7 +148,7 @@
       "period": "2024.07 ~ 2025.08",
       "type": "Personal Project / Fullstack",
       "description": "React와 Firebase 기반으로 제작한 개인 포트폴리오 사이트입니다.\n맑은 여름 하늘에서 착안한 색상 팔레트를 적용하고, 프로젝트·경험·기술 스택을 체계적으로 정리하여 취업 준비와 자기 소개에 활용할 수 있도록 구성했습니다.",
-      "tech": ["HTML5", "CSS3", "JavaScript", "React", "Firebase"],
+      "tech": "HTML5, CSS3, JavaScript, React, Firebase",
       "links": {
         "project": "https://mesel7.dev/",
         "github": "https://github.com/mesel7/portfolio"
@@ -174,7 +166,7 @@
       "period": "2025.03 ~ 2025.06",
       "type": "Team Project (5 members) / Team Leader • Web Frontend",
       "description": "Food Runner는 AI 기능을 활용해 식단과 운동을 손쉽게 관리할 수 있도록 돕는 헬스케어 플랫폼입니다.\nAI가 음식 사진을 분석해 자동으로 영양 정보를 기록하고, 음성 인식을 통해 간편하게 운동 데이터를 입력할 수 있습니다.\n개인의 선호나 상태에 맞춘 식단과 운동 영상을 추천하여 체계적인 건강 관리를 지원합니다.\n웹과 모바일(Android/iOS)을 모두 지원하는 크로스 플랫폼으로 개발되어 뛰어난 접근성과 사용자 경험을 제공합니다.",
-      "tech": ["React", "Spring Boot", "OpenAI API", "Google Cloud Vision API", "MySQL"],
+      "tech": "React, Spring Boot, OpenAI API, Google Cloud Vision API, MySQL",
       "links": {
         "project": "",
         "github": "https://github.com/25-capstone-team-breakthrough/food-runner-web-fe",
@@ -193,7 +185,7 @@
       "period": "2024.09 ~ 2024.12",
       "type": "Team Project (4 members) / Web Frontend",
       "description": "마음의 날씨는 LLM 기반 감정 분석과 심리 상담 기능을 도입한 일기 웹 앱입니다.\n사용자가 감정을 기록하고 심리적 도움을 얻을 수 있도록 지원하며, 캘린더와 해시태그, 일기 검색 기능으로 작성한 일기를 편리하게 관리할 수 있습니다.\nAI가 분석한 감정과 해시태그를 기반으로 사용자는 자신의 감정을 더 깊이 인식하고 표현할 수 있습니다.",
-      "tech": ["React", "Node.js", "Firebase Auth", "OpenAI API", "OpenWeather API", "MySQL"],
+      "tech": "React, Node.js, Firebase Auth, OpenAI API, OpenWeather API, MySQL",
       "links": {
         "project": "",
         "github": "https://github.com/24-precapstone-team3/weather-diary-fe"
@@ -211,7 +203,7 @@
       "period": "2024.07 ~ 2024.08",
       "type": "Personal Project / Fullstack",
       "description": "Seremeety는 자만추가 어려운 대학생들을 위한 검증된 정보 기반의 건전한 연애 플랫폼입니다.\n‘세레나데’와 ‘미팅’을 결합한 이름처럼, 감성적인 분위기와 함께 자연스럽고 건강한 만남을 유도하며, 파스텔 톤의 세레니티 블루 테마를 적용해 연애 감성을 시각적으로 담아냈습니다.\n브라우저만 있으면 누구나 플랫폼 구애 없이 이용할 수 있도록 웹 앱으로 구현되었으며, 네이티브 앱에 가까운 사용자 경험(UX)을 제공하기 위해 인터랙션과 화면 흐름을 구성하였습니다.",
-      "tech": ["HTML5", "CSS3", "JavaScript", "React", "Firebase"],
+      "tech": "HTML5, CSS3, JavaScript, React, Firebase",
       "links": {
         "project": "https://seremeety-kr.web.app/",
         "github": "https://github.com/mesel7/seremeety-web"
@@ -229,7 +221,7 @@
       "period": "2024.01 ~ 2024.06",
       "type": "Team Project (3 members) / Web Frontend",
       "description": "Sweetii는 대학교 인증 시스템과 상세한 사용자 프로필을 기반으로, 건전한 매칭 환경을 제공하는 소개팅 플랫폼입니다.\n기획팀과 협업하여 매칭 로직, 수익 모델, 디자인을 기획하고, 그에 맞춘 UI/UX를 구현하여 실제 사용자 경험 향상에 중점을 두었습니다.\nVanilla JS로 구현된 웹 앱이며, Firebase를 활용한 인증, Database 연동, Hosting까지 전반적인 개발 및 배포를 담당했습니다.\n실제 사용자 대상의 서비스 운영과 정기적인 온라인 홍보 활동도 함께 진행했습니다.",
-      "tech": ["HTML5", "CSS3", "JavaScript", "Firebase"],
+      "tech": "HTML5, CSS3, JavaScript, Firebase",
       "links": {
         "project": "",
         "github": "https://github.com/mesel7/sweetii-docs"

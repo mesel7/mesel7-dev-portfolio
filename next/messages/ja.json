@@ -114,15 +114,7 @@
       "period": "2025.10 ~ 2025.11",
       "type": "Personal Project / Fullstack",
       "description": "SABI SHOPは、日本の美意識「侘び寂び(Wabi-Sabi)」から着想を得たミニマルなコーヒーストアです。\n「華やかさよりも余白を、装飾よりも温もりを」というコンセプトのもと、抑えたデザインと直感的なユーザー体験（UX）を追求しました。\nNext.jsのSSRおよびSSGを活用し、SEOパフォーマンスを強化しました。\nTailwind CSSによって高速かつ一貫性のあるデザインシステムを構築し、Redux Toolkitを用いてグローバル状態を効率的に管理しています。\nまた、Firebase AuthとFirestoreを利用してログインおよび注文データを処理し、Vercelによる自動デプロイパイプラインを構築しました。\ni18nに対応し、韓国語と日本語の切り替えが可能な多言語構造を設計しました。",
-      "tech": [
-        "Tailwind CSS",
-        "TypeScript",
-        "React",
-        "Redux Toolkit",
-        "Next.js",
-        "Firebase",
-        "Vercel"
-      ],
+      "tech": "Tailwind CSS, TypeScript, React, Redux Toolkit, Next.js, Firebase, Vercel",
       "links": {
         "project": "https://sabi-shop.vercel.app",
         "github": "https://github.com/mesel7/sabi-shop"
@@ -140,7 +132,7 @@
       "period": "2024.07 ~ 2025.08",
       "type": "Personal Project / Fullstack",
       "description": "ReactとFirebaseを基盤に制作した個人ポートフォリオサイトです。\n爽やかな夏の空から着想を得たイメージのカラーパレットを採用し、プロジェクト・経験・技術スタックを体系的に整理して、就職活動や自己PRに活用できるよう構成しました。",
-      "tech": ["HTML5", "CSS3", "JavaScript", "React", "Firebase"],
+      "tech": "HTML5, CSS3, JavaScript, React, Firebase",
       "links": {
         "project": "https://mesel7.dev/",
         "github": "https://github.com/mesel7/portfolio"
@@ -158,7 +150,7 @@
       "period": "2025.03 ~ 2025.06",
       "type": "Team Project (5 members) / Team Leader • Web Frontend",
       "description": "Food Runnerは、AI機能を活用して食事と運動を手軽に管理できるよう支援するヘルスケアプラットフォームです。\nAIが料理の写真を分析して自動的に栄養情報を記録し、音声認識を通じて簡単に運動データを入力できます。\nユーザーの好みや体調に合わせた食事や運動動画を提案し、体系的な健康管理をサポートいたします。\nWebとモバイル（Android/iOS）の両方に対応したクロスプラットフォームで開発されており、優れたアクセス性とユーザー体験を提供いたします。",
-      "tech": ["React", "Spring Boot", "OpenAI API", "Google Cloud Vision API", "MySQL"],
+      "tech": "React, Spring Boot, OpenAI API, Google Cloud Vision API, MySQL",
       "links": {
         "project": "",
         "github": "https://github.com/25-capstone-team-breakthrough/food-runner-web-fe",
@@ -177,7 +169,7 @@
       "period": "2024.09 ~ 2024.12",
       "type": "Team Project (4 members) / Web Frontend",
       "description": "心の天気は、LLMベースの感情分析および心理相談機能を導入した日記型Webアプリケーションです。\nユーザーが日々の感情を記録し、心理的なサポートを得られるよう支援するものであり、カレンダー・ハッシュタグ・日記検索機能を通じて、記録した日記を便利に管理することができます。\nAIによって分析された感情とハッシュタグをもとに、ユーザーは自身の感情状態をより深く認識し、適切に表現できるようになります。",
-      "tech": ["React", "Node.js", "Firebase Auth", "OpenAI API", "OpenWeather API", "MySQL"],
+      "tech": "React, Node.js, Firebase Auth, OpenAI API, OpenWeather API, MySQL",
       "links": {
         "project": "",
         "github": "https://github.com/24-precapstone-team3/weather-diary-fe"
@@ -195,7 +187,7 @@
       "period": "2024.07 ~ 2024.08",
       "type": "Personal Project / Fullstack",
       "description": "Seremeetyは、自然な出会いが難しい大学生のための、信頼性のある情報に基づいた健全なマッチングプラットフォームです。\n「セレナーデ（Serenade）」と「ミーティング（Meeting）」を組み合わせたネーミングの通り、感性的な雰囲気の中で、ナチュラルかつ健全な出会いを提供することを目指しています。\n色彩テーマには、ロマンチックな印象を与えるセレニティブルーのパステルカラーを採用し、恋愛の感情をビジュアル面でも表現しました。\n本サービスは、PCやスマートフォンなど、ブラウザさえあればどのデバイスからでも利用できるWebアプリとして構築されています。\nネイティブアプリに近い直感的でスムーズなユーザー体験（UX）を実現するため、インタラクションと画面遷移に工夫を凝らしました。",
-      "tech": ["HTML5", "CSS3", "JavaScript", "React", "Firebase"],
+      "tech": "HTML5, CSS3, JavaScript, React, Firebase",
       "links": {
         "project": "https://seremeety-kr.web.app/",
         "github": "https://github.com/mesel7/seremeety-web"
@@ -213,7 +205,7 @@
       "period": "2024.01 ~ 2024.06",
       "type": "Team Project (3 members) / Web Frontend",
       "description": "Sweetiiは、大学認証システムと詳細なプロフィールを通じて、信頼性の高いマッチング環境を提供する出会い系プラットフォームです。\n企画チームと連携してマッチングロジック、収益モデル、デザインを設計し、それに基づいたUI/UXを実装することで、実際のユーザー体験の向上に努めました。\n本サービスはVanilla JSで構築されたWebアプリであり、Firebaseを活用して認証、Database連携、Hostingまで全体の開発とデプロイを担当しました。\n実際のユーザーに向けてサービスを運営し、定期的なオンラインプロモーション活動も行いました。",
-      "tech": ["HTML5", "CSS3", "JavaScript", "Firebase"],
+      "tech": "HTML5, CSS3, JavaScript, Firebase",
       "links": {
         "project": "",
         "github": "https://github.com/mesel7/sweetii-docs"
