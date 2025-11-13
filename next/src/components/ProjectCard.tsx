@@ -23,7 +23,7 @@ function slugify(s: string) {
     .replace(/\s+/g, '-');
 }
 
-export default function ProjectItem({ itemKey }: Props) {
+export default function ProjectCard({ itemKey }: Props) {
   const t = useTranslations();
   const router = useRouter();
   const locale = useLocale();
@@ -43,22 +43,19 @@ export default function ProjectItem({ itemKey }: Props) {
       className="h-full cursor-pointer p-6 shadow-[0_4px_16px_rgba(0,0,0,0.08)] transition-opacity hover:opacity-75 flex flex-col"
     >
       <header className="flex flex-col gap-1">
-        <h3 className="text-[1.125rem] font-bold">{title}</h3>
-        <div className="font-outfit text-sm text-gray-500">{period}</div>
+        <h3 className="font-semibold">{title}</h3>
+        <div className="font-outfit text-sm font-medium text-gray-500">{period}</div>
 
         <div className="mt-2 flex flex-wrap gap-1">
           {tech?.map((tag, i) => (
-            <span
-              key={i}
-              className="font-outfit text-sm px-1.5 py-0.5 rounded border border-gray-200"
-            >
+            <span key={i} className="font-outfit text-sm font-medium px-1.5 border border-gray-200">
               {tag}
             </span>
           ))}
         </div>
       </header>
 
-      <p className="mt-4 text-sm leading-7">{firstSentence(description)}</p>
+      <p className="mt-2 text-sm leading-7">{firstSentence(description)}</p>
     </article>
   );
 }

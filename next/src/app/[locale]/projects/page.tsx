@@ -1,8 +1,8 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import ProjectItem from '@/components/ProjectItem';
 import { projectsPreData } from '@/data/portfolio';
+import ProjectCard from '@/components/ProjectCard';
 
 export default function ProjectsPage() {
   const t = useTranslations('projects.page');
@@ -42,7 +42,7 @@ export default function ProjectsPage() {
         {/* 그리드 리듬: About의 skills와 동일한 여백/간격 */}
         <div className="grid gap-6 md:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-stretch">
           {projectsPreData.map((p) => (
-            <ProjectItem key={p.itemKey} itemKey={p.itemKey} />
+            <ProjectCard key={p.itemKey} itemKey={p.itemKey} />
           ))}
         </div>
       </section>
