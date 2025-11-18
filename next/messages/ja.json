@@ -1,119 +1,228 @@
 {
-  "nav": {
-    "about": "ABOUT",
-    "projects": "PROJECTS"
-  },
   "home": {
-    "page": {
-      "title": "WEB DEVELOPER",
-      "greeting": "こんにちは :)",
-      "description": "私は、視覚的な美しさはもちろん、使いやすさにも気を配ったUI/UXを目指して開発に取り組んでおります。特にフロントエンドは、ユーザーとの接点に最も近い部分であり、単なる画面実装にとどまらず、サービスがユーザーにどう認識され、どのように体験されるかを設計する仕事だと考えます。日本は、多彩な分野で質の高いコンテンツを生み出し、また、細部までユーザーに配慮した、洗練されたサービスが数多く存在しています。そのような点が、私の開発姿勢とも通じる部分が多いと感じました。この環境でしか得られない経験を通じ、技術力はもちろん、ユーザー体験を設計し、サービス価値を創り出す力を高めたいと考えております。",
-      "cta": {
-        "moreAboutMe": "MORE ABOUT ME"
-      },
-      "sections": {
-        "profile": {
-          "heading": "PROFILE",
-          "caption": "プロフィール",
-          "items": {
-            "name": { "label": "NAME", "value": "KIM DONGHYEON" },
-            "birthdate": { "label": "BIRTHDATE", "value": "1999.04.28" },
-            "phone": { "label": "PHONE", "value": "010-5954-2166" },
-            "email": { "label": "EMAIL", "value": "cejhans1520@gmail.com" },
-            "address": { "label": "ADDRESS", "value": "Seoul, Korea" },
-            "language": { "label": "LANGUAGE", "value": "Korean / Japanese" }
-          }
-        }
-      }
-    }
-  },
-
-  "about": {
-    "page": {
-      "title": "ABOUT",
-      "lead": "私が主に使用している技術スタックと開発経験をご紹介いたします。",
-      "sections": {
-        "tech": {
-          "heading": "TECH STACK",
-          "caption": "技術スタック"
+    "hero": {
+      "line1": "I'm Donghyeon",
+      "role": "Web Developer",
+      "description": "私はフロントエンドを中心に、画面だけでなくサービス全体の構造や自然な動作まで設計する Web エンジニアです。React・Next.js を基盤に、フロー・コンポーネント・インタラクションを丁寧に整え、デベロッパーツールで詳細に分析しながら小さな不便も改善していくことを大切にしています。チーム開発では、明確なコミュニケーションと一貫した構造を重視し、安定性が高く使いやすいユーザー体験(UX)を実現することに注力しています。"
+    },
+    "contactBar": {
+      "contactItems": [
+        {
+          "type": "email",
+          "label": "cejhans1520@gmail.com",
+          "icon": "/images/icon/mail-icon.svg",
+          "link": "mailto:cejhans1520@gmail.com"
         },
-        "experience": {
-          "heading": "EXPERIENCE",
-          "caption": "開発経験"
+        {
+          "type": "phone",
+          "label": "010-5954-2166",
+          "icon": "/images/icon/call-icon.svg",
+          "link": "tel:01059542166"
+        },
+        {
+          "type": "location",
+          "label": "Seoul, Korea",
+          "icon": "/images/icon/location-icon.svg",
+          "link": "https://www.google.com/maps/search/?api=1&query=Seoul,Korea"
         }
-      }
+      ],
+      "socialItems": [
+        {
+          "platform": "github",
+          "icon": "/images/icon/github-icon.svg",
+          "link": "https://github.com/mesel7"
+        },
+        {
+          "platform": "linkedin",
+          "icon": "/images/icon/linkedin-icon.svg",
+          "link": "https://linkedin.com"
+        }
+      ]
     },
-    "skills": {
-      "html": {
-        "title": "HTML5",
-        "description": "セマンティックタグを活用した構造的なマークアップが可能です。\nWeb標準やアクセシビリティを考慮したレイアウト設計に対応できます。\n簡潔で保守性の高いHTMLを書くことを得意としています。"
-      },
-      "css": {
-        "title": "CSS3",
-        "description": "Flexboxとメディアクエリを組み合わせたレスポンシブレイアウトの実装が可能です。\nBEM方法論とブラウザ開発者ツールを活用し、構造的なクラス設計や細部のスタイルデバッグに対応できます。\nコンポーネント単位でのカスタムスタイル設計にも慣れています。"
-      },
-      "js": {
-        "title": "JavaScript",
-        "description": "Vanilla JavaScriptでDOM操作やイベント処理を実装できます。\nES6構文（アロー関数、分割代入、テンプレートリテラルなど）を活用可能です。\naxiosを用いたバックエンド（Spring Boot）との非同期通信実装経験があります。"
-      },
-      "react": {
-        "title": "React",
-        "description": "コンポーネントベースのUI開発、React Routerによるルーティング、条件付きレンダリングなどの基本構造を理解しています。\nuseStateでのローカル状態管理、Contextによるグローバル状態の設計・管理が可能です。\nuseCallbackやReact.memoを活用し、パフォーマンス最適化を意識した開発を行っています。"
-      },
-      "node": {
-        "title": "Node.js",
-        "description": "Node.jsの実行構造やランタイム環境を理解しています。\nnpmでプロジェクト依存関係を管理できます。\nローカルサーバー構築やバックエンド連携にNode.jsを使用した経験があります。"
-      },
-      "git": {
-        "title": "Git / GitHub",
-        "description": "Gitを使用してプロジェクトのバージョン管理やチームでの協働経験があります。\nPull Request、Merge、Rebaseなどの基本的なブランチ戦略を理解しています。\nGitHubを通じたコードレビューやIssue管理の経験があります。"
-      }
+    "aboutMe": {
+      "title": "About Me",
+      "sectionIndex": "( 01 )",
+      "description": "コンピュータ工学を基盤に、Web・モバイル・バックエンドまで幅広く学んできました。Vanilla JS から React・Next.js・TypeScript へと段階的に Web 開発のスキルを高めており、新しい技術は実際に比較・検証しながら習得することを好みます。自分でサービスを設計し構築していくプロセスに強い興味を持っています。",
+      "stats": [
+        {
+          "count": "5+",
+          "label": "Years of coding experience"
+        },
+        {
+          "count": "6+",
+          "label": "Web / App projects"
+        },
+        {
+          "count": "3+",
+          "label": "Team & startup programs"
+        }
+      ],
+      "languages": ["Korean", "Japanese"]
     },
-    "experience": {
-      "capstone": {
-        "period": "2025.03 ~ 2025.06",
-        "title": "Capstone Design Project",
-        "role": "Team Leader / Frontend Developer",
-        "description": "キャップストーンプロジェクトにて5人チームのリーダーを務め、Webフロントエンドの開発を担当いたしました。モバイルとWebの双方に対応するクロスプラットフォーム構成のサービスを実装し、OpenAI APIとSpring Bootを用いたバックエンドとの連携設計、ユーザー導線を意識したUI/UXの構築を通じて、ソフトウェア開発全体の流れを理解し、チーム開発のマネジメント経験を積むことができました。"
-      },
-      "preCapstone": {
-        "period": "2024.09 ~ 2024.12",
-        "title": "Pre-Capstone: Industry Collaboration Project",
-        "role": "Frontend Developer",
-        "description": "Reactのスキルを実践的なチーム開発に初めて応用したプロジェクトです。企業連携型の学内プロジェクトにて、4人チームの一員としてフロントエンド開発を担当いたしました。RESTful APIとの連携、Context APIによる状態管理、レスポンシブデザインの最適化など、幅広い実装を行いました。完成度の高さが評価され、学内にて優秀賞を受賞いたしました。"
-      },
-      "reactPractice": {
-        "period": "2024.07 ~ 2024.08",
-        "title": "React Practice Projects",
-        "role": "Personal Project",
-        "description": "初期のプロジェクトを通じて、Vanilla JSのデバッグのしやすさは理解した一方で、生産性や保守性の限界も感じ、Reactを独学いたしました。その後、新たにマッチングWebアプリをReactで企画・開発し、併せてポートフォリオサイトも制作する中で、状態管理、ルーティング、Context設計、パフォーマンス最適化などの技術理解を体系的に深めることができました。"
-      },
-      "playin": {
-        "period": "2024.01 ~ 2024.06",
-        "title": "PLAY-IN (Startup Collaboration)",
-        "role": "Frontend Developer",
-        "description": "スタートアップとの連携による初めての実務的プロジェクトであり、企画チームと協力して大学生向けマッチングWebアプリの開発と運用を行いました。HTML・CSS・Vanilla JS・Firebaseを用いてフロントエンド全体の実装および本番環境へのデプロイを担当し、ユーザーフィードバックに基づき、画像の最適化や読み込み速度の改善など、実運用上の課題に積極的に対応いたしました。"
-      }
+    "experiences": {
+      "title": "Experience",
+      "sectionIndex": "( 02 )",
+      "items": [
+        {
+          "year": "25.03 ~ 25.06",
+          "title": "Capstone Design Project",
+          "company": "Team Leader / Frontend Developer",
+          "type": "University Capstone Project",
+          "description": "5名チームのリーダーとして、Webフロントエンドのアーキテクチャ設計・実装を担当しました。React を用いた Web・モバイル統合 UI の構築、OpenAI API との連携、Spring Boot バックエンドとの通信構造を設計し、サービス全体のフローを技術的に統括しました。"
+        },
+        {
+          "year": "24.09 ~ 24.12",
+          "title": "Pre-Capstone: Industry Collaboration",
+          "company": "Frontend Developer",
+          "type": "Industry Collaboration Project",
+          "description": "企業連携プロジェクトにて React ベースのフロントエンド開発を担当しました。REST API 連携、Context・Reducer を活用したグローバル状態管理、レスポンシブ UI の最適化、コンポーネント単位での構造化などを実施し、プロジェクトの完成度が高く学内優秀賞を受賞しました。"
+        },
+        {
+          "year": "24.07 ~ 24.08",
+          "title": "React Practice Projects",
+          "company": "Personal Project",
+          "type": "Self-driven Study",
+          "description": "React エコシステムを集中的に学習し、出会いアプリやポートフォリオサイトなどの個人プロジェクトを開発しました。Routing、グローバル状態管理、コンポーネント構造設計、useMemo / useCallback を用いたパフォーマンス最適化、レスポンシブ UI パターンなど、実践的な開発手法を習得しました。"
+        },
+        {
+          "year": "24.01 ~ 24.06",
+          "title": "PLAY-IN (Startup Collaboration)",
+          "company": "Frontend Developer",
+          "type": "Startup Collaboration Project",
+          "description": "HTML・CSS・Vanilla JS・Firebase を用いてフロントエンド全体を単独で開発し、デプロイまで担当しました。画像圧縮、キャッシュ戦略、Firebase Realtime DB の構造改善など、実サービス運用におけるパフォーマンス・UX 課題を自ら分析し、改善しました。"
+        }
+      ]
+    },
+    "educationSkills": {
+      "title": "Education & Skills",
+      "sectionIndex": "( 03 )",
+      "education": [
+        {
+          "title": "Hansung University - Computer Science (2020~ )",
+          "description": "Web/モバイルプログラミング、バックエンド、ソフトウェア工学、データベースなど、Webサービス全般を扱う専門科目を履修しました。資料構造、アルゴリズム、オペレーティングシステムなどのCS基礎とともに、プロジェクトベースの学習を通して Frontend-Backend 連携、API 設計、UI/UX 実装など、実際のサービス開発フローを体系的に習得しました."
+        },
+        {
+          "title": "Sejong Science High School (2015~2018)",
+          "description": "C 言語の基礎および Java leJOS を用いたロボティクスプログラミングを学び、工学的思考の基盤を築きました。理数中心の教育を通して、論理的思考力と問題解決能力を強化しました."
+        }
+      ],
+      "skills": [
+        {
+          "name": "Next.js",
+          "icon": "/images/home/education-skill/next-icon.svg",
+          "rating": 3
+        },
+        {
+          "name": "React",
+          "icon": "/images/home/education-skill/react-icon.svg",
+          "rating": 5
+        },
+        {
+          "name": "Redux Toolkit",
+          "icon": "/images/home/education-skill/redux-icon.svg",
+          "rating": 3
+        },
+        {
+          "name": "TypeScript",
+          "icon": "/images/home/education-skill/ts-icon.svg",
+          "rating": 3
+        },
+        {
+          "name": "Tailwind CSS",
+          "icon": "/images/home/education-skill/tailwind-icon.svg",
+          "rating": 3
+        },
+        {
+          "name": "Node.js",
+          "icon": "/images/home/education-skill/node-icon.svg",
+          "rating": 4
+        },
+        {
+          "name": "HTML5",
+          "icon": "/images/home/education-skill/html-icon.svg",
+          "rating": 5
+        },
+        {
+          "name": "CSS3",
+          "icon": "/images/home/education-skill/css-icon.svg",
+          "rating": 5
+        },
+        {
+          "name": "JavaScript",
+          "icon": "/images/home/education-skill/js-icon.svg",
+          "rating": 5
+        },
+        {
+          "name": "Git / GitHub",
+          "icon": "/images/home/education-skill/git-icon.svg",
+          "rating": 4
+        },
+        {
+          "name": "Figma",
+          "icon": "/images/home/education-skill/figma-icon.svg",
+          "rating": 2
+        },
+        {
+          "name": "Photoshop",
+          "icon": "/images/home/education-skill/photoshop-icon.svg",
+          "rating": 2
+        }
+      ]
+    },
+    "latestWork": {
+      "title": "Projects",
+      "sectionIndex": "( 04 )",
+      "works": [
+        {
+          "image": "/images/work/sabi-shop.jpg",
+          "title": "SABI SHOP - WABI SABI Minimal Coffee Store",
+          "client": "Personal Project / Fullstack",
+          "slug": "sabi-shop"
+        },
+        {
+          "image": "/images/work/food-runner.jpg",
+          "title": "Food Runner - AI を活用したヘルスケアプラットフォーム",
+          "client": "Team Project (5) / Team Leader · Web Frontend",
+          "slug": "food-runner"
+        },
+        {
+          "image": "/images/work/weather-diary.jpg",
+          "title": "心の天気 - 感情記録プラットフォーム",
+          "client": "Team Project (4) / Web Frontend",
+          "slug": "weather-diary"
+        },
+        {
+          "image": "/images/work/seremeety.jpg",
+          "title": "Seremeety - 出会いのセレナーデ",
+          "client": "Personal Project / Fullstack",
+          "slug": "seremeety"
+        },
+        {
+          "image": "/images/work/sweetii.jpg",
+          "title": "Sweetii - 甘い出会い",
+          "client": "Team Project (3) / Web Frontend",
+          "slug": "sweetii"
+        },
+        {
+          "image": "/images/work/portfolio.jpg",
+          "title": "mesel7 Dev Portfolio",
+          "client": "Personal Project / Frontend",
+          "slug": "portfolio"
+        }
+      ]
     }
   },
 
   "projects": {
-    "page": {
-      "title": "PROJECTS",
-      "lead": "私がこれまでに取り組んだプロジェクトの中から、代表的なものをご紹介いたします。",
-      "sections": {
-        "mainProjects": {
-          "heading": "MAIN PROJECTS",
-          "caption": "主なプロジェクト"
-        }
-      }
-    },
-    "sabiShop": {
+    "title": "Project Detail",
+    "sectionIndex": "( 05 )",
+
+    "sabi-shop": {
       "name": "sabi-shop",
       "title": "SABI SHOP - WABI SABI Minimal Coffee Store",
       "period": "2025.10 ~ 2025.11",
       "type": "Personal Project / Fullstack",
-      "description": "SABI SHOPは、日本の美意識「侘び寂び(Wabi-Sabi)」から着想を得たミニマルなコーヒーストアです。\n「華やかさよりも余白を、装飾よりも温もりを」というコンセプトのもと、抑えたデザインと直感的なユーザー体験（UX）を追求しました。\nNext.jsのSSRおよびSSGを活用し、SEOパフォーマンスを強化しました。\nTailwind CSSによって高速かつ一貫性のあるデザインシステムを構築し、Redux Toolkitを用いてグローバル状態を効率的に管理しています。\nまた、Firebase AuthとFirestoreを利用してログインおよび注文データを処理し、Vercelによる自動デプロイパイプラインを構築しました。\ni18nに対応し、韓国語と日本語の切り替えが可能な多言語構造を設計しました。",
+      "description": "SABI SHOPは、日本の美意識「侘び寂び(Wabi-Sabi)」から着想を得たミニマルなコーヒーストアです。\n「華やかさよりも余白を、装飾よりも温もりを」というコンセプトのもと、抑えたデザインと直感的なユーザー体験(UX)を追求しました。\nNext.jsのSSRおよびSSGを活用し、SEOパフォーマンスを強化しました。\nTailwind CSSによって高速かつ一貫性のあるデザインシステムを構築し、Redux Toolkitを用いてグローバル状態を効率的に管理しています。\nまた、Firebase AuthとFirestoreを利用してログインおよび注文データを処理し、Vercelによる自動デプロイパイプラインを構築しました。\ni18nに対応し、韓国語と日本語の切り替えが可能な多言語構造を設計しました。",
       "tech": "Tailwind CSS, TypeScript, React, Redux Toolkit, Next.js, Firebase, Vercel",
       "links": {
         "project": "https://sabi-shop.vercel.app",
@@ -121,35 +230,35 @@
       },
       "note": "本プロジェクトの主要機能・構造・スクリーンショット等はGitHubにてご確認いただけます。また、プロジェクトリンクから実際のサービスを体験することも可能です。\n本ページでは、開発の背景、課題解決の過程、学んだ点を中心にまとめています。",
       "insight": {
-        "motive": "これまでのプロジェクトではReact SPAとContext APIを基盤として実装していましたが、レンダリング効率や状態管理の複雑さ、SEO対応において限界を感じていました。\nそこでNext.jsを導入し、CSRだけでなくSSR・SSGの構成を直接体験し、実際のデプロイ環境でSEOおよび初期ロード速度の改善効果を検証しました。\nまた、CSS（BEM命名）による静的スタイリングから脱却し、Tailwind CSSへ移行することで、高速なスタイル設計と一貫したレスポンシブデザインを実現しました。",
-        "problemSolving": "React Context APIの代わりにRedux Toolkitを導入し、カートのように複数ページで共通利用されるグローバル状態をslice単位で構造化し、localStorageと同期させることでデータの永続性を確保しました。\nFirebase Authを用いてユーザー認証を簡素化し、Firestoreで注文データを管理しました。\nまた、VercelのCI/CDパイプラインを構成し、push操作のみで自動デプロイが行える環境を整えました。\nNext.jsの動的ルーティング（App Router）を活用して、商品詳細ページおよび注文履歴を効率的にレンダリングし、i18nの多言語JSON構造をlocaleごとに分離して保守性を向上させました。\nTypeScriptを導入することでコンパイル段階でエラーを事前に検出し、props・stateの型整合性を維持することで安定したコード品質を実現しました。",
-        "learned": "Next.jsへの移行を通じて、React SPAとは異なるレンダリング方式（SSR、SSG、ISR）を理解し、サービス構築におけるクライアントとサーバーの役割分担を明確に把握することができました。\nTailwind CSSの導入によって、デザインシステムの管理効率と生産性の向上を実感し、TypeScriptへのマイグレーションを通じてコードの安全性と保守性を大幅に高めました。\nまた、Redux Toolkitのslice構造により状態管理ロジックがシンプルかつ予測可能になり、Vercelによる自動デプロイにより開発からデプロイ、フィードバックまでのサイクルを大幅に短縮できました。\n結果として、SABI SHOPは技術的な実験と学習を兼ね備えた「次のステップへの成長プロジェクト」となり、フロントエンドエンジニアとして新しい技術スタックを実務レベルで習得した貴重な経験となりました。"
+        "motive": "これまでのプロジェクトではReact SPAとContext APIを基盤として実装していましたが、レンダリング効率や状態管理の複雑さ、SEO対応において限界を感じていました。\nそこでNext.jsを導入し、CSRだけでなくSSR・SSGの構成を直接体験し、実際のデプロイ環境でSEOおよび初期ロード速度の改善効果を検証しました。\nまた、CSS(BEM命名)による静的スタイリングから脱却し、Tailwind CSSへ移行することで、高速なスタイル設計と一貫したレスポンシブデザインを実現しました。",
+        "problemSolving": "React Context APIの代わりにRedux Toolkitを導入し、カートのように複数ページで共通利用されるグローバル状態をslice単位で構造化し、localStorageと同期させることでデータの永続性を確保しました。\nFirebase Authを用いてユーザー認証を簡素化し、Firestoreで注文データを管理しました。\nまた、VercelのCI/CDパイプラインを構成し、push操作のみで自動デプロイが行える環境を整えました。\nNext.jsの動的ルーティング(App Router)を活用して、商品詳細ページおよび注文履歴を効率的にレンダリングし、i18nの多言語JSON構造をlocaleごとに分離して保守性を向上させました。\nTypeScriptを導入することでコンパイル段階でエラーを事前に検出し、props・stateの型整合性を維持することで安定したコード品質を実現しました。",
+        "learned": "Next.jsへの移行を通じて、React SPAとは異なるレンダリング方式(SSR、SSG、ISR)を理解し、サービス構築におけるクライアントとサーバーの役割分担を明確に把握することができました。\nTailwind CSSの導入によって、デザインシステムの管理効率と生産性の向上を実感し、TypeScriptへのマイグレーションを通じてコードの安全性と保守性を大幅に高めました。\nまた、Redux Toolkitのslice構造により状態管理ロジックがシンプルかつ予測可能になり、Vercelによる自動デプロイにより開発からデプロイ、フィードバックまでのサイクルを大幅に短縮できました。\n結果として、SABI SHOPは技術的な実験と学習を兼ね備えた「次のステップへの成長プロジェクト」となり、フロントエンドエンジニアとして新しい技術スタックを実務レベルで習得した貴重な経験となりました。"
       }
     },
     "portfolio": {
       "name": "portfolio",
       "title": "mesel7 Dev Portfolio",
-      "period": "2024.07 ~ 2025.08",
+      "period": "2024.07 ~ 2025.11",
       "type": "Personal Project / Fullstack",
-      "description": "ReactとFirebaseを基盤に制作した個人ポートフォリオサイトです。\n爽やかな夏の空から着想を得たイメージのカラーパレットを採用し、プロジェクト・経験・技術スタックを体系的に整理して、就職活動や自己PRに活用できるよう構成しました。",
-      "tech": "HTML5, CSS3, JavaScript, React, Firebase",
+      "description": "以前の React SPA・Firebase ベースで構築していた個人ポートフォリオを、Next.js・TypeScript・Tailwind CSS を用いて全面的にリニューアルしたプロジェクトです。\n全体の構造を見直し、UI/UX を再整理することで、プロジェクト・経験・技術スタックをより直感的かつ一貫性のある形で伝えられるように改善しました。",
+      "tech": "Next.js, React, TypeScript, Tailwind CSS, Vercel",
       "links": {
         "project": "https://mesel7.dev/",
         "github": "https://github.com/mesel7/portfolio"
       },
       "note": "本プロジェクトの主要機能・構造・スクリーンショット等はGitHubにてご確認いただけます。また、プロジェクトリンクから実際のサービスを体験することも可能です。\n本ページでは、開発の背景、課題解決の過程、学んだ点を中心にまとめています。",
       "insight": {
-        "motive": "React学習の後、今後進めるプロジェクト・経験・技術スタックを体系的に整理し、効果的に伝えるために個人ポートフォリオサイトを企画しました。商用テンプレートに依存せず、デザイン企画から実装まで全工程を自ら行い、自身の能力と個性を最もよく表現できるオーダーメイドのポートフォリオを完成させました。",
-        "problemSolving": "本ポートフォリオサイトでは、プロジェクト・経験・技術スタックなどCRUDが不要な静的データをJSONファイルで管理し、バックエンド呼び出しなしで高速な読み込みと軽量なユーザー体験を実現しました。多言語対応のため、i18nライブラリを用いて国際化（i18n）構造を設計し、locales/ko.jsonおよびlocales/ja.jsonに言語別データを分離保存するローカライズ（l10n）作業を行いました。これにより、保守性と拡張性を確保し、共通レイアウトコンポーネントでレンダリング効率を高めました。また、768px以下のモバイル端末でもスムーズに表示できるよう、CSSメディアクエリとreact-responsiveのuseMediaQueryフックを活用してレスポンシブWebを実装しました。スタイルやサイズの調整はメディアクエリで行い、レイアウトが完全に異なる場合はモバイル専用・PC専用コンポーネントを使用しました。デザイン面では、過剰なエフェクトよりもシンプルで洗練されたUIと高い可読性を重視しました。さらに、夏の蒼天から着想を得たカラーパレットとlinear-gradientを適用し、情報性とブランド感性の両立を図りました。",
-        "learned": "本プロジェクトを通じて、Webサイトの目的や要件に合った技術を選定・適用する能力の重要性を実感しました。特にi18nライブラリを活用してユーザー体験を向上させる多言語対応機能を実装する中で、国際化（i18n）とローカライズ（l10n）の実践的な適用方法を習得しました。また、個人プロジェクトであっても技術実装に留まらず、デザインやUI/UXの完成度を高めることがプロジェクトの価値を大きく向上させることを確認しました。これにより、単なる機能開発を超えて、自分を効果的に表現しブランドアイデンティティを反映させる経験を積むことができました。"
+        "motive": "初期の React ベースのポートフォリオは構造的な制約や拡張性の不足があったため、今後のプロジェクトや技術スタックをより専門的に提示できるよう、全面的なリニューアルを企画しました。\nレイアウト構造を基盤に、カラーパレット、インタラクション、コンポーネント構成を自ら再設計し、独自のデザインテイストとブランド性を反映させました。",
+        "problemSolving": "従来の React SPA 構造を Next.js App Router ベースにマイグレーションすることで、ルーティング構造、SEO、パフォーマンスを大幅に改善しました。\nJavaScript で実装していたコードを TypeScript へ移行し、型安全性と保守性を強化しました。また、CSS ベースのスタイリングを Tailwind CSS に再構成し、スタイルの一貫性と管理性を向上させました。\n静的データは JSON ファイルとして管理し、バックエンド呼び出しなしで高速にレンダリングできる構成としました。さらに、国際化 (i18n) を実現するため、言語別リソースを ko.json・ja.json に分離し、保守性と拡張性を確保しました。\nレスポンシブ対応では、モバイル・PC 専用レイアウトを適切に分けることで自然な画面遷移を実現し、UI はシンプルなホワイトベースのレイアウトにネオン・グラデーションのアクセントを施し、情報性と独自性のバランスを取りました。",
+        "learned": "Next.js・TypeScript を基盤とした再構築を通じて、技術選定と構造設計の重要性を改めて実感しました。\ni18n の導入、Tailwind CSS によるスタイルシステム構築、型を意識したコンポーネント設計など、実サービスに近い構造的な課題に向き合う経験を得ました。\nまた、単なる機能実装に留まらず、UI、ブランディング、可読性まで含めた総合的な完成度がポートフォリオの価値を大きく高めることを学び、開発者としてのアイデンティティを視覚的に表現する貴重な経験となりました。"
       }
     },
-    "foodRunner": {
+    "food-runner": {
       "name": "food-runner",
       "title": "Food Runner",
       "period": "2025.03 ~ 2025.06",
       "type": "Team Project (5 members) / Team Leader • Web Frontend",
-      "description": "Food Runnerは、AI機能を活用して食事と運動を手軽に管理できるよう支援するヘルスケアプラットフォームです。\nAIが料理の写真を分析して自動的に栄養情報を記録し、音声認識を通じて簡単に運動データを入力できます。\nユーザーの好みや体調に合わせた食事や運動動画を提案し、体系的な健康管理をサポートいたします。\nWebとモバイル（Android/iOS）の両方に対応したクロスプラットフォームで開発されており、優れたアクセス性とユーザー体験を提供いたします。",
+      "description": "Food Runnerは、AI機能を活用して食事と運動を手軽に管理できるよう支援するヘルスケアプラットフォームです。\nAIが料理の写真を分析して自動的に栄養情報を記録し、音声認識を通じて簡単に運動データを入力できます。\nユーザーの好みや体調に合わせた食事や運動動画を提案し、体系的な健康管理をサポートいたします。\nWebとモバイル(Android/iOS)の両方に対応したクロスプラットフォームで開発されており、優れたアクセス性とユーザー体験を提供いたします。",
       "tech": "React, Spring Boot, OpenAI API, Google Cloud Vision API, MySQL",
       "links": {
         "project": "",
@@ -163,7 +272,7 @@
         "learned": "デザインを含む重要な意思決定プロセスにおいて、チームメンバーと密接に協力しながら進める中で、コミュニケーションの重要性を強く実感しました。\n特に、Webとモバイルサービスが同一のバックエンドを共有する構成であったため、機能の一貫性とユーザーフローを維持するために、週1回以上の対面ミーティングを実施し、意見の調整と方向性の統一を行いました。\nまた、Webフロントエンドを担当しながらも、Spring BootベースのバックエンドやOpenAI APIとの連携を含むシステム全体の構造を理解し、設計フローを把握する経験を積みました。\nバックエンド担当メンバーとの協働を通じて、データ構造設計からフロントエンドのContextやコンポーネント構造に至るまで、一貫性と効率性を意識した統合的な設計手法を学ぶことができました。"
       }
     },
-    "weatherDiary": {
+    "weather-diary": {
       "name": "weather-diary",
       "title": "心の天気 - 感情記録プラットフォーム",
       "period": "2024.09 ~ 2024.12",
@@ -186,7 +295,7 @@
       "title": "Seremeety - 出会いのセレナーデ",
       "period": "2024.07 ~ 2024.08",
       "type": "Personal Project / Fullstack",
-      "description": "Seremeetyは、自然な出会いが難しい大学生のための、信頼性のある情報に基づいた健全なマッチングプラットフォームです。\n「セレナーデ（Serenade）」と「ミーティング（Meeting）」を組み合わせたネーミングの通り、感性的な雰囲気の中で、ナチュラルかつ健全な出会いを提供することを目指しています。\n色彩テーマには、ロマンチックな印象を与えるセレニティブルーのパステルカラーを採用し、恋愛の感情をビジュアル面でも表現しました。\n本サービスは、PCやスマートフォンなど、ブラウザさえあればどのデバイスからでも利用できるWebアプリとして構築されています。\nネイティブアプリに近い直感的でスムーズなユーザー体験（UX）を実現するため、インタラクションと画面遷移に工夫を凝らしました。",
+      "description": "Seremeetyは、自然な出会いが難しい大学生のための、信頼性のある情報に基づいた健全なマッチングプラットフォームです。\n「セレナーデ(Serenade)」と「ミーティング(Meeting)」を組み合わせたネーミングの通り、感性的な雰囲気の中で、ナチュラルかつ健全な出会いを提供することを目指しています。\n色彩テーマには、ロマンチックな印象を与えるセレニティブルーのパステルカラーを採用し、恋愛の感情をビジュアル面でも表現しました。\n本サービスは、PCやスマートフォンなど、ブラウザさえあればどのデバイスからでも利用できるWebアプリとして構築されています。\nネイティブアプリに近い直感的でスムーズなユーザー体験(UX)を実現するため、インタラクションと画面遷移に工夫を凝らしました。",
       "tech": "HTML5, CSS3, JavaScript, React, Firebase",
       "links": {
         "project": "https://seremeety-kr.web.app/",
@@ -195,7 +304,7 @@
       "note": "本プロジェクトの主要機能・構造・スクリーンショット等はGitHubにてご確認いただけます。また、プロジェクトリンクから実際のサービスを体験することも可能です。\n本ページでは、開発の背景、課題解決の過程、学んだ点を中心にまとめています。",
       "insight": {
         "motive": "前回のプロジェクトではVanilla JSを用いてマッチングWebアプリを開発しましたが、UI・UXの面で限界があり、より高いレベルのユーザー体験を提供する必要性を感じました。\nそこで、新たに学習したReactを適用し、より直感的で反応性の高いインターフェースを実現することを目標に本プロジェクトを企画しました。\nまた、Reactを用いることでVanilla JSよりもWebアプリをネイティブアプリに近い形で実装できるかという技術的挑戦も並行して行いました。",
-        "problemSolving": "モバイル環境を優先的に考慮し、様々なデバイス幅を分析した上で、最大幅を480pxに設定し、全体にメディアクエリを適用しました。さらに、rem単位を活用して画面サイズに応じた柔軟な対応を可能にしました。\n標準のHTMLフォーム要素（select、input、radio、textareaなど）はブラウザやOSによってスタイルが異なるため、プロジェクトテーマに合わせたカスタムスタイルを適用し、再利用可能なコンポーネントとして作成しました。\nチャット機能では、Firebaseのリアルタイム購読を利用してメッセージの変化を即時反映させつつ、ChatProviderに購読解除ロジックを組み込み、ページ遷移時の重複購読を防止しました。チャットルームでは初期表示を20件のメッセージに制限し、スクロール時に20件ずつ追加読み込みすることでパフォーマンス負荷を軽減しました。また、react-intersection-observerライブラリを活用してスクロール最上部の検知を行い、自然な無限スクロールを実装しました。さらに、メッセージ追加時にはrequestAnimationFrameを用いて、モバイル環境でもスムーズにスクロール位置を維持できるよう最適化しました。\nApp.jsxでは、Firebase AuthとFirestoreの新規ユーザーデータ登録状況を同期するロジックを実装しました。ログイン時にonAuthStateChangedで認証状態を確認し、Firestoreに該当UIDのデータが存在しない場合は即座に新規ユーザーデータを生成します。これにより、認証のみが完了しDBに情報が存在しない状態を防ぎ、安定した初期アクセス体験を提供しました。",
+        "problemSolving": "モバイル環境を優先的に考慮し、様々なデバイス幅を分析した上で、最大幅を480pxに設定し、全体にメディアクエリを適用しました。さらに、rem単位を活用して画面サイズに応じた柔軟な対応を可能にしました。\n標準のHTMLフォーム要素(select、input、radio、textareaなど)はブラウザやOSによってスタイルが異なるため、プロジェクトテーマに合わせたカスタムスタイルを適用し、再利用可能なコンポーネントとして作成しました。\nチャット機能では、Firebaseのリアルタイム購読を利用してメッセージの変化を即時反映させつつ、ChatProviderに購読解除ロジックを組み込み、ページ遷移時の重複購読を防止しました。チャットルームでは初期表示を20件のメッセージに制限し、スクロール時に20件ずつ追加読み込みすることでパフォーマンス負荷を軽減しました。また、react-intersection-observerライブラリを活用してスクロール最上部の検知を行い、自然な無限スクロールを実装しました。さらに、メッセージ追加時にはrequestAnimationFrameを用いて、モバイル環境でもスムーズにスクロール位置を維持できるよう最適化しました。\nApp.jsxでは、Firebase AuthとFirestoreの新規ユーザーデータ登録状況を同期するロジックを実装しました。ログイン時にonAuthStateChangedで認証状態を確認し、Firestoreに該当UIDのデータが存在しない場合は即座に新規ユーザーデータを生成します。これにより、認証のみが完了しDBに情報が存在しない状態を防ぎ、安定した初期アクセス体験を提供しました。",
         "learned": "Reactでの実装により、画面遷移速度とUIの反応性が大幅に向上し、コンポーネント再利用によって開発効率も高まりました。これにより、モバイル中心のWebアプリにおいてネイティブアプリに近いユーザー体験を実現するという当初の目標を達成し、一般的なWebサービス開発においてもReactの効率性と一貫したユーザー体験提供能力を実感しました。\nまた、Firebaseの非同期データ処理を扱う中で、データ準備状態に応じたレンダリング制御、ローディングコンポーネントの適用、エラー防止処理などの技術を習得しました。さらに、データロジックをContextとuseReducerベースで管理し、StateとDispatchを分離して供給する構造を採用しました。これにより、機能ごとに4つのContextを細分化し、必要なページにのみ効率的に状態を提供できるようになりました。\n2025年7月から8月にかけてコード構造の改善とデザインリニューアルを実施し、初期開発後の保守やリファクタリングの重要性を改めて認識しました。その結果、コードの可読性、パフォーマンス、UIの一貫性を向上させることができました。"
       }
     },
@@ -213,21 +322,9 @@
       "note": "本プロジェクトは現在、デプロイ環境が終了しておりサービスをご利用いただけません。また、会社の内部方針によりソースコードは公開できませんが、GitHubに別途まとめた紹介ページにて、主要機能・構造・スクリーンショットなどをご確認いただけます。\n本ページでは、開発の背景、課題解決の過程、学んだ点を中心にまとめています。",
       "insight": {
         "motive": "HTML5、CSS3、Vanilla JSを学習し、それらを活用して実際にユーザーが利用できるWebサービスを制作したいと考え、本プロジェクトを開始しました。\nマッチングプラットフォームという特性上、CRUD機能の実装は必須であり、信頼性とセキュリティを備えたFirebaseを活用し、認証、DB連携、Hostingまで全工程を自ら構築しました。\nまた、Vanilla JS環境において複雑な状態管理とUI更新を効率的に実装する方法を試験的に挑戦したプロジェクトでもあります。",
-        "problemSolving": "快適なログイン環境を提供するため、Firebase Authenticationを基盤としたGoogle・Kakaoソーシャルログイン（OAuth 2.0）機能を実装しました。実装過程ではトークン処理やリダイレクトフローにおいて問題が発生しましたが、デバッグと認証プロセスの分析を通じて安定したログインプロセスを完成させました。\nまた、リアルタイムデータ反映のためにFirebaseの非同期ロジックを最適化し、イベント駆動のUI更新を適用しつつDOM操作を最小化することでパフォーマンスを向上させました。\n2024年4月のデプロイ後は実際のユーザー向けに運用を行い、画像読み込みの遅延、認証セッションの期限切れ、データ同期遅延などの問題が発生した際には即座に分析し、ホットフィックスを適用して改善しました。\nさらに、カスタマーサポートおよび管理者ページを構築し、ユーザーからの問い合わせに迅速に対応するとともに、利用者統計を可視化することでサービス運営の効率化を図りました。",
+        "problemSolving": "快適なログイン環境を提供するため、Firebase Authenticationを基盤としたGoogle・Kakaoソーシャルログイン(OAuth 2.0)機能を実装しました。実装過程ではトークン処理やリダイレクトフローにおいて問題が発生しましたが、デバッグと認証プロセスの分析を通じて安定したログインプロセスを完成させました。\nまた、リアルタイムデータ反映のためにFirebaseの非同期ロジックを最適化し、イベント駆動のUI更新を適用しつつDOM操作を最小化することでパフォーマンスを向上させました。\n2024年4月のデプロイ後は実際のユーザー向けに運用を行い、画像読み込みの遅延、認証セッションの期限切れ、データ同期遅延などの問題が発生した際には即座に分析し、ホットフィックスを適用して改善しました。\nさらに、カスタマーサポートおよび管理者ページを構築し、ユーザーからの問い合わせに迅速に対応するとともに、利用者統計を可視化することでサービス運営の効率化を図りました。",
         "learned": "Vanilla JSのみでもリアルタイムデータを基盤としたWebサービスを実装できる可能性を確認できましたが、生産性や保守性の面で限界も感じました。\nFirebase Authentication、Database、Hostingまでの全工程を直接経験することで、Webサービスの企画・開発・デプロイの流れを全体的に理解することができました。特に、マッチングサービス特有の信頼性・セキュリティ・応答速度を考慮した設計や、実際のユーザーフィードバックを反映したUI/UX改善を繰り返す中で、フィードバックに基づく迅速な改善サイクルの重要性を学びました。\nまた、企画チームとの定期的なミーティングによる協働、実際の収益モデル設計、ユーザーの不便解消など、サービス運営の視点を持ったフロントエンド開発を経験しました。これにより、単なる画面実装にとどまらず、ユーザーがサービスをどのように認識し、体験するかまで設計する能力がフロントエンド開発者にとって不可欠であることを強く認識しました。これは私がフロントエンド開発の本質と考える価値観となり、その後のプロジェクト全体に一貫して適用しています。"
       }
-    }
-  },
-
-  "projectDetail": {
-    "page": {
-      "title": "PROJECT DETAIL",
-      "cta": {
-        "backToList": "プロジェクト一覧",
-        "projectsButton": "PROJECTS"
-      },
-      "notFound": "プロジェクトが存在しません。",
-      "loading": "プロジェクト情報を読み込み中です..."
     }
   }
 }

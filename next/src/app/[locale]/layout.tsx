@@ -1,12 +1,12 @@
-// src/app/[locale]/layout.tsx
 import '../globals.css';
 import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 
 import { Noto_Sans_JP, Noto_Sans_KR, Outfit } from 'next/font/google';
 import type { Metadata, Viewport } from 'next';
+
+import Footer from '@/components/footer';
+import Header from '@/components/header';
 
 const locales = ['ko', 'ja'] as const;
 
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   description: 'mesel7 Dev Portfolio',
   icons: {
     icon: '/favicon.ico',
-    apple: '/logo192.png',
+    apple: '/apple-touch-icon.png',
   },
   openGraph: {
     title: 'mesel7 Dev Portfolio',
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
     siteName: 'mesel7 Dev Portfolio',
     images: [
       {
-        url: '/logo512.png',
-        width: 512,
-        height: 512,
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
         alt: 'mesel7 Dev Portfolio',
       },
     ],
@@ -58,14 +58,14 @@ export const viewport: Viewport = {
 type Props = {
   children: React.ReactNode;
   // Next 15 스타일: params는 Promise
-  params: Promise<{ locale: (typeof locales)[number] }>;
+  params: Promise<{ locale: string }>;
 };
 
 export default async function LocaleLayout({ children, params }: Props) {
   // 반드시 await
   const { locale } = await params;
 
-  if (!locales.includes(locale)) {
+  if (!locales.includes(locale as (typeof locales)[number])) {
     notFound();
   }
 
@@ -84,7 +84,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         <NextIntlClientProvider locale={locale} messages={messages}>
           <div className="min-h-dvh flex flex-col">
             <Header />
-            <main className="flex-1 pt-16">{children}</main>
+            {children}
             <Footer />
           </div>
         </NextIntlClientProvider>

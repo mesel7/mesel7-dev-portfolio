@@ -1,0 +1,33 @@
+<svg width="1480" height="240" viewBox="0 0 1480 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="neonSoft" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#007cf0" />
+      <stop offset="100%" stop-color="#ff0080" />
+    </linearGradient>
+
+    <linearGradient id="fadeGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="white" stop-opacity="1" />
+      <stop offset="60%" stop-color="white" stop-opacity="1" />
+      <stop offset="100%" stop-color="white" stop-opacity="0" />
+    </linearGradient>
+
+    <mask id="fadeMask">
+      <rect x="0" y="0" width="1480" height="240" fill="url(#fadeGradient)" />
+    </mask>
+  </defs>
+  <text
+    x="50%"
+    y="65%"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    fill="url(#neonSoft)"
+    font-size="350"
+    font-weight="700"
+    letter-spacing="0.12em"
+    font-family="Outfit, system-ui, sans-serif"
+    opacity="0.1"
+    mask="url(#fadeMask)"
+  >
+    mesel7
+  </text>
+</svg>

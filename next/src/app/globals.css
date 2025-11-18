@@ -1,47 +1,181 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:is(.dark *));
+
+/* 전역 폰트 스택 정의 */
 :root {
-  --background: #ffffff;
-  --foreground: #282828;
-  --font-sans: "Hiragino Sans", var(--font-noto-jp), var(--font-noto-kr), sans-serif;
+  /* Outfit → Hiragino → Noto JP → Noto KR → system (글자 단위 폴백) */
+  --font-base:
+    var(--font-outfit), "Hiragino Sans", var(--font-noto-jp), var(--font-noto-kr), system-ui,
+    sans-serif;
 }
 
-/* 기본 */
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
-}
-
-/* 영문 폰트 */
+/* Outfit 스택을 그대로 쓰는 유틸리티 */
 @utility font-outfit {
-  font-family: var(--font-outfit), var(--font-noto-kr), var(--font-noto-jp), sans-serif;
+  font-family: var(--font-base);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: var(--font-base);
 }
 
-/* input 자동완성 배경 없애기 (Chrome, Safari) */
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus {
-  -webkit-box-shadow: 0 0 0px 1000px var(--background) inset;
-  -webkit-text-fill-color: var(--foreground);
-  transition: background-color 9999s ease-out 0s;
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
 }
 
-input:-webkit-autofill {
-  -webkit-background-clip: text;
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
-/* 입력창들 focus 스타일 제거 */
-input:focus,
-textarea:focus,
-select:focus {
-  outline: none !important;
-  box-shadow: none !important;
-  -webkit-box-shadow: none !important;
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@theme {
+  --color-primary: #4b5563;
+  --color-secondary: #868686;
+  --color-softGray: #f0f0f0;
+  --color-mistGray: #d7dcdd;
+  --color-gray: #c0d8e0;
+
+  --breakpoint-xs: 425px;
+}
+
+@layer utilities {
+  .container {
+    @apply w-full max-w-[80rem] mx-auto mt-0 mb-0 py-0 sm:px-7 px-5;
+  }
+  .label {
+    @apply text-secondary text-sm font-normal;
+  }
+  .input {
+    @apply w-full border-b border-gray focus:border-primary focus:outline-none py-2;
+  }
+  .neon-highlight {
+    background: linear-gradient(-90deg, #007cf0, #00dfd8, #ff0080, #007cf0);
+    background-size: 400% 100%;
+    animation: 8s ease-in-out infinite;
+    filter: blur(8px);
+    inset: 1px;
+    position: absolute;
+    border-radius: 9999px;
+  }
+  .neon-dot-highlight {
+    position: absolute;
+    inset: -1px;
+    border-radius: 9999px;
+    background: linear-gradient(-90deg, #007cf0, #00dfd8, #ff0080, #007cf0);
+    background-size: 400% 100%;
+    animation: 8s ease-in-out infinite;
+    filter: blur(2px);
+    opacity: 0.5;
+  }
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl md:text-5xl xl:text-7xl 2xl:text-[85px] font-semibold leading-tight;
+  }
+
+  h2 {
+    @apply text-3xl md:text-5xl lg:text-6xl xl:text-[65px] font-semibold;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold;
+  }
+
+  h4 {
+    @apply text-4xl;
+  }
+
+  h5 {
+    @apply text-xl xl:text-2xl;
+  }
+
+  h6 {
+    @apply text-sm md:text-base xl:text-xl;
+  }
+
+  p {
+    @apply text-base text-gray-600 leading-relaxed tracking-wide;
+  }
+}
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  header,
+  footer,
+  .navbar,
+  .no-print {
+    display: none !important;
+  }
+
+  main {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  * {
+    box-shadow: none !important;
+    background: transparent !important;
+  }
+
+  html,
+  body {
+    height: auto;
+    overflow: visible;
+  }
+
+  .hero-section {
+    padding-top: 35px;
+  }
+
+  .break-page {
+    break-before: page;
+    page-break-before: always;
+  }
 }

@@ -1,136 +1,229 @@
 {
-  "nav": {
-    "about": "ABOUT",
-    "projects": "PROJECTS"
-  },
   "home": {
-    "page": {
-      "title": "WEB DEVELOPER",
-      "greeting": "안녕하세요 :)",
-      "description": "저는 사용자 중심의 사고로 서비스를 설계하는 웹 개발자입니다. 단순히 화면을 구현하는 데 그치지 않고, 사용자가 ‘기분 좋게 사용할 수 있는 경험’을 만드는 것을 목표로 합니다. React를 중심으로 UI/UX 개선과 성능 최적화에 집중하며, 작은 지연이나 오류도 놓치지 않고 개선합니다. 또한 협업 과정에서는 명확한 소통과 코드 품질을 중시하며, 팀과 함께 성장하는 개발자로 나아가고 있습니다.",
-      "cta": {
-        "moreAboutMe": "MORE ABOUT ME"
-      },
-      "sections": {
-        "profile": {
-          "heading": "PROFILE",
-          "caption": "프로필",
-          "items": {
-            "name": { "label": "NAME", "value": "김동현" },
-            "birthdate": { "label": "BIRTHDATE", "value": "1999.04.28" },
-            "phone": { "label": "PHONE", "value": "010-5954-2166" },
-            "email": { "label": "EMAIL", "value": "cejhans1520@gmail.com" },
-            "address": { "label": "ADDRESS", "value": "Seoul, Korea" },
-            "language": { "label": "LANGUAGE", "value": "Korean / Japanese" }
-          }
-        }
-      }
-    }
-  },
-
-  "about": {
-    "page": {
-      "title": "ABOUT",
-      "lead": "제가 주로 사용하는 기술 스택과 개발 경험을 소개합니다.",
-      "sections": {
-        "tech": {
-          "heading": "TECH STACK",
-          "caption": "기술 스택"
+    "hero": {
+      "line1": "I'm Donghyeon",
+      "role": "Web Developer",
+      "description": "저는 프론트엔드를 중심으로, 화면뿐 아니라 서비스 전체의 구조와 자연스러운 동작까지 설계하는 웹 개발자입니다. React·Next.js 기반으로 흐름·컴포넌트·인터랙션을 다듬고, 개발자 도구로 세밀히 분석해 작은 불편도 개선하는 방식을 중요하게 생각합니다. 팀 개발에서는 명확한 소통과 일관된 구조를 중시하며, 안정적이고 사용성이 높은 사용자 경험(UX)을 만드는 데 집중합니다."
+    },
+    "contactBar": {
+      "contactItems": [
+        {
+          "type": "email",
+          "label": "cejhans1520@gmail.com",
+          "icon": "/images/icon/mail-icon.svg",
+          "link": "mailto:cejhans1520@gmail.com"
         },
-        "experience": {
-          "heading": "EXPERIENCE",
-          "caption": "개발 경험"
+        {
+          "type": "phone",
+          "label": "010-5954-2166",
+          "icon": "/images/icon/call-icon.svg",
+          "link": "tel:01059542166"
+        },
+        {
+          "type": "location",
+          "label": "Seoul, Korea",
+          "icon": "/images/icon/location-icon.svg",
+          "link": "https://www.google.com/maps/search/?api=1&query=Seoul,Korea"
         }
-      }
+      ],
+      "socialItems": [
+        {
+          "platform": "github",
+          "icon": "/images/icon/github-icon.svg",
+          "link": "https://github.com/mesel7"
+        },
+        {
+          "platform": "linkedin",
+          "icon": "/images/icon/linkedin-icon.svg",
+          "link": "https://linkedin.com"
+        }
+      ]
     },
-    "skills": {
-      "html": {
-        "title": "HTML5",
-        "description": "시맨틱 태그를 활용하여 구조적인 마크업을 작성할 수 있습니다. 웹 표준과 접근성을 고려하여 레이아웃을 설계할 수 있습니다. 간결하고 유지보수하기 쉬운 구조로 HTML을 작성하는 데 익숙합니다."
-      },
-      "css": {
-        "title": "CSS3",
-        "description": "Flexbox와 미디어 쿼리를 조합해 반응형 레이아웃을 구현할 수 있습니다. BEM 방법론과 브라우저 개발자 도구를 활용해 구조적인 클래스 설계와 세밀한 스타일 디버깅이 가능합니다. 컴포넌트 단위의 커스텀 스타일 설계에도 익숙합니다."
-      },
-      "tailwind": {
-        "title": "Tailwind CSS",
-        "description": "유틸리티 클래스 기반으로 빠르게 UI를 스타일링할 수 있습니다. 반응형 레이아웃과 공통 컴포넌트 스타일을 일관성 있게 관리할 수 있습니다. 실제 프로젝트에서 디자인 시스템을 적용하며 유지보수 효율을 높인 경험이 있습니다."
-      },
-      "js": {
-        "title": "JavaScript",
-        "description": "Vanilla JavaScript로 DOM 조작과 이벤트 처리를 구현할 수 있습니다. ES6 문법(화살표 함수, 구조 분해 할당, 템플릿 리터럴 등)을 활용할 수 있습니다. axios를 활용하여 백엔드와의 비동기 통신을 구현한 경험이 있습니다."
-      },
-      "ts": {
-        "title": "TypeScript",
-        "description": "정적 타입 시스템을 활용해 런타임 오류를 사전에 방지하고 코드 안정성을 높일 수 있습니다. React 및 Next.js와 결합하여 컴포넌트, 훅, 전역 상태 등의 타입을 명확히 정의한 경험이 있습니다. API 응답 타입을 기반으로 안전한 데이터 처리 흐름을 설계할 수 있습니다."
-      },
-      "react": {
-        "title": "React",
-        "description": "컴포넌트 기반의 UI 개발과 라우팅, 조건부 렌더링 등 기본 구조를 잘 이해하고 있습니다. useState와 커스텀 훅을 활용해 재사용 가능한 로직을 구성할 수 있습니다. Context API 및 Redux Toolkit과 함께 전역 상태를 관리한 경험이 있습니다."
-      },
-      "redux": {
-        "title": "Redux Toolkit",
-        "description": "createSlice 기반의 구조로 전역 상태를 모듈화하여 관리할 수 있습니다. 장바구니 등 여러 페이지에서 공통으로 사용하는 상태를 효율적으로 유지하고, localStorage와 동기화한 경험이 있습니다. 불필요한 전역화를 피하면서 필요한 영역에만 Redux를 적용하는 설계를 지향합니다."
-      },
-      "next": {
-        "title": "Next.js",
-        "description": "SABI SHOP 프로젝트에서 Next.js(App Router)를 활용해 다국어 지원 E-commerce 페이지를 구현한 경험이 있습니다. SSR/SSG를 통해 초기 로딩 속도와 SEO를 고려한 페이지 구성을 할 수 있습니다. 동적 라우팅과 폴더 구조 기반 개발 방식에 익숙합니다."
-      },
-      "node": {
-        "title": "Node.js",
-        "description": "Node.js의 실행 구조와 런타임 환경에 대해 이해하고 있습니다. npm을 통해 프로젝트 의존성을 관리할 수 있습니다. 로컬 서버 환경 구성이나 간단한 백엔드 연동에 Node.js를 사용한 경험이 있습니다."
-      },
-      "git": {
-        "title": "Git / GitHub",
-        "description": "Git을 사용하여 프로젝트 버전을 관리하고 팀원과 협업한 경험이 있습니다. Pull Request, Merge, Rebase 등 기본적인 브랜치 전략에 대해 이해하고 있습니다. GitHub를 통해 코드 리뷰 및 이슈 관리를 수행한 경험이 있습니다."
-      }
+    "aboutMe": {
+      "title": "About Me",
+      "sectionIndex": "( 01 )",
+      "description": "컴퓨터공학 전공을 기반으로 웹·모바일·백엔드 전반을 학습했고, Vanilla JS부터 React·Next.js·TypeScript까지 단계적으로 웹 개발 역량을 쌓아왔습니다. 새로운 기술을 직접 비교·실험하며 배우는 것을 선호하며, 스스로 서비스를 설계하고 구축하는 과정에 흥미를 가지고 있습니다.",
+      "stats": [
+        {
+          "count": "5+",
+          "label": "Years of coding experience"
+        },
+        {
+          "count": "6+",
+          "label": "Web / App projects"
+        },
+        {
+          "count": "3+",
+          "label": "Team & startup programs"
+        }
+      ],
+      "languages": ["Korean", "Japanese"]
     },
-    "experience": {
-      "capstone": {
-        "period": "2025.03 ~ 2025.06",
-        "title": "Capstone Design Project",
-        "role": "Team Leader / Frontend Developer",
-        "description": "캡스톤 프로젝트에서 5인 팀의 팀장을 맡고 웹 프론트엔드를 전담하였으며, 모바일·웹 통합 구조의 크로스 플랫폼 서비스를 구현하였습니다. OpenAI API와 Spring Boot 백엔드 연동을 설계하고, 사용자 흐름을 고려한 UI/UX를 구현하여 SW 프로젝트의 전체 개발 흐름을 이해하고 조율하는 경험을 쌓았습니다."
-      },
-      "preCapstone": {
-        "period": "2024.09 ~ 2024.12",
-        "title": "Pre-Capstone: Industry Collaboration Project",
-        "role": "Frontend Developer",
-        "description": "React 기술을 실전 협업에 적용한 첫 프로젝트입니다. 기업 연계 4인 팀 프로젝트에서 프론트엔드를 담당하였습니다. RESTful API 연동, Context 기반 상태 관리, 반응형 UI 최적화 등 다양한 기능을 구현하였고, 개발 완성도로 교내 우수상을 수상했습니다."
-      },
-      "reactPractice": {
-        "period": "2024.07 ~ 2024.08",
-        "title": "React Practice Projects",
-        "role": "Personal Project",
-        "description": "초기 프로젝트를 통해 Vanilla JS의 디버깅 용이성은 경험했지만, 생산성과 유지 보수에는 한계를 느껴 React를 독학하게 되었습니다. React를 활용해 새로운 소개팅 웹 앱을 기획·개발하였고, 포트폴리오 사이트 제작도 병행하며 상태 관리, 라우팅, Context 구조 설계, 성능 최적화 기법에 대해 체계적인 이해를 갖추었습니다."
-      },
-      "playin": {
-        "period": "2024.01 ~ 2024.06",
-        "title": "PLAY-IN (Startup Collaboration)",
-        "role": "Frontend Developer",
-        "description": "스타트업 외주로 시작한 첫 실전 프로젝트로, 기획팀과 협업하여 대학생 소개팅 웹 앱을 개발·운영하였습니다. HTML・CSS・Vanilla JS・Firebase를 활용해 전체 프론트 구현부터 배포까지 담당했으며, 실사용자 대상 피드백을 바탕으로 이미지 최적화, 로딩 속도 개선 등 다양한 이슈를 직접 해결했습니다."
-      }
+    "experiences": {
+      "title": "Experience",
+      "sectionIndex": "( 02 )",
+      "items": [
+        {
+          "year": "25.03 ~ 25.06",
+          "title": "Capstone Design Project",
+          "company": "Team Leader / Frontend Developer",
+          "type": "University Capstone Project",
+          "description": "5인 팀을 리드하며 웹 프론트엔드 아키텍처를 설계·구현했습니다. React 기반 웹·모바일 통합 UI, OpenAI API 연동, Spring Boot 백엔드와의 통신 구조를 구축하고 전체 서비스 플로우를 기술적으로 조율했습니다."
+        },
+        {
+          "year": "24.09 ~ 24.12",
+          "title": "Pre-Capstone: Industry Collaboration",
+          "company": "Frontend Developer",
+          "type": "Industry Collaboration Project",
+          "description": "기업 연계 팀 프로젝트에서 React 프론트를 개발했습니다. REST API 연동, Context·Reducer 기반 전역 상태 관리, 반응형 UI 구성, 컴포넌트 단위 구조화 등을 담당했으며, 완성도를 인정받아 교내 우수상을 수상했습니다."
+        },
+        {
+          "year": "24.07 ~ 24.08",
+          "title": "React Practice Projects",
+          "company": "Personal Project",
+          "type": "Self-driven Study",
+          "description": "React 생태계를 집중적으로 학습하며 소개팅 앱·포트폴리오 등 개인 프로젝트를 개발했습니다. 라우팅, 전역 상태 관리, 컴포넌트 구조 설계, 성능 최적화(useMemo/useCallback), 반응형 UI 패턴을 실전 수준으로 익혔습니다."
+        },
+        {
+          "year": "24.01 ~ 24.06",
+          "title": "PLAY-IN (Startup Collaboration)",
+          "company": "Frontend Developer",
+          "type": "Startup Collaboration Project",
+          "description": "HTML·CSS·Vanilla JS·Firebase로 전체 프론트를 단독 개발하고 배포했습니다. 이미지 압축, 캐싱 전략, Firebase Realtime DB 구조 개선 등 실서비스 운영 과정에서의 성능·UX 문제를 직접 진단·개선했습니다."
+        }
+      ]
+    },
+    "educationSkills": {
+      "title": "Education & Skills",
+      "sectionIndex": "( 03 )",
+      "education": [
+        {
+          "title": "Hansung University - Computer Science (2020~ )",
+          "description": "웹/모바일 프로그래밍, 백엔드, 소프트웨어 공학, 데이터베이스 등 웹 서비스 전반을 다루는 전공 과목을 수강했습니다. 자료구조, 알고리즘, 운영체제 등 CS 기초와 함께 프로젝트 기반 학습을 통해 Frontend–Backend 연동, API 설계, UI/UX 구현 등 실제 서비스 개발 흐름을 체계적으로 익혔습니다."
+        },
+        {
+          "title": "Sejong Science High School (2015~2018)",
+          "description": "C 언어 기초와 Java leJOS 로보틱스 프로그래밍을 학습하며 공학적 사고 기반을 다졌습니다. 과학·수학 중심 교육을 통해 논리적 사고와 문제 해결 능력을 강화했습니다."
+        }
+      ],
+      "skills": [
+        {
+          "name": "Next.js",
+          "icon": "/images/home/education-skill/next-icon.svg",
+          "rating": 3
+        },
+        {
+          "name": "React",
+          "icon": "/images/home/education-skill/react-icon.svg",
+          "rating": 5
+        },
+        {
+          "name": "Redux Toolkit",
+          "icon": "/images/home/education-skill/redux-icon.svg",
+          "rating": 3
+        },
+        {
+          "name": "TypeScript",
+          "icon": "/images/home/education-skill/ts-icon.svg",
+          "rating": 3
+        },
+        {
+          "name": "Tailwind CSS",
+          "icon": "/images/home/education-skill/tailwind-icon.svg",
+          "rating": 3
+        },
+        {
+          "name": "Node.js",
+          "icon": "/images/home/education-skill/node-icon.svg",
+          "rating": 4
+        },
+        {
+          "name": "HTML5",
+          "icon": "/images/home/education-skill/html-icon.svg",
+          "rating": 5
+        },
+        {
+          "name": "CSS3",
+          "icon": "/images/home/education-skill/css-icon.svg",
+          "rating": 5
+        },
+        {
+          "name": "JavaScript",
+          "icon": "/images/home/education-skill/js-icon.svg",
+          "rating": 5
+        },
+        {
+          "name": "Git / GitHub",
+          "icon": "/images/home/education-skill/git-icon.svg",
+          "rating": 4
+        },
+        {
+          "name": "Figma",
+          "icon": "/images/home/education-skill/figma-icon.svg",
+          "rating": 2
+        },
+        {
+          "name": "Photoshop",
+          "icon": "/images/home/education-skill/photoshop-icon.svg",
+          "rating": 2
+        }
+      ]
+    },
+    "latestWork": {
+      "title": "Projects",
+      "sectionIndex": "( 04 )",
+      "works": [
+        {
+          "image": "/images/work/sabi-shop.jpg",
+          "title": "SABI SHOP - WABI SABI Minimal Coffee Store",
+          "client": "Personal Project / Fullstack",
+          "slug": "sabi-shop"
+        },
+        {
+          "image": "/images/work/food-runner.jpg",
+          "title": "Food Runner - AI 기반 헬스케어 플랫폼",
+          "client": "Team Project (5) / Team Leader · Web Frontend",
+          "slug": "food-runner"
+        },
+        {
+          "image": "/images/work/weather-diary.jpg",
+          "title": "마음의 날씨 - 감정 기록 플랫폼",
+          "client": "Team Project (4) / Web Frontend",
+          "slug": "weather-diary"
+        },
+        {
+          "image": "/images/work/seremeety.jpg",
+          "title": "Seremeety - 만남의 세레나데",
+          "client": "Personal Project / Fullstack",
+          "slug": "seremeety"
+        },
+        {
+          "image": "/images/work/sweetii.jpg",
+          "title": "Sweetii - 달콤한 만남",
+          "client": "Team Project (3) / Web Frontend",
+          "slug": "sweetii"
+        },
+        {
+          "image": "/images/work/portfolio.jpg",
+          "title": "mesel7 Dev Portfolio",
+          "client": "Personal Project / Frontend",
+          "slug": "portfolio"
+        }
+      ]
     }
   },
 
   "projects": {
-    "page": {
-      "title": "PROJECTS",
-      "lead": "제가 진행했던 주요 프로젝트를 소개합니다.",
-      "sections": {
-        "mainProjects": {
-          "heading": "MAIN PROJECTS",
-          "caption": "주요 프로젝트"
-        }
-      }
-    },
-    "sabiShop": {
+    "title": "Project Detail",
+    "sectionIndex": "( 05 )",
+
+    "sabi-shop": {
       "name": "sabi-shop",
       "title": "SABI SHOP - WABI SABI Minimal Coffee Store",
       "period": "2025.10 ~ 2025.11",
       "type": "Personal Project / Fullstack",
       "description": "SABI SHOP은 일본 미학 ‘와비사비(侘び寂び)’에서 영감을 받은 미니멀 커피 스토어입니다.\n‘화려함보다 여백을, 꾸밈보다 온기를’이라는 컨셉으로 절제된 디자인과 직관적인 사용자 경험(UX)을 추구하였으며, Next.js의 SSR과 SSG을 활용해 SEO 성능을 강화했습니다.\nTailwind CSS를 통해 빠른 스타일링과 일관된 디자인 시스템을 구축하였고, Redux Toolkit으로 전역 상태를 체계적으로 관리했습니다. 또한, Firebase Auth와 Firestore로 로그인 및 주문 데이터를 처리하고, Vercel을 통해 자동 배포 파이프라인을 구축했습니다.\n다국어(i18n) 지원을 구현하여 한국어·일본어 간 언어 전환이 가능한 구조를 설계했습니다.",
-      "tech": "Tailwind CSS, TypeScript, React, Redux Toolkit, Next.js, Firebase, Vercel",
+      "tech": "Next.js, React, Redux Toolkit, TypeScript, Tailwind CSS, Firebase, Vercel",
       "links": {
         "project": "https://sabi-shop.vercel.app",
         "github": "https://github.com/mesel7/sabi-shop"
@@ -145,22 +238,22 @@
     "portfolio": {
       "name": "portfolio",
       "title": "mesel7 Dev Portfolio",
-      "period": "2024.07 ~ 2025.08",
+      "period": "2024.07 ~ 2025.11",
       "type": "Personal Project / Fullstack",
-      "description": "React와 Firebase 기반으로 제작한 개인 포트폴리오 사이트입니다.\n맑은 여름 하늘에서 착안한 색상 팔레트를 적용하고, 프로젝트·경험·기술 스택을 체계적으로 정리하여 취업 준비와 자기 소개에 활용할 수 있도록 구성했습니다.",
-      "tech": "HTML5, CSS3, JavaScript, React, Firebase",
+      "description": "기존 React SPA·Firebase 기반으로 제작했던 개인 포트폴리오를 Next.js, TypeScript, Tailwind CSS 기반으로 전면 리뉴얼한 프로젝트입니다.\n전체 구조를 개선하고 UI/UX를 재정비하여, 프로젝트·경험·기술 스택을 더 직관적이고 일관된 방식으로 전달할 수 있도록 구성했습니다.",
+      "tech": "Next.js, React, TypeScript, Tailwind CSS, Vercel",
       "links": {
         "project": "https://mesel7.dev/",
         "github": "https://github.com/mesel7/portfolio"
       },
       "note": "이 프로젝트의 주요 기능, 구조, 스크린샷 등은 GitHub를 통해 확인하실 수 있으며 프로젝트 링크에서 실제 서비스를 체험해보실 수 있습니다.\n본 페이지에서는 개발 배경과 문제 해결 과정, 배운 점을 중심으로 정리하였습니다.",
       "insight": {
-        "motive": "React 학습 이후, 향후 진행할 프로젝트·경험·기술 스택을 체계적으로 정리하고 효과적으로 전달하기 위해 개인 포트폴리오 사이트를 기획했습니다.\n상용 템플릿에 의존하지 않고 디자인 기획부터 구현까지 전 과정을 직접 수행하여, 저의 역량과 개성을 가장 잘 드러낼 수 있는 맞춤형 포트폴리오를 완성했습니다.",
-        "problemSolving": "본 포트폴리오 사이트는 프로젝트·경험·기술 스택 등 CRUD가 불필요한 정적 데이터를 JSON 파일로 관리하여, 백엔드 호출 없이 빠른 로딩 속도와 경량화된 사용자 경험을 구현했습니다.\n다국어 지원을 위해 i18n 라이브러리로 국제화(i18n) 구조를 설계하고, locales/ko.json 및 locales/ja.json에 언어별 데이터를 분리 저장하는 현지화(l10n) 작업을 진행했습니다. 이를 통해 유지보수성과 확장성을 확보하고, 공통 레이아웃 컴포넌트로 렌더링 효율을 높였습니다.\n또한 768px 이하 모바일 기기에서도 매끄럽게 표시되도록 CSS 미디어쿼리와 react-responsive의 useMediaQuery 훅을 활용하여 반응형 웹을 구현했습니다. 스타일·크기 조정은 미디어쿼리로 처리하고, 레이아웃이 완전히 달라지는 경우에는 Mobile·PC 전용 컴포넌트를 사용했습니다.\n디자인 측면에서는 과도한 효과보다 심플하고 정제된 UI, 높은 가독성을 우선시했습니다. 동시에 맑은 여름 하늘에서 영감을 받은 색상 팔레트와 linear-gradient를 적용하여 정보성과 브랜드 감성을 모두 담았습니다.",
-        "learned": "이번 프로젝트를 통해 웹사이트의 목적과 요구사항에 맞는 기술을 선별·적용하는 능력의 중요성을 체감했습니다. 특히 i18n 라이브러리를 활용하여 사용자 경험을 높이는 다국어 지원 기능을 구현하며, 국제화(i18n)와 현지화(l10n)의 실제 적용 방법을 익혔습니다.\n또한, 개인 프로젝트라 하더라도 기술 구현에만 그치지 않고 디자인과 UI/UX 완성도를 높이는 것이 프로젝트의 가치를 크게 향상시킨다는 점을 확인했습니다. 이를 통해, 단순한 기능 개발을 넘어 저를 효과적으로 표현하고 브랜드 아이덴티티를 담아내는 경험을 쌓을 수 있었습니다."
+        "motive": "처음 제작했던 React 기반 포트폴리오는 구조적 한계와 확장성 부족 문제가 있었기에, 향후 프로젝트와 기술 스택을 전문적으로 보여줄 수 있도록 전면 리뉴얼을 기획했습니다.\n레이아웃 구조를 기반으로 색상 팔레트, 인터랙션, 컴포넌트 구성 등을 직접 재설계해, 저만의 디자인 톤과 브랜드 감성을 담았습니다.",
+        "problemSolving": "기존 React SPA 구조를 Next.js App Router 기반으로 마이그레이션하여 라우팅 구조, SEO, 성능을 대폭 개선했습니다.\nJavaScript로 작성된 코드를 TypeScript로 전환하며 타입 안정성을 확보했고, CSS 기반 스타일링을 Tailwind CSS 체계로 재구성하여 스타일 일관성을 높였습니다.\n정적 데이터는 JSON 파일로 관리해 서버 호출 없이 빠르게 렌더링되도록 구성했고, 국제화(i18n) 적용을 위해 언어별 리소스를 ko.json·ja.json으로 분리했습니다.\n반응형 디자인은 모바일·PC 전용 레이아웃을 분리하여 자연스럽게 전환되도록 구현했고, UI는 심플한 화이트 기반 레이아웃에 네온·그라데이션 포인트를 적용해 정보성과 개성을 균형 있게 전달했습니다.",
+        "learned": "Next.js·TypeScript 기반으로 포트폴리오를 재구축하면서 기술 선택과 구조 설계의 중요성을 다시 확인했습니다.\n국제화(i18n) 적용, Tailwind CSS 스타일 시스템 구성, 타입 기반 컴포넌트 설계 등 실서비스 수준의 구조적 고민을 경험했습니다.\n또한 단순한 기능 구현을 넘어 UI·브랜딩·가독성까지 고려하는 것이 포트폴리오 완성도에 큰 영향을 준다는 점을 체감하며, 개발자로서의 정체성을 시각적으로 표현하는 경험을 쌓을 수 있었습니다."
       }
     },
-    "foodRunner": {
+    "food-runner": {
       "name": "food-runner",
       "title": "Food Runner",
       "period": "2025.03 ~ 2025.06",
@@ -179,7 +272,7 @@
         "learned": "디자인을 포함한 여러 주요 의사결정 과정에서 팀원들과 긴밀하게 협업하며, 소통의 중요성을 깊이 체감할 수 있었습니다.\n특히 웹과 모바일 서비스가 동일한 백엔드를 공유하는 구조였기 때문에, 기능의 일관성과 사용자 흐름을 유지하기 위해 주 1회 이상의 대면 회의를 통해 의견을 조율하고 방향성을 함께 설정했습니다.\n또한 웹 프론트엔드를 맡아 개발하면서도, Spring Boot 기반의 백엔드와 OpenAI API까지 연동되는 전체 시스템 구조를 이해하고 설계 흐름을 파악하는 경험을 쌓았습니다.\n백엔드 팀원과의 협업을 통해 데이터 구조 설계부터 프론트의 context 및 컴포넌트 구조까지, 일관성과 효율성을 고려한 통합적인 설계 방식을 배우게 되었습니다."
       }
     },
-    "weatherDiary": {
+    "weather-diary": {
       "name": "weather-diary",
       "title": "마음의 날씨 - 감정 기록 플랫폼",
       "period": "2024.09 ~ 2024.12",
@@ -232,18 +325,6 @@
         "problemSolving": "편리한 로그인 환경을 제공하기 위해 Firebase Authentication 기반으로 Google·Kakao 소셜 로그인(OAuth 2.0) 기능을 구현했습니다. 구현 과정에서 토큰 처리 및 리디렉션 흐름에서 문제가 발생했지만, 디버깅과 인증 절차 분석을 통해 안정적인 로그인 프로세스를 완성했습니다.\n또한, 실시간 데이터 반영을 위해 Firebase 비동기 로직을 최적화하고, 이벤트 기반 UI 업데이트를 적용하되 DOM 조작을 최소화하여 성능을 향상시켰습니다.\n2024년 4월 배포 후 실제 사용자 대상으로 운영하며 발생한 이미지 로드 지연, 인증 세션 만료, 데이터 동기화 지연 등의 문제를 즉시 분석하고 핫픽스를 적용해 개선했습니다.\n추가로, 고객센터 및 관리자 페이지를 구축하여 사용자 문의에 신속히 대응하고, 이용자 통계를 시각화하여 서비스 운영 효율성을 높였습니다.",
         "learned": "순수 Vanilla JS로도 실시간 데이터 기반 웹 서비스를 구현할 수 있다는 가능성을 확인했지만, 생산성과 유지보수 측면에서의 한계를 체감했습니다.\nFirebase Authentication, Database, Hosting 전 과정을 직접 경험하며, 웹 서비스의 기획·개발·배포 흐름을 전체적으로 이해할 수 있었습니다. 특히 매칭 서비스 특성상 중요한 신뢰성·보안·응답 속도를 고려한 설계와, 실사용자 피드백을 반영한 UI/UX 개선 과정을 반복하며 피드백 기반의 빠른 개선 주기의 중요성을 배웠습니다.\n또한 기획팀과의 정기 회의를 통한 협업, 실제 수익 모델 설계, 사용자 불편 사항 해결 등 서비스 운영 관점의 프론트엔드 개발을 경험했습니다. 이를 통해 단순한 화면 구현을 넘어, 사용자가 서비스를 어떻게 인지하고 경험하는지까지 설계하는 역량이 프론트엔드 개발자에게 필수적임을 깊이 깨달았습니다. 이는 제가 프론트엔드 개발의 본질로 삼는 가치관이 되었고, 이후 프로젝트 전반에 일관되게 적용하고 있습니다."
       }
-    }
-  },
-
-  "projectDetail": {
-    "page": {
-      "title": "PROJECT DETAIL",
-      "cta": {
-        "backToList": "프로젝트 목록",
-        "projectsButton": "PROJECTS"
-      },
-      "notFound": "프로젝트가 존재하지 않습니다.",
-      "loading": "프로젝트 정보를 불러오는 중입니다..."
     }
   }
 }
