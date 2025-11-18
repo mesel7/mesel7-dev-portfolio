@@ -1,15 +1,15 @@
 # mesel7 Dev Portfolio
 
-ReactとFirebaseを基盤に制作した個人ポートフォリオサイトです。 
-爽やかな夏の空から着想を得たイメージのカラーパレットを採用し、プロジェクト・経験・技術スタックを体系的に整理して、就職活動や自己PRに活用できるよう構成しました。
+Next.js、TypeScript、Tailwind CSSを基盤に制作した個人ポートフォリオサイトです。 
+2025年11月のリニューアルでは、全体構造の見直しと UI/UX の再設計を行い、プロジェクト・経験・技術スタックをより直感的で一貫性のある形で伝えられるよう改善しました。
 
 ---
 
 ## 🧭 プロジェクト概要
 
-- **期間:** 2024.07 ~ 2025.08 
+- **期間:** 2024.07 ~ 2025.11 
 - **タイプ:** Personal Project / Fullstack
-- **担当:** 全機能の設計・フロントエンド実装、Firebaseを用いたバックエンド構築およびデプロイ
+- **担当:** 全機能の設計・フロントエンド実装、Vercel デプロイ
 
 ---
 
@@ -17,8 +17,8 @@ ReactとFirebaseを基盤に制作した個人ポートフォリオサイトで�
 
 | 区分 | 技術スタック |
 |------|------|
-| Frontend | HTML5, CSS3, JavaScript, React |
-| Infra & Deployment | Firebase Hosting |
+| Frontend | HTML5, Tailwind CSS, TypeScript, React, Next.js |
+| Infra & Deployment | Vercel |
 | Collaboration & Versioning | GitHub |
 
 ---
